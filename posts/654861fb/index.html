@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.5"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source"/>
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            NexT 主题配置备份（二） · 
+        
+        Dinphy - 简乐
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="这篇博客是承接上一篇 Next 主题配置备份，按照个人喜好做了一些修改。
+加密文章网上针对 Hexo 博客加密文章的办法有两种：
+js 的阻塞机制在 themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig 中的 \ 标签后添加以下代码：
+12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&#39;)&amp;#123;            if (prompt(&#39;请输入文章密码&#39;, &#39;&#39;) !== &#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&#39;)&amp;#123;                alert(&#39;密码错误&#39;);                history.back();            &amp;#125;        &amp;#125;    &amp;#125;)();&amp;lt;/script&amp;gt;">
+    <meta name="keywords" content="Blog,小王,dinphy,定飞,国庆,NexT,博客">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material.min.css">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{}};lsloader.removeLS=function(b){try{localStorage.removeItem(b)}catch(a){}};lsloader.setLS=function(b,a){try{localStorage.setItem(b,a)}catch(c){}};lsloader.getLS=function(b){var a="";try{a=localStorage.getItem(b)}catch(c){a=""}return a};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{for(var b=[],a=0;a<localStorage.length;a++)b.push(localStorage.key(a));b.forEach(function(a){-1===lsloader.getLS(a).indexOf(versionString)&&lsloader.removeLS(a)})}catch(c){}};lsloader.clean();lsloader.load=function(b,a,c,e){"boolean"===typeof c&&(e=c,c=void 0);e=e||!1;c=c||function(){};var d;(d=this.getLS(b))&&-1===d.indexOf(versionString)?(this.removeLS(b),this.requestResource(b,a,c,e)):d?d.split(versionString)[0]!=a?(console.log("reload:"+a),this.removeLS(b),this.requestResource(b,a,c,e)):(d=d.split(versionString)[1],e?(this.jsRunSequence.push({name:b,code:d}),this.runjs(a,b,d)):(document.getElementById(b).appendChild(document.createTextNode(d)),c())):this.requestResource(b,a,c,e)};lsloader.requestResource=function(b,a,c,e){var d=this;e?this.iojs(a,b,function(a,b,c){d.setLS(b,a+versionString+c);d.runjs(a,b,c)}):this.iocss(a,b,function(c){document.getElementById(b).appendChild(document.createTextNode(c));d.setLS(b,a+versionString+c)},c)};lsloader.iojs=function(b,a,c){var e=this;e.jsRunSequence.push({name:a,code:""});try{var d=new XMLHttpRequest;d.open("get",b,!0);d.onreadystatechange=function(){4==d.readyState&&((200<=d.status&&300>d.status||304==d.status)&&""!=d.response?c(b,a,d.response):e.jsfallback(b,a))};d.send(null)}catch(f){e.jsfallback(b,a)}};lsloader.runjs=function(b,a,c){if(a&&c)for(var e in this.jsRunSequence)this.jsRunSequence[e].name==a&&(this.jsRunSequence[e].code=c);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)b=document.createElement("script"),b.appendChild(document.createTextNode(this.jsRunSequence[0].code)),b.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(b),this.jsRunSequence.shift(),0<this.jsRunSequence.length&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var d=this;b=document.createElement("script");b.src=this.jsRunSequence[0].path;b.type="text/javascript";this.jsRunSequence[0].status="loading";b.onload=function(){d.jsRunSequence.shift();0<d.jsRunSequence.length&&d.runjs()};document.body.appendChild(b)}};lsloader.jsfallback=function(b,a){if(!this.jsnamemap[a]){this.jsnamemap[a]=a;for(var c in this.jsRunSequence)this.jsRunSequence[c].name==a&&(this.jsRunSequence[c].code="",this.jsRunSequence[c].status="failed",this.jsRunSequence[c].path=b);this.runjs()}};lsloader.cssfallback=function(b,a,c){this.cssnamemap[a]||(this.cssnamemap[a]=1,a=document.createElement("link"),a.type="text/css",a.href=b,a.rel="stylesheet",a.onload=a.onerror=c,b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b))};lsloader.runInlineScript=function(b,a){a=document.getElementById(a).innerText;this.jsRunSequence.push({name:b,code:a});this.runjs()}})();</script>
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+<!-- Other Styles -->
+<style>
+#post-content hr {
+  height: 20px;
+  margin: 15px auto;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC')
+  center center no-repeat;
+}
+* {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.22);
+}
+
+table {
+  display: table!important;
+}
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material-icons.css">
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/jquery.min.js", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Dinphy - 简乐">
+    <meta name="msapplication-starturl" content="https://dinphy.github.io/posts/654861fb/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dinphy - 简乐">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://dinphy.github.io/posts/654861fb/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="NexT 主题配置备份（二） · Dinphy - 简乐">
+    <meta property="og:image" content="/img/favicon.ico">
+    <meta property="og:description" content="这篇博客是承接上一篇 Next 主题配置备份，按照个人喜好做了一些修改。
+加密文章网上针对 Hexo 博客加密文章的办法有两种：
+js 的阻塞机制在 themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig 中的 \ 标签后添加以下代码：
+12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&#39;)&amp;#123;            if (prompt(&#39;请输入文章密码&#39;, &#39;&#39;) !== &#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&#39;)&amp;#123;                alert(&#39;密码错误&#39;);                history.back();            &amp;#125;        &amp;#125;    &amp;#125;)();&amp;lt;/script&amp;gt;">
+    <meta property="og:article:tag" content="NexT"> <meta property="og:article:tag" content="博客"> 
+
+    
+        <meta property="article:published_time" content="Fri Jun 30 2017 10:55:34 GMT+0800">
+        <meta property="article:modified_time" content="Sun Dec 24 2017 19:39:29 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://dinphy.github.io/posts/654861fb/" />
+    
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://dinphy.github.io/posts/654861fb/index.html",
+    "headline": "NexT 主题配置备份（二）",
+    "datePublished": "Fri Jun 30 2017 10:55:34 GMT+0800",
+    "dateModified": "Sun Dec 24 2017 19:39:29 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Dinphy - 简乐",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "生活不易,快乐就好"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dinphy - 简乐",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.ico"
+        }
+    },
+    "keywords": ",NexT,博客Blog,小王,dinphy,定飞,国庆",
+    "description": "这篇博客是承接上一篇 Next 主题配置备份，按照个人喜好做了一些修改。
+加密文章网上针对 Hexo 博客加密文章的办法有两种：
+js 的阻塞机制在 themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig 中的 \ 标签后添加以下代码：
+12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&#39;)&amp;#123;            if (prompt(&#39;请输入文章密码&#39;, &#39;&#39;) !== &#39;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&#39;)&amp;#123;                alert(&#39;密码错误&#39;);                history.back();            &amp;#125;        &amp;#125;    &amp;#125;)();&amp;lt;/script&amp;gt;",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            <link rel="manifest" href="/manifest.json">
+        
+            <script>lsloader.load("ap_js","https://cdn.jsdelivr.net/npm/aplayer@1.6.0/dist/APlayer.min.js", true)</script>
+        
+            <script>lsloader.load("music_js", "https://cdn.jsdelivr.net/gh/wincerchan/QQMusic-Parse@0.3/parse.min.js", true)</script>
+        
+    
+
+</head>
+
+
+<div>
+
+</div>
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#加密文章"><span class="post-toc-number">1.</span> <span class="post-toc-text">加密文章</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#js-的阻塞机制"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">js 的阻塞机制</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#crypto-js-的-AES-加密"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">crypto-js 的 AES 加密</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#添加一言"><span class="post-toc-number">2.</span> <span class="post-toc-text">添加一言</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#压缩博客文章"><span class="post-toc-number">3.</span> <span class="post-toc-text">压缩博客文章</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#博文置顶"><span class="post-toc-number">4.</span> <span class="post-toc-text">博文置顶</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#隐藏文章"><span class="post-toc-number">5.</span> <span class="post-toc-text">隐藏文章</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#首页"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">首页</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#归档"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">归档</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分享页面"><span class="post-toc-number">6.</span> <span class="post-toc-text">分享页面</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://s1.ax1x.com/2017/12/24/vGU0K.png)">
+    
+            <p class="article-headline-p">
+                NexT 主题配置备份（二）
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Dinphy - 简乐</strong>
+        <span>6月 30, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB5klEQVR42u3aQXLCQAwEQP7/6eSaC2RGCwVG7RNFGVvNQSWtdPv5iuuGgYGBgYGBgfExjFt8/b3/3hOSe+7dn8eAgYGxk/FParvzyuT+5Js2BgwMjM2MNskm6TIJfRgDBgYGRvCaGan9UzAwMDCem3CT8rH9IzAwMDBmDeRJWEmL+/JeHAMD44KM2WDguZ/fNt/AwMD4eEa94hAc6LcjzDfsjGBgYFyKkbejyZpFXiy2A85hL46BgfEVjKQpzQu75JltCRg1sRgYGAsYs9SZPycpJfOEjoGBsY1xclh/MkJ4yQIrBgbGlzLaV+YBtWPLutzEwMBYw2iXt/JD/3zZK4lhuDOCgYHxRYz8KC3/5qR8xMDAwDhpR5OgZ81qfUiHgYGxjDELK0+az2qMMTAwNjPyQ67zMUB73IaBgYFxshb/+MWzFY3iVxgYGGsYs4Ow9i+YDQAwMDAw8gfN1uhbXs7GwMDYycivdvG0bZVzEgYGxh5Gm/hOPidD0OFgAAMDYwHjZCTZFoj/BJcPEjAwMFYy8mOv82FnntyL0hADAwMjTrh5Om6XxjAwMDByRptwh4E+TvoYGBgrGSeFXbuukTexLzluw8DAuCCjHQwkK62zAjF5JgYGxjbGdS8MDAwMDAwMjLdev0Ybc6jy32PGAAAAAElFTkSuQmCC">
+    
+</ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/NexT/">NexT</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/博客/">博客</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/posts/654861fb/" class="leancloud-views_num" data-flag-title="NexT 主题配置备份（二）">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=NexT 主题配置备份（二）&url=https://dinphy.github.io/posts/654861fb/index.html&pic=https://dinphy.github.io/img/favicon.ico&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=NexT 主题配置备份（二）&url=https://dinphy.github.io/posts/654861fb/index.html&via=Dinphy - 简乐" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://dinphy.github.io/posts/654861fb/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>这篇博客是承接上一篇 <a href="../a40f8cd0/">Next 主题配置备份</a>，按照个人喜好做了一些修改。</p>
+<h3 id="加密文章"><a href="#加密文章" class="headerlink" title="加密文章"></a>加密文章</h3><p>网上针对 Hexo 博客加密文章的办法有两种：</p>
+<h4 id="js-的阻塞机制"><a href="#js-的阻塞机制" class="headerlink" title="js 的阻塞机制"></a>js 的阻塞机制</h4><p>在 <code>themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig</code> 中的 \<meta> 标签后添加以下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>, <span class="string">''</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">                alert(<span class="string">'密码错误'</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>这里的 <code>page</code> 变量就是文章的首部：需要在首部自行添加 <code>password</code> 字段，再设置一个密码值：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: NexT主题配置备份（二）</span><br><span class="line">type: categories</span><br><span class="line">categories: 笔记</span><br><span class="line">tags:</span><br><span class="line"><span class="code">	- NexT</span></span><br><span class="line"><span class="code">	- 博客</span></span><br><span class="line">copyright: true</span><br><span class="line">date: 2017/06/20 10:55:34</span><br><span class="line">password: ffffff</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>当然这个并不是真的加密，用查源代码的方式还是能看出博客的内容，不过这已经可以阻挡绝大部分访客了。</p>
+<h4 id="crypto-js-的-AES-加密"><a href="#crypto-js-的-AES-加密" class="headerlink" title="crypto-js 的 AES 加密"></a>crypto-js 的 AES 加密</h4><p>采用的是 <a href="https://github.com/edolphin-ydf/hexo-encrypt" target="_blank" rel="noopener">hexo-encrypt</a> 插件，原理见作者<a href="http://edolphin.site/2016/05/31/encrypt-post/" target="_blank" rel="noopener">博客</a>，这个就属于真正的加密了，不知道密码查看源代码就是一堆无法辨认的字符。</p>
+<h3 id="添加一言"><a href="#添加一言" class="headerlink" title="添加一言"></a>添加一言</h3><p>使用效果见我的博客侧边栏的底部。</p>
+<p>需要修改 <code>themes-&gt;next-&gt;layout-&gt;_macro-&gt;sidebar.swig</code>，在倒数第三行的  后面加上：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"cost"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cost-inner"</span>&gt;</span><span class="tag">&lt;<span class="name">script</span> <span class="attr">language</span>=<span class="string">"Javascript"</span> <span class="attr">src</span>=<span class="string">"https://rawgit.com/WincerChan/d314ff3a0ddc197134ad56efaeb34da0/raw/f4c3e73cdb08235fb01cd8849457c81d52236a1d/hitokoto.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这里的 Js 文件是我自己写的，托管在「<a href="https://gist.github.com/d314ff3a0ddc197134ad56efaeb34da0.git" target="_blank" rel="noopener">Gist</a>」，当然你可以自由修改这其中的每一句。我以后也会添加的越来越多</p>
+<p>然后修改 <code>themes-&gt;next-&gt;source-&gt;css-&gt;_schemes-&gt;Pisces</code>，添加：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.cost</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.cost-inner</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">240px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background</span>: white;</span><br><span class="line">  <span class="attribute">box-shadow</span>: $box-shadow;</span><br><span class="line">  <span class="attribute">border-radius</span>: $border-radius;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="压缩博客文章"><a href="#压缩博客文章" class="headerlink" title="压缩博客文章"></a>压缩博客文章</h3><p>这里采用的是 <code>gulp</code> 插件，hexo 根目录新建 <code>gulpfile.js</code> 文件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</span><br><span class="line">    uglify = <span class="built_in">require</span>(<span class="string">'gulp-uglify'</span>),</span><br><span class="line">    del = <span class="built_in">require</span>(<span class="string">'del'</span>);</span><br><span class="line">    rename = <span class="built_in">require</span>(<span class="string">'gulp-rename'</span>),</span><br><span class="line">    cssmin = <span class="built_in">require</span>(<span class="string">'gulp-minify-css'</span>);</span><br><span class="line">    htmlclean = <span class="built_in">require</span>(<span class="string">'gulp-htmlclean'</span>);</span><br><span class="line">    htmlmin = <span class="built_in">require</span>(<span class="string">'gulp-htmlmin'</span>);</span><br><span class="line">    imagemin = <span class="built_in">require</span>(<span class="string">'gulp-imagemin'</span>);</span><br><span class="line">    runSequence = <span class="built_in">require</span>(<span class="string">'run-sequence'</span>);</span><br><span class="line">    Hexo = <span class="built_in">require</span>(<span class="string">'hexo'</span>);</span><br><span class="line">    </span><br><span class="line"><span class="comment">//清除public</span></span><br><span class="line">gulp.task(<span class="string">'clean'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> del([<span class="string">'public/**/*'</span>]);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 利用Hexo API 来生成博客内容， 效果和在命令行运行： hexo g 一样</span></span><br><span class="line"><span class="comment">// generate html with 'hexo generate'</span></span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</span><br><span class="line">gulp.task(<span class="string">'generate'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">cb</span>) </span>&#123;</span><br><span class="line">    hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.call(<span class="string">'generate'</span>, &#123;</span><br><span class="line">            watch: <span class="literal">false</span></span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.exit();</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cb()</span><br><span class="line">    &#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err);</span><br><span class="line">        hexo.exit(err);</span><br><span class="line">        <span class="keyword">return</span> cb(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//JS压缩</span></span><br><span class="line">gulp.task(<span class="string">'uglify'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'././public/js/*.js'</span>)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'././public/js/'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//public-fancybox-js压缩</span></span><br><span class="line">gulp.task(<span class="string">'fancybox:js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'././public/fancybox/jquery.fancybox.js'</span>)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'././public/fancybox/'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//public-fancybox-css压缩</span></span><br><span class="line">gulp.task(<span class="string">'fancybox:css'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'././public/fancybox/jquery.fancybox.css'</span>)</span><br><span class="line">        .pipe(cssmin())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'././public/fancybox/'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//CSS压缩</span></span><br><span class="line">gulp.task(<span class="string">'cssmin'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'././public/css/style.css'</span>)</span><br><span class="line">        .pipe(cssmin())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'././public/css/'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩public目录下的所有html</span></span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">        .pipe(htmlclean())</span><br><span class="line">        .pipe(htmlmin(&#123;</span><br><span class="line">            removeComments: <span class="literal">true</span>,</span><br><span class="line">            minifyJS: <span class="literal">true</span>,</span><br><span class="line">            minifyCSS: <span class="literal">true</span>,</span><br><span class="line">            minifyURLs: <span class="literal">true</span>,</span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 同上，压缩图片，这里采用了： 最大化压缩效果。</span></span><br><span class="line">gulp.task(<span class="string">'minify-img-aggressive'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'./public/images/**/*.*'</span>)</span><br><span class="line">        .pipe(imagemin(</span><br><span class="line">        [imagemin.gifsicle(&#123;<span class="string">'optimizationLevel'</span>: <span class="number">3</span>&#125;), </span><br><span class="line">        imagemin.jpegtran(&#123;<span class="string">'progressive'</span>: <span class="literal">true</span>&#125;), </span><br><span class="line">        imagemin.optipng(&#123;<span class="string">'optimizationLevel'</span>: <span class="number">7</span>&#125;), </span><br><span class="line">        imagemin.svgo()],</span><br><span class="line">        &#123;<span class="string">'verbose'</span>: <span class="literal">true</span>&#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'./public/images'</span>))</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 用run-sequence并发执行，同时处理html，css，js，img</span></span><br><span class="line">gulp.task(<span class="string">'compress'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">cb</span>) </span>&#123;</span><br><span class="line">    runSequence([<span class="string">'minify-html'</span>, <span class="string">'cssmin'</span>, <span class="string">'uglify'</span>, <span class="string">'fancybox:js'</span>, <span class="string">'fancybox:css'</span>, <span class="string">'minify-img-aggressive'</span>], cb);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆</span></span><br><span class="line">gulp.task(<span class="string">'build'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">cb</span>) </span>&#123;</span><br><span class="line">    runSequence(<span class="string">'clean'</span>, <span class="string">'generate'</span>, <span class="string">'compress'</span>, cb)</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'build'</span>])</span><br></pre></td></tr></table></figure>
+<p>需要用 npm 安装一些包：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">"del": "^3.0.0",</span><br><span class="line">"gulp": "^3.9.1",</span><br><span class="line">"gulp-clean-css": "^3.4.2",</span><br><span class="line">"gulp-htmlclean": "^2.7.14",</span><br><span class="line">"gulp-htmlmin": "^3.0.0",</span><br><span class="line">"gulp-minify-css": "^1.2.4",</span><br><span class="line">"gulp-rename": "^1.2.2",</span><br><span class="line">"gulp-sourcemaps": "^2.6.0",</span><br><span class="line">"gulp-uglify": "^3.0.0",</span><br><span class="line">"run-sequence": "^1.2.2",</span><br><span class="line">"gulp-imagemin": "^3.3.0",</span><br></pre></td></tr></table></figure>
+<p>在执行 <code>gulp build</code> 时，会自动执行 <code>hexo clean</code>、<code>hexo g</code>，这时直接 <code>hexo d</code> 就行了。</p>
+<p>这是网站优化后的结果：<img src="https://ws1.sinaimg.cn/large/ba22af52gy1fh33l1gzdxj20no08uaaj.jpg" alt=""></p>
+<h3 id="博文置顶"><a href="#博文置顶" class="headerlink" title="博文置顶"></a>博文置顶</h3><p>修改 <code>node_modules/hexo-generator-index/lib/generator</code> 内的代码为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">'hexo-pagination'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> config = <span class="keyword">this</span>.config;</span><br><span class="line">  <span class="keyword">var</span> posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123; <span class="comment">// 两篇文章top都有定义</span></span><br><span class="line">            <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date; <span class="comment">// 若top值一样则按照文章日期降序排</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> b.top - a.top; <span class="comment">// 否则按照top值降序排</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123; <span class="comment">// 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）</span></span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date; <span class="comment">// 都没定义按照文章日期降序排</span></span><br><span class="line">    &#125;);</span><br><span class="line">  <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">'page'</span>;</span><br><span class="line">  <span class="keyword">return</span> pagination(<span class="string">''</span>, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [<span class="string">'index'</span>, <span class="string">'archive'</span>],</span><br><span class="line">    format: paginationDir + <span class="string">'/%d/'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>在文章的首部添加 <code>top</code> 值，数值越大越靠前：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: NexT主题配置备份（二）</span><br><span class="line">type: categories</span><br><span class="line">categories: 笔记</span><br><span class="line">tags:</span><br><span class="line">  - NexT</span><br><span class="line">  - 博客</span><br><span class="line">copyright: true</span><br><span class="line">top: 888</span><br><span class="line">date: '2017/06/30 10:55:34'</span><br><span class="line">abbrlink: 654861fb</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="隐藏文章"><a href="#隐藏文章" class="headerlink" title="隐藏文章"></a>隐藏文章</h3><p>可实现在首页和归档隐藏指定文章</p>
+<p>首先在需要隐藏文章的 <code>Front-matter</code> 添加 <code>visible</code> 值，值为 <code>hide</code> 就表示隐藏。</p>
+<h4 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h4><p>修改 <code>next/layout/index.swig</code> 中的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> post <span class="keyword">in</span> page.post %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> post.visible !== <span class="string">'hide'</span> %&#125;</span><br><span class="line">    &#123;&#123; post_template.render(post, <span class="literal">true</span>) &#125;&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+<p>在第 14 行左右，将 <code>for post in page.post</code> 中的内容修改成以上</p>
+<h4 id="归档"><a href="#归档" class="headerlink" title="归档"></a>归档</h4><p>修改 <code>next/layout/index.swig</code>：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.visible !== <span class="string">'hide'</span> %&#125;</span><br><span class="line">    &#123;&#123; post_template.render(post, <span class="literal">true</span>) &#125;&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>在第 42 行左右，将原本的 <code>post_template.render(post)</code> 改成以上。</p>
+<p>不建议在归档中隐藏是因为归档提供的是一个统计的功能，隐藏后统计的文章篇数没变，但却显示不出来，有点别扭，不想要别人看就直接加密就好了。至于 <code>type</code> 和 <code>tags</code>，删除文章的相应字段就行了。</p>
+<h3 id="分享页面"><a href="#分享页面" class="headerlink" title="分享页面"></a>分享页面</h3><p>NexT 主题自带的是 <a href="http://www.jiathis.com/" target="_blank" rel="noopener">JiaThis</a>，可是太丑了，还不支持 <code>https</code>，找了好久终于到了「<a href="http://overtrue.me/share.js/" target="_blank" rel="noopener">Share.js</a>」，简直把 JiaThis 秒成渣：</p>
+<p>新增文件：<code>next/layout/_partials/share/sharejs.swig</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"share-component"</span> data-mobile-sites=<span class="string">"weibo,qq,qzone,tencent"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;!-- share.css --&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- share.js --&gt;</span><br><span class="line">&lt;script src=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>随后修改 <code>next\layout\post.swig</code>：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"post-spread"</span>&gt;			<span class="comment">//在这一行后面添加：</span></span><br><span class="line">  &#123;% include <span class="string">'_partials/share/sharejs.swig'</span> %&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>效果见下方</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><b>本文标题：</b> NexT 主题配置备份（二）
+                    <br>
+                        <b>最后更新：</b>2017 年 12 月 24 日 - 19:12<br>
+                        <b>本文链接：</b><a href="https://dinphy.github.io/posts/654861fb/">https://dinphy.github.io/posts/654861fb/</a>                   
+                        <br>
+                         
+                            <b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>
+                        
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/posts/72171293/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            上一篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/posts/a40f8cd0/" id="post_nav-older" class="next-content">
+            下一篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Dinphy - 简乐's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        2027821710<span style="display:none">fuck</span>@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a class="obfus" href="" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                文章分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline/" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags/" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">label</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/life/" title="生活栈">
+                
+                    <i class="material-icons sidebar-material-icons">book</i>
+                
+                生活栈
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about/" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="订阅">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                订阅
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">6</span>
+            </a>
+        </li>
+        
+    
+</ul>
+<script>
+let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});
+</script>
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/dinphy" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Dinphy - 简乐
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+<script>    
+var element = document.querySelector("#aplayer1");
+  async function syncHand() {
+      new APlayer({
+          element: element,
+          narrow: false,
+          autoplay: false,
+          showlrc: 3,
+          mutex: true,
+          theme: "#ad7a86",
+          mode: "random",
+          listmaxheight: '263px',
+          music: [{
+              title: element.getAttribute('title'),
+              author: element.getAttribute('author'),
+              url: await getMusic(element.getAttribute('url')),
+              pic: element.getAttribute('pic'),
+              lrc: element.getAttribute('lrc')
+          }]
+      })
+  }
+  if (element !== null) { 
+      syncHand(); }
+  </script>
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/lazyload.min.js", true)</script>
+
+
+
+    <script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/js.min.js", true)</script>
+
+
+
+    <script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/nprogress.js", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 300);
+</script>
+
+
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz', '4pmmj56YRbawceTeHCkLMT7n');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/hanabi-browser-bundle.js", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+    
+        <script>lsloader.load("sw_js","/sw-reg.js", true)</script>
+    
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+    console.clear();
+console.log(` %c © Dinphy | Date: ${new Date().toLocaleDateString()} %c https://github.com/dinphy/MyBlog `,"color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;","background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;") 
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

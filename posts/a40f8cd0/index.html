@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.5"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source"/>
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            NexT 主题配置备份 · 
+        
+        Dinphy - 简乐
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="基本设置参照 NexT 使用文档，设置中文语言、头像、作者、网站描述和 URL 等。
+动态背景修改 themes/next/layout/_layout.swig:
+加上下面内容：
+12&amp;lt;script type=&#34;text/javascript&#34; src=&#34;js/src/particle.js&amp;gt;&amp;lt;script&amp;gt;&amp;lt;script type=&#34;text/javascript&#34; src=&#34;/js/src/particle.js&#34; count=&#34;50&#34; zindex=&#34;-2&#34; opacity=&#34;1&#34; color=&#34;0,104,183&#34;&amp;gt;&amp;lt;/script&amp;gt;
+目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 true，这里不用自带是因为想添加彩色的线条，自带的只有黑色。">
+    <meta name="keywords" content="Blog,小王,dinphy,定飞,国庆,NexT,博客">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material.min.css">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{}};lsloader.removeLS=function(b){try{localStorage.removeItem(b)}catch(a){}};lsloader.setLS=function(b,a){try{localStorage.setItem(b,a)}catch(c){}};lsloader.getLS=function(b){var a="";try{a=localStorage.getItem(b)}catch(c){a=""}return a};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{for(var b=[],a=0;a<localStorage.length;a++)b.push(localStorage.key(a));b.forEach(function(a){-1===lsloader.getLS(a).indexOf(versionString)&&lsloader.removeLS(a)})}catch(c){}};lsloader.clean();lsloader.load=function(b,a,c,e){"boolean"===typeof c&&(e=c,c=void 0);e=e||!1;c=c||function(){};var d;(d=this.getLS(b))&&-1===d.indexOf(versionString)?(this.removeLS(b),this.requestResource(b,a,c,e)):d?d.split(versionString)[0]!=a?(console.log("reload:"+a),this.removeLS(b),this.requestResource(b,a,c,e)):(d=d.split(versionString)[1],e?(this.jsRunSequence.push({name:b,code:d}),this.runjs(a,b,d)):(document.getElementById(b).appendChild(document.createTextNode(d)),c())):this.requestResource(b,a,c,e)};lsloader.requestResource=function(b,a,c,e){var d=this;e?this.iojs(a,b,function(a,b,c){d.setLS(b,a+versionString+c);d.runjs(a,b,c)}):this.iocss(a,b,function(c){document.getElementById(b).appendChild(document.createTextNode(c));d.setLS(b,a+versionString+c)},c)};lsloader.iojs=function(b,a,c){var e=this;e.jsRunSequence.push({name:a,code:""});try{var d=new XMLHttpRequest;d.open("get",b,!0);d.onreadystatechange=function(){4==d.readyState&&((200<=d.status&&300>d.status||304==d.status)&&""!=d.response?c(b,a,d.response):e.jsfallback(b,a))};d.send(null)}catch(f){e.jsfallback(b,a)}};lsloader.runjs=function(b,a,c){if(a&&c)for(var e in this.jsRunSequence)this.jsRunSequence[e].name==a&&(this.jsRunSequence[e].code=c);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)b=document.createElement("script"),b.appendChild(document.createTextNode(this.jsRunSequence[0].code)),b.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(b),this.jsRunSequence.shift(),0<this.jsRunSequence.length&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var d=this;b=document.createElement("script");b.src=this.jsRunSequence[0].path;b.type="text/javascript";this.jsRunSequence[0].status="loading";b.onload=function(){d.jsRunSequence.shift();0<d.jsRunSequence.length&&d.runjs()};document.body.appendChild(b)}};lsloader.jsfallback=function(b,a){if(!this.jsnamemap[a]){this.jsnamemap[a]=a;for(var c in this.jsRunSequence)this.jsRunSequence[c].name==a&&(this.jsRunSequence[c].code="",this.jsRunSequence[c].status="failed",this.jsRunSequence[c].path=b);this.runjs()}};lsloader.cssfallback=function(b,a,c){this.cssnamemap[a]||(this.cssnamemap[a]=1,a=document.createElement("link"),a.type="text/css",a.href=b,a.rel="stylesheet",a.onload=a.onerror=c,b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b))};lsloader.runInlineScript=function(b,a){a=document.getElementById(a).innerText;this.jsRunSequence.push({name:b,code:a});this.runjs()}})();</script>
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+<!-- Other Styles -->
+<style>
+#post-content hr {
+  height: 20px;
+  margin: 15px auto;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC')
+  center center no-repeat;
+}
+* {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.22);
+}
+
+table {
+  display: table!important;
+}
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material-icons.css">
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/jquery.min.js", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Dinphy - 简乐">
+    <meta name="msapplication-starturl" content="https://dinphy.github.io/posts/a40f8cd0/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dinphy - 简乐">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://dinphy.github.io/posts/a40f8cd0/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="NexT 主题配置备份 · Dinphy - 简乐">
+    <meta property="og:image" content="/img/favicon.ico">
+    <meta property="og:description" content="基本设置参照 NexT 使用文档，设置中文语言、头像、作者、网站描述和 URL 等。
+动态背景修改 themes/next/layout/_layout.swig:
+加上下面内容：
+12&amp;lt;script type=&#34;text/javascript&#34; src=&#34;js/src/particle.js&amp;gt;&amp;lt;script&amp;gt;&amp;lt;script type=&#34;text/javascript&#34; src=&#34;/js/src/particle.js&#34; count=&#34;50&#34; zindex=&#34;-2&#34; opacity=&#34;1&#34; color=&#34;0,104,183&#34;&amp;gt;&amp;lt;/script&amp;gt;
+目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 true，这里不用自带是因为想添加彩色的线条，自带的只有黑色。">
+    <meta property="og:article:tag" content="NexT"> <meta property="og:article:tag" content="博客"> 
+
+    
+        <meta property="article:published_time" content="Wed May 31 2017 18:04:00 GMT+0800">
+        <meta property="article:modified_time" content="Fri Nov 24 2017 19:38:38 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://dinphy.github.io/posts/a40f8cd0/" />
+    
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://dinphy.github.io/posts/a40f8cd0/index.html",
+    "headline": "NexT 主题配置备份",
+    "datePublished": "Wed May 31 2017 18:04:00 GMT+0800",
+    "dateModified": "Fri Nov 24 2017 19:38:38 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Dinphy - 简乐",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "生活不易,快乐就好"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dinphy - 简乐",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.ico"
+        }
+    },
+    "keywords": ",NexT,博客Blog,小王,dinphy,定飞,国庆",
+    "description": "基本设置参照 NexT 使用文档，设置中文语言、头像、作者、网站描述和 URL 等。
+动态背景修改 themes/next/layout/_layout.swig:
+加上下面内容：
+12&amp;lt;script type=&#34;text/javascript&#34; src=&#34;js/src/particle.js&amp;gt;&amp;lt;script&amp;gt;&amp;lt;script type=&#34;text/javascript&#34; src=&#34;/js/src/particle.js&#34; count=&#34;50&#34; zindex=&#34;-2&#34; opacity=&#34;1&#34; color=&#34;0,104,183&#34;&amp;gt;&amp;lt;/script&amp;gt;
+目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 true，这里不用自带是因为想添加彩色的线条，自带的只有黑色。",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            <link rel="manifest" href="/manifest.json">
+        
+            <script>lsloader.load("ap_js","https://cdn.jsdelivr.net/npm/aplayer@1.6.0/dist/APlayer.min.js", true)</script>
+        
+            <script>lsloader.load("music_js", "https://cdn.jsdelivr.net/gh/wincerchan/QQMusic-Parse@0.3/parse.min.js", true)</script>
+        
+    
+
+</head>
+
+
+<div>
+
+</div>
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#基本设置"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本设置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#动态背景"><span class="post-toc-number">2.</span> <span class="post-toc-text">动态背景</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#鼠标点击小红心"><span class="post-toc-number">3.</span> <span class="post-toc-text">鼠标点击小红心</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文章的标签"><span class="post-toc-number">4.</span> <span class="post-toc-text">文章的标签</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#博文置顶"><span class="post-toc-number">5.</span> <span class="post-toc-text">博文置顶</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#NexT-主题自定义无序列表样式"><span class="post-toc-number">6.</span> <span class="post-toc-text">NexT 主题自定义无序列表样式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#修改侧边栏头像为圆形"><span class="post-toc-number">7.</span> <span class="post-toc-text">修改侧边栏头像为圆形</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文章链接唯一化"><span class="post-toc-number">8.</span> <span class="post-toc-text">文章链接唯一化</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文章底部增加版权信息"><span class="post-toc-number">9.</span> <span class="post-toc-text">文章底部增加版权信息</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://s1.ax1x.com/2017/12/24/vGU0K.png)">
+    
+            <p class="article-headline-p">
+                NexT 主题配置备份
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Dinphy - 简乐</strong>
+        <span>5月 31, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB60lEQVR42u3ay27DIBAFUP//T7fbSq3wnYE0MRxWkZsSjhejeXB9bbEuDAwMDAwMDIyPYVzx+mOj4fOffx3v1jsDBgbGaYyb0Bb88O9vJi9i6gwYGBhHMpLDjf93vOf4SfUMGBgYGDdbDFO35POCM2BgYGAEjCqsGqAxMDAwegXkqoI2CcQvrMUxMDAeyMib8q/7/K/zDQwMjEcxpq47xEEzHxK84c4IBgbGxzPGBWqe8OW79V4EBgbGyYwkOUvCaA5LQnD0BAMD40hGdWCQwHphN7o+i4GBcTCjeiUi//nqSAADAwOjkITFI8Y81euNPzEwMM5klMNc8dpErzxeMN/AwMDYiNFL5lZ9f6aUxcDAOIfRa5P1Lnj1CtdyLY6BgbEdIyoXg+fjQ/cKYwwMDIy8NM0bZ9WGXbUYxsDAOJNRbfrnaWIybJgK9xgYGMcw8pFAj5qnjBgYGBh5EdtL2noheKoxh4GBcQxjJrBWw+XMNdnytTAMDIyNGFe85kvTXhlcmG9gYGBszciHiOX2/aKUEQMDA2OmcK022vIi9ublYmBgYARtuF7brkp6ScDFwMDYmpGPBPKUsdeew8DAOJORFLH58CB5WTlscS2OgYHxQEaenFUHBvPpIAYGBsZzFwYGBgYGBgbGW9c339/kKVcjHpsAAAAASUVORK5CYII=">
+    
+</ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/NexT/">NexT</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/博客/">博客</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/posts/a40f8cd0/" class="leancloud-views_num" data-flag-title="NexT 主题配置备份">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=NexT 主题配置备份&url=https://dinphy.github.io/posts/a40f8cd0/index.html&pic=https://dinphy.github.io/img/favicon.ico&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=NexT 主题配置备份&url=https://dinphy.github.io/posts/a40f8cd0/index.html&via=Dinphy - 简乐" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://dinphy.github.io/posts/a40f8cd0/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h3 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h3><p>参照 <a href="http://theme-next.iissnan.com/getting-started.html#theme-settings" target="_blank" rel="noopener">NexT 使用文档</a>，设置中文语言、头像、作者、网站描述和 URL 等。</p>
+<h3 id="动态背景"><a href="#动态背景" class="headerlink" title="动态背景"></a>动态背景</h3><p>修改 <code>themes/next/layout/_layout.swig</code>:</p>
+<p>加上下面内容：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"js/src/particle.js&gt;&lt;script&gt;</span></span><br><span class="line"><span class="string">&lt;script type="</span>text/javascript<span class="string">" src="</span>/js/src/particle.js<span class="string">" count="</span><span class="number">50</span><span class="string">" zindex="</span><span class="number">-2</span><span class="string">" opacity="</span><span class="number">1</span><span class="string">" color="</span><span class="number">0</span>,<span class="number">104</span>,<span class="number">183</span><span class="string">"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 <code>true</code>，这里不用自带是因为想添加彩色的线条，自带的只有黑色。</p>
+<a id="more"></a>
+<p>然后在 <code>thmems/next/source/js/src/</code> 目录新建 <code>particle.js</code>，文件写入以下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">! <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params">n, e, t</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n.getAttribute(e) || t</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">document</span>.getElementsByTagName(n)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">t</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> t = e(<span class="string">"script"</span>),</span><br><span class="line">            o = t.length,</span><br><span class="line">            i = t[o - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            l: o,</span><br><span class="line">            z: n(i, <span class="string">"zIndex"</span>, <span class="number">-1</span>),</span><br><span class="line">            o: n(i, <span class="string">"opacity"</span>, <span class="number">.5</span>),</span><br><span class="line">            c: n(i, <span class="string">"color"</span>, <span class="string">"0,0,0"</span>),</span><br><span class="line">            n: n(i, <span class="string">"count"</span>, <span class="number">99</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        c = u.width = <span class="built_in">window</span>.innerWidth || <span class="built_in">document</span>.documentElement.clientWidth || <span class="built_in">document</span>.body.clientWidth, a = u.height = <span class="built_in">window</span>.innerHeight || <span class="built_in">document</span>.documentElement.clientHeight || <span class="built_in">document</span>.body.clientHeight</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        l.clearRect(<span class="number">0</span>, <span class="number">0</span>, c, a);</span><br><span class="line">        <span class="keyword">var</span> n, e, t, o, u, d, x = [w].concat(y);</span><br><span class="line">        y.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">i</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">for</span> (i.x += i.xa, i.y += i.ya, i.xa *= i.x &gt; c || i.x &lt; <span class="number">0</span> ? <span class="number">-1</span> : <span class="number">1</span>, i.ya *= i.y &gt; a || i.y &lt; <span class="number">0</span> ? <span class="number">-1</span> : <span class="number">1</span>, l.fillRect(i.x - <span class="number">.5</span>, i.y - <span class="number">.5</span>, <span class="number">1</span>, <span class="number">1</span>), e = <span class="number">0</span>; e &lt; x.length; e++) n = x[e], i !== n &amp;&amp; <span class="literal">null</span> !== n.x &amp;&amp; <span class="literal">null</span> !== n.y &amp;&amp; (o = i.x - n.x, u = i.y - n.y, d = o * o + u * u, d &lt; n.max &amp;&amp; (n === w &amp;&amp; d &gt;= n.max / <span class="number">2</span> &amp;&amp; (i.x -= <span class="number">.03</span> * o, i.y -= <span class="number">.03</span> * u), t = (n.max - d) / n.max, l.beginPath(), l.lineWidth = t / <span class="number">2</span>, l.strokeStyle = <span class="string">"rgba("</span> + m.c + <span class="string">","</span> + (t + <span class="number">.2</span>) + <span class="string">")"</span>, l.moveTo(i.x, i.y), l.lineTo(n.x, n.y), l.stroke()));</span><br><span class="line">            x.splice(x.indexOf(i), <span class="number">1</span>)</span><br><span class="line">        &#125;), r(i)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> c, a, u = <span class="built_in">document</span>.createElement(<span class="string">"canvas"</span>),</span><br><span class="line">        m = t(),</span><br><span class="line">        d = <span class="string">"c_n"</span> + m.l,</span><br><span class="line">        l = u.getContext(<span class="string">"2d"</span>),</span><br><span class="line">        r = <span class="built_in">window</span>.requestAnimationFrame || <span class="built_in">window</span>.webkitRequestAnimationFrame || <span class="built_in">window</span>.mozRequestAnimationFrame || <span class="built_in">window</span>.oRequestAnimationFrame || <span class="built_in">window</span>.msRequestAnimationFrame || <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">window</span>.setTimeout(n, <span class="number">1e3</span> / <span class="number">45</span>)</span><br><span class="line">        &#125;,</span><br><span class="line">        x = <span class="built_in">Math</span>.random,</span><br><span class="line">        w = &#123;</span><br><span class="line">            x: <span class="literal">null</span>,</span><br><span class="line">            y: <span class="literal">null</span>,</span><br><span class="line">            max: <span class="number">2e4</span></span><br><span class="line">        &#125;;</span><br><span class="line">    u.id = d, u.style.cssText = <span class="string">"position:fixed;top:0;left:0;z-index:"</span> + m.z + <span class="string">";opacity:"</span> + m.o, e(<span class="string">"body"</span>)[<span class="number">0</span>].appendChild(u), o(), <span class="built_in">window</span>.onresize = o, <span class="built_in">window</span>.onmousemove = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        n = n || <span class="built_in">window</span>.event, w.x = n.clientX, w.y = n.clientY</span><br><span class="line">    &#125;, <span class="built_in">window</span>.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        w.x = <span class="literal">null</span>, w.y = <span class="literal">null</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> y = [], s = <span class="number">0</span>; m.n &gt; s; s++) &#123;</span><br><span class="line">        <span class="keyword">var</span> f = x() * c,</span><br><span class="line">            h = x() * a,</span><br><span class="line">            g = <span class="number">2</span> * x() - <span class="number">1</span>,</span><br><span class="line">            p = <span class="number">2</span> * x() - <span class="number">1</span>;</span><br><span class="line">        y.push(&#123;</span><br><span class="line">            x: f,</span><br><span class="line">            y: h,</span><br><span class="line">            xa: g,</span><br><span class="line">            ya: p,</span><br><span class="line">            max: <span class="number">6e3</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        i()</span><br><span class="line">    &#125;, <span class="number">100</span>)</span><br><span class="line">&#125;();</span><br></pre></td></tr></table></figure>
+<h3 id="鼠标点击小红心"><a href="#鼠标点击小红心" class="headerlink" title="鼠标点击小红心"></a>鼠标点击小红心</h3><p>修改 <code>themes/next/layout/_layout.swig</code>:</p>
+<p>加上下面内容：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/love.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>然后在 <code>themes/next/source/js/src/</code> 目录新建文件 <code>love.js</code>，添加以下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">! <span class="function"><span class="keyword">function</span>(<span class="params">e, t, a</span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        c(<span class="string">".heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;"</span>), o(), r()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> e = <span class="number">0</span>; e &lt; d.length; e++) d[e].alpha &lt;= <span class="number">0</span> ? (t.body.removeChild(d[e].el), d.splice(e, <span class="number">1</span>)) : (d[e].y--, d[e].scale += <span class="number">.004</span>, d[e].alpha -= <span class="number">.013</span>, d[e].el.style.cssText = <span class="string">"left:"</span> + d[e].x + <span class="string">"px;top:"</span> + d[e].y + <span class="string">"px;opacity:"</span> + d[e].alpha + <span class="string">";transform:scale("</span> + d[e].scale + <span class="string">","</span> + d[e].scale + <span class="string">") rotate(45deg);background:"</span> + d[e].color + <span class="string">";z-index:99999"</span>);</span><br><span class="line">        requestAnimationFrame(r)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> t = <span class="string">"function"</span> == <span class="keyword">typeof</span> e.onclick &amp;&amp; e.onclick;</span><br><span class="line">        e.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">            t &amp;&amp; t(), i(e)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = t.createElement(<span class="string">"div"</span>);</span><br><span class="line">        a.className = <span class="string">"heart"</span>, d.push(&#123;</span><br><span class="line">            el: a,</span><br><span class="line">            x: e.clientX - <span class="number">5</span>,</span><br><span class="line">            y: e.clientY - <span class="number">5</span>,</span><br><span class="line">            scale: <span class="number">1</span>,</span><br><span class="line">            alpha: <span class="number">1</span>,</span><br><span class="line">            color: s()</span><br><span class="line">        &#125;), t.body.appendChild(a)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = t.createElement(<span class="string">"style"</span>);</span><br><span class="line">        a.type = <span class="string">"text/css"</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            a.appendChild(t.createTextNode(e))</span><br><span class="line">        &#125; <span class="keyword">catch</span> (t) &#123;</span><br><span class="line">            a.styleSheet.cssText = e</span><br><span class="line">        &#125;</span><br><span class="line">        t.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(a)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"rgb("</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">")"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> d = [];</span><br><span class="line">    e.requestAnimationFrame = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">            setTimeout(e, <span class="number">1e3</span> / <span class="number">60</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;(), n()</span><br><span class="line">&#125;(<span class="built_in">window</span>, <span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="文章的标签"><a href="#文章的标签" class="headerlink" title="文章的标签"></a>文章的标签</h3><p>文章的 tags 是用「#」来标注，将「#」换成图标：</p>
+<p>修改 <code>layout/_macro/post.swig</code>，搜索 <code>rel=&quot;tag&quot;&gt;#</code>，将 # 换成 <code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code></p>
+<h3 id="博文置顶"><a href="#博文置顶" class="headerlink" title="博文置顶"></a>博文置顶</h3><p>修改 <code>hexo-generator-index</code> 插件：</p>
+<p>修改文件：<code>node_modules/hexo-generator-index/lib/generator.js</code> 为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">'hexo-pagination'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> config = <span class="keyword">this</span>.config;</span><br><span class="line">  <span class="keyword">var</span> posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123; <span class="comment">// 两篇文章top都有定义</span></span><br><span class="line">            <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date; <span class="comment">// 若top值一样则按照文章日期降序排</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> b.top - a.top; <span class="comment">// 否则按照top值降序排</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123; <span class="comment">// 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）</span></span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date; <span class="comment">// 都没定义按照文章日期降序排</span></span><br><span class="line">    &#125;);</span><br><span class="line">  <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">'page'</span>;</span><br><span class="line">  <span class="keyword">return</span> pagination(<span class="string">''</span>, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [<span class="string">'index'</span>, <span class="string">'archive'</span>],</span><br><span class="line">    format: paginationDir + <span class="string">'/%d/'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>在文章的 <code>Front-matter</code> 中添加 <code>top</code> 值，数值越大文章越靠前，如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">Next主题配置备份</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">categories</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">笔记</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Next</span></span><br><span class="line"><span class="attr">copyright:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">top:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2017</span><span class="bullet">-05</span><span class="bullet">-31</span> <span class="number">18</span><span class="string">:04:00</span></span><br></pre></td></tr></table></figure>
+<h3 id="NexT-主题自定义无序列表样式"><a href="#NexT-主题自定义无序列表样式" class="headerlink" title="NexT 主题自定义无序列表样式"></a>NexT 主题自定义无序列表样式</h3><p>打开 <code>\themes\next\source\css\_custom\custom.styl</code> 加入：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line">list-style-type: circle;  // 空心圆，实心圆为 disc</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="修改侧边栏头像为圆形"><a href="#修改侧边栏头像为圆形" class="headerlink" title="修改侧边栏头像为圆形"></a>修改侧边栏头像为圆形</h3><p>修改文件 <code>themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code>，修改其中的 <code>.site-author-image</code> 段代码，改为如下形式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.site-author-image</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</span><br><span class="line">  <span class="attribute">height</span>: auto;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>鼠标悬停旋转效果：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.site-author-image</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</span><br><span class="line">  <span class="attribute">height</span>: auto;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span></span><br><span class="line">  webkit-transition: <span class="number">1.4s</span> all;</span><br><span class="line">  <span class="attribute">moz-transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">  <span class="attribute">ms-transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.site-author-image</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#55DAE1</span>;</span><br><span class="line">  <span class="attribute">webkit-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.1);</span><br><span class="line">  <span class="attribute">moz-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.1);</span><br><span class="line">  <span class="attribute">ms-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.1);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考链接：</p>
+<ul>
+<li><a href="http://codepub.cn/2016/03/20/Hexo-blog-theme-switching-from-Jacman-to-NexT-Mist/" target="_blank" rel="noopener">http://codepub.cn/2016/03/20/Hexo-blog-theme-switching-from-Jacman-to-NexT-Mist/</a></li>
+</ul>
+<h3 id="文章链接唯一化"><a href="#文章链接唯一化" class="headerlink" title="文章链接唯一化"></a>文章链接唯一化</h3><p>也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在 <code>hexo s</code> 模式下更改文章文件名，否则文章将成空白。</p>
+<p>安装：<code>npm install hexo-abbrlink --save</code></p>
+<p>在站点配置文件中查找代码 <code>permalink</code>，将其更改为：<code>permalink: posts/:abbrlink/  # “posts/” 可自行更换</code></p>
+<p>同样在站点配置文件中添加代码：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># abbrlink config</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line"><span class="attr">  alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32 </span></span><br><span class="line"><span class="attr">  rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+<p>可选模式：</p>
+<ul>
+<li>crc16 &amp; hex</li>
+<li>crc16 &amp; dec</li>
+<li>crc32 &amp; hex</li>
+<li>crc32 &amp; dec</li>
+</ul>
+<h3 id="文章底部增加版权信息"><a href="#文章底部增加版权信息" class="headerlink" title="文章底部增加版权信息"></a>文章底部增加版权信息</h3><p>自定义版权信息，不采用 NexT 本身的版权设置</p>
+<p>添加 <code>next/layout/_macro/my-copyright.swig</code> 文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;my_post_copyright&quot;&gt;</span><br><span class="line">  &lt;script src=&quot;//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;!-- JS库 sweetalert 可修改路径 --&gt;</span><br><span class="line">  &lt;script src=&quot;http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script src=&quot;http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css&quot;&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;本文标题:&lt;/span&gt;&lt;a href=&quot;&#123;&#123; url_for(page.path) &#125;&#125;&quot;&gt;&#123;&#123; page.title &#125;&#125;&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;文章作者:&lt;/span&gt;&lt;a href=&quot;/&quot; title=&quot;访问 &#123;&#123; theme.author &#125;&#125; 的个人博客&quot;&gt;&#123;&#123; theme.author &#125;&#125;&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;发布时间:&lt;/span&gt;&#123;&#123; page.date.format(&quot;YYYY年MM月DD日 - HH:MM&quot;) &#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;最后更新:&lt;/span&gt;&#123;&#123; page.updated.format(&quot;YYYY年MM月DD日 - HH:MM&quot;) &#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;原始链接:&lt;/span&gt;&lt;a href=&quot;&#123;&#123; url_for(page.path) &#125;&#125;&quot; title=&quot;&#123;&#123; page.title &#125;&#125;&quot;&gt;&#123;&#123; page.permalink &#125;&#125;&lt;/a&gt;</span><br><span class="line">    &lt;span class=&quot;copy-path&quot;  title=&quot;点击复制文章链接&quot;&gt;&lt;i class=&quot;fa fa-clipboard&quot; data-clipboard-text=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;  aria-label=&quot;复制成功！&quot;&gt;&lt;/i&gt;&lt;/span&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&lt;span&gt;许可协议:&lt;/span&gt;&lt;i class=&quot;fa fa-creative-commons&quot;&gt;&lt;/i&gt; &lt;a rel=&quot;license&quot; href=&quot;https://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot; title=&quot;Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)&quot;&gt;署名-非商业性使用-禁止演绎 4.0 国际&lt;/a&gt; 转载请保留原文链接及作者。&lt;/p&gt;  </span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt; </span><br><span class="line">    var clipboard = new Clipboard(&apos;.fa-clipboard&apos;);</span><br><span class="line">	clipboard.on(&apos;success&apos;, $(function()&#123;</span><br><span class="line">	  $(&quot;.fa-clipboard&quot;).click(function()&#123;</span><br><span class="line">		swal(&#123;   </span><br><span class="line">		  title: &quot;&quot;,   </span><br><span class="line">		  text: &apos;复制成功&apos;,   </span><br><span class="line">		  html: false,</span><br><span class="line">		  timer: 500,   </span><br><span class="line">		  showConfirmButton: false</span><br><span class="line">	    &#125;);</span><br><span class="line">	  &#125;);</span><br><span class="line">    &#125;));  </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>在目录 <code>next/source/css/_common/components/post/</code> 下添加 <code>my-post-copyright.styl</code>：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">85%</span>;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">45em</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">2.8em</span> auto <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0.5em</span> <span class="number">1.0em</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#d3d3d3</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">0.93rem</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.6em</span>;</span><br><span class="line">  <span class="attribute">word-break</span>: break-all;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(255,255,255,0.4);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">p</span>&#123;<span class="attribute">margin</span>:<span class="number">0</span>;&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">5.2em</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#b5b5b5</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.raw</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">5em</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#808080</span>;</span><br><span class="line">  <span class="attribute">border-bottom</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#a3d2a3</span>;</span><br><span class="line">  <span class="attribute">text-decoration</span>: underline;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.fa-clipboard</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.post-url</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">font-weight</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.copy-path</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1em</span>;</span><br><span class="line">  +mobile()&#123;display:none;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.copy-path</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#808080</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改 <code>next/layout/_macro/post.swig</code>，在代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">      &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">        &#123;% include <span class="string">'wechat-subscriber.swig'</span> %&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
+<p>之前添加增加如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">      &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">        &#123;% include <span class="string">'my-copyright.swig'</span> %&#125;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改 <code>next/source/css/_common/components/post/post.styl</code> 文件，在最后一行增加代码：<code>@import &quot;my-post-copyright&quot;</code></p>
+<p>每当发布一篇文章，需要在 <code>Front-matter</code> 添加 <code>copyright: true</code></p>
+<p>参考链接：<a href="http://www.wuxubj.cn/" target="_blank" rel="noopener">务虚笔记</a></p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><b>本文标题：</b> NexT 主题配置备份
+                    <br>
+                        <b>最后更新：</b>2017 年 11 月 24 日 - 19:11<br>
+                        <b>本文链接：</b><a href="https://dinphy.github.io/posts/a40f8cd0/">https://dinphy.github.io/posts/a40f8cd0/</a>                   
+                        <br>
+                         
+                            <b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>
+                        
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/posts/654861fb/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            上一篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/posts/3e793072/" id="post_nav-older" class="next-content">
+            下一篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Dinphy - 简乐's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        2027821710<span style="display:none">fuck</span>@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a class="obfus" href="" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                文章分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline/" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags/" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">label</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/life/" title="生活栈">
+                
+                    <i class="material-icons sidebar-material-icons">book</i>
+                
+                生活栈
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about/" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="订阅">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                订阅
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">6</span>
+            </a>
+        </li>
+        
+    
+</ul>
+<script>
+let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});
+</script>
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/dinphy" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Dinphy - 简乐
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+<script>    
+var element = document.querySelector("#aplayer1");
+  async function syncHand() {
+      new APlayer({
+          element: element,
+          narrow: false,
+          autoplay: false,
+          showlrc: 3,
+          mutex: true,
+          theme: "#ad7a86",
+          mode: "random",
+          listmaxheight: '263px',
+          music: [{
+              title: element.getAttribute('title'),
+              author: element.getAttribute('author'),
+              url: await getMusic(element.getAttribute('url')),
+              pic: element.getAttribute('pic'),
+              lrc: element.getAttribute('lrc')
+          }]
+      })
+  }
+  if (element !== null) { 
+      syncHand(); }
+  </script>
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/lazyload.min.js", true)</script>
+
+
+
+    <script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/js.min.js", true)</script>
+
+
+
+    <script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/nprogress.js", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 300);
+</script>
+
+
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz', '4pmmj56YRbawceTeHCkLMT7n');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/hanabi-browser-bundle.js", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+    
+        <script>lsloader.load("sw_js","/sw-reg.js", true)</script>
+    
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+    console.clear();
+console.log(` %c © Dinphy | Date: ${new Date().toLocaleDateString()} %c https://github.com/dinphy/MyBlog `,"color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;","background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;") 
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

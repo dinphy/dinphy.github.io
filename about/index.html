@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.5"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source"/>
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            关于 · 
+        
+        Dinphy - 简乐
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="生活不易,快乐就好">
+    <meta name="keywords" content="Blog,小王,dinphy,定飞,国庆">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material.min.css">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{}};lsloader.removeLS=function(b){try{localStorage.removeItem(b)}catch(a){}};lsloader.setLS=function(b,a){try{localStorage.setItem(b,a)}catch(c){}};lsloader.getLS=function(b){var a="";try{a=localStorage.getItem(b)}catch(c){a=""}return a};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{for(var b=[],a=0;a<localStorage.length;a++)b.push(localStorage.key(a));b.forEach(function(a){-1===lsloader.getLS(a).indexOf(versionString)&&lsloader.removeLS(a)})}catch(c){}};lsloader.clean();lsloader.load=function(b,a,c,e){"boolean"===typeof c&&(e=c,c=void 0);e=e||!1;c=c||function(){};var d;(d=this.getLS(b))&&-1===d.indexOf(versionString)?(this.removeLS(b),this.requestResource(b,a,c,e)):d?d.split(versionString)[0]!=a?(console.log("reload:"+a),this.removeLS(b),this.requestResource(b,a,c,e)):(d=d.split(versionString)[1],e?(this.jsRunSequence.push({name:b,code:d}),this.runjs(a,b,d)):(document.getElementById(b).appendChild(document.createTextNode(d)),c())):this.requestResource(b,a,c,e)};lsloader.requestResource=function(b,a,c,e){var d=this;e?this.iojs(a,b,function(a,b,c){d.setLS(b,a+versionString+c);d.runjs(a,b,c)}):this.iocss(a,b,function(c){document.getElementById(b).appendChild(document.createTextNode(c));d.setLS(b,a+versionString+c)},c)};lsloader.iojs=function(b,a,c){var e=this;e.jsRunSequence.push({name:a,code:""});try{var d=new XMLHttpRequest;d.open("get",b,!0);d.onreadystatechange=function(){4==d.readyState&&((200<=d.status&&300>d.status||304==d.status)&&""!=d.response?c(b,a,d.response):e.jsfallback(b,a))};d.send(null)}catch(f){e.jsfallback(b,a)}};lsloader.runjs=function(b,a,c){if(a&&c)for(var e in this.jsRunSequence)this.jsRunSequence[e].name==a&&(this.jsRunSequence[e].code=c);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)b=document.createElement("script"),b.appendChild(document.createTextNode(this.jsRunSequence[0].code)),b.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(b),this.jsRunSequence.shift(),0<this.jsRunSequence.length&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var d=this;b=document.createElement("script");b.src=this.jsRunSequence[0].path;b.type="text/javascript";this.jsRunSequence[0].status="loading";b.onload=function(){d.jsRunSequence.shift();0<d.jsRunSequence.length&&d.runjs()};document.body.appendChild(b)}};lsloader.jsfallback=function(b,a){if(!this.jsnamemap[a]){this.jsnamemap[a]=a;for(var c in this.jsRunSequence)this.jsRunSequence[c].name==a&&(this.jsRunSequence[c].code="",this.jsRunSequence[c].status="failed",this.jsRunSequence[c].path=b);this.runjs()}};lsloader.cssfallback=function(b,a,c){this.cssnamemap[a]||(this.cssnamemap[a]=1,a=document.createElement("link"),a.type="text/css",a.href=b,a.rel="stylesheet",a.onload=a.onerror=c,b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b))};lsloader.runInlineScript=function(b,a){a=document.getElementById(a).innerText;this.jsRunSequence.push({name:b,code:a});this.runjs()}})();</script>
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+<!-- Other Styles -->
+<style>
+#post-content hr {
+  height: 20px;
+  margin: 15px auto;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC')
+  center center no-repeat;
+}
+* {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.22);
+}
+
+table {
+  display: table!important;
+}
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material-icons.css">
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/jquery.min.js", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Dinphy - 简乐">
+    <meta name="msapplication-starturl" content="https://dinphy.github.io/about/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dinphy - 简乐">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://dinphy.github.io/about/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="关于 · Dinphy - 简乐">
+    <meta property="og:image" content="/img/favicon.ico">
+    <meta property="og:description" content="生活不易,快乐就好">
+    
+
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://dinphy.github.io/about/" />
+    
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            <link rel="manifest" href="/manifest.json">
+        
+            <script>lsloader.load("ap_js","https://cdn.jsdelivr.net/npm/aplayer@1.6.0/dist/APlayer.min.js", true)</script>
+        
+            <script>lsloader.load("music_js", "https://cdn.jsdelivr.net/gh/wincerchan/QQMusic-Parse@0.3/parse.min.js", true)</script>
+        
+    
+
+</head>
+
+
+<div>
+
+<style>img{border-width:0}#donateBox>a{color:#000;text-decoration:none;outline:0;border:none}.list,.list li,.list-left li{list-style:none;list-style-type:none;margin:0;padding:0}.pos-f{position:relative}.left-100{width:100%;height:100%}.blur{-webkit-filter:blur(3px);filter:blur(3px)}.tr3{transition:all .3s}#DonateText{position:fixed;font-size:12px;width:70px;height:70px;line-height:70px;color:#fff;background:#ffd886 url(../img/like.svg) no-repeat center 10px;background-size:20px;border-radius:35px;text-align:center;left:calc(50% - 120px);top:calc(50% - 60px);z-index:-1;transform:rotatez(-15deg)}#donateBox{overflow:visible!important;left:calc(50% - 150px);top:calc(50% - 15px);background-color:#fff;border:1px solid #ddd;border-radius:6px;height:28px;float:left;z-index:1}#donateBox li{width:74px;float:right;font-size:0;text-align:center;border-left:1px solid #ddd;background:no-repeat center center;background-color:rgba(204,217,220,.1);background-size:55px;transition:all .3s;cursor:pointer;overflow:hidden;line-height:600px;height:28px;-webkit-filter:grayscale(1);filter:grayscale(1);opacity:.5}#donateBox li:hover{background-color:rgba(204,217,220,.3);-webkit-filter:grayscale(0);filter:grayscale(0);opacity:1}#donateBox a{display:block}#donateBox #PayPal{background-image:url(/img/paypal.svg)}#donateBox>#BTC{background-image:url(/img/bitcoin.svg);line-height:28px}#donateBox>#LTC{background-image:url(/img/litecoin.svg);line-height:28px}#donateBox>#BTC:hover{overflow:visible}#donateBox>#LTC:hover{overflow:visible}#donateBox>#PayPal:hover{overflow:visible}#BTC>button{opacity:0;cursor:pointer}#LTC>button{opacity:0;cursor:pointer}#QRBox{top:0;left:0;z-index:1;background-color:rgba(255,255,255,.3);display:none;perspective:400px}#MainBox{cursor:pointer;position:absolute;text-align:center;width:268px;height:268px;left:calc(50% - 134px);top:calc(50% - 134px);background:#fff no-repeat center center;background-size:190px;border-radius:6px;box-shadow:0 2px 7px rgba(0,0,0,.3);opacity:0;transition:all 1s ease-in-out;transform-style:preserve-3d;transform-origin:center center;overflow:hidden}#btc-key{opacity:0;width:2px;height:8px;overflow:hidden;left:-2px;top:-8px}#github{width:24px;height:24px;left:calc(50% + 135px);top:calc(50% - 30px);background:no-repeat center center url(../img/github.svg);background-size:contain;opacity:.3;transform:rotatez(15deg)}[data-footnote]{position:relative;overflow:hidden}[data-footnote]:hover{overflow:visible}[data-footnote]::after,[data-footnote]::before{position:absolute;transition:all .3s;transform:translate3d(-50%,0,0);opacity:0;left:37px;z-index:10}[data-footnote]::before{content:attr(data-footnote);border-radius:6px;background-color:rgba(100,100,100,.8);color:#fff;height:24px;line-height:24px;padding:0 6px;font-size:12px;white-space:nowrap;top:-24px;left:49px}[data-footnote]::after{content:'';border:5px solid #333;border-color:rgba(100,100,100,.8) transparent transparent transparent;top:0;left:49px}[data-footnote]:hover::after,[data-footnote]:hover::before{opacity:1}[data-footnote]:hover::after,[data-footnote]:hover::before{transform:translate3d(-50%,-7px,0)}#MainBox.showQR{opacity:1;animation-name:showQR;animation-duration:3s;animation-timing-function:ease-in-out;animation-iteration-count:1;animation-fill-mode:forwards;-webkit-animation:showQR 3s ease-in-out 0s 1 normal forwards}@keyframes showQR{from{transform:rotateX(90deg)}8%{opacity:1;transform:rotateX(-60deg)}18%{opacity:1;transform:rotateX(40deg)}34%{opacity:1;transform:rotateX(-28deg)}44%{opacity:1;transform:rotateX(18deg)}58%{opacity:1;transform:rotateX(-12deg)}72%{opacity:1;transform:rotateX(9deg)}88%{opacity:1;transform:rotateX(-5deg)}96%{opacity:1;transform:rotateX(2deg)}to{opacity:1}}#MainBox.hideQR{opacity:1;animation-name:hideQR;animation-duration:.5s;animation-timing-function:ease-in-out;animation-iteration-count:1;animation-fill-mode:forwards;-webkit-animation:hideQR .5s ease-in-out 0s 1 normal forwards}@keyframes hideQR{20%,50%{transform:scale(1.08,1.08);opacity:1}to{opacity:0;transform:rotateZ(40deg) scale(.6,.6)}}.bitcoin{position:absolute;top:calc(50% + 9rem);text-align:center;left:0;right:0}.litecoin{position:absolute;top:calc(50% + 9rem);text-align:center;left:0;right:0}#QRBox>#title{color:#969696;border-bottom:1px}#model-background{bottom:0;left:0;right:0;top:0;background-color:white;position:fixed;display:none}</style>
+<script>$(document).ready(function(){function d(b){b&&c.attr("src",b);$("#DonateText,#donateBox").addClass("blur");e.fadeIn(300,function(b){c.addClass("showQR")})}var e=$("#QRBox"),c=$("#MainBox"),a=0;$("#donateBox>li").hide();a++;$("#BTC").show();$("#BTC").addClass("yc");a++;$("#LTC").show();$("#LTC").addClass("yc");a++;$("#PayPal a").attr("href","https://paypal.me/tivsae");$("#PayPal").show();0==a&&$("#WeChat").after('<div id="ps">\u5c1a\u672a\u5f00\u542f donate!</div>');$("#donateBox li,#donateBox li a").css("width",
+Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#model-background").css({'display':'block'});document.documentElement.style.overflow='hidden';document.documentElement.style.height="100%";b=$(this).attr("id");"BTC"===b?d("/img/btcqr.png"):!0;"LTC"===b?d("/img/liteqr.png"):!0;var a=$("#title");"BTC"===b?(a.addClass("bitcoin"),a.text("3Mij5rZfu1sX4iXzbXHd4HQTrD8BTbf7VB")):"LTC"===b&&(a.addClass("litecoin"),a.text("MDekyA12Y8v9ScsSqe8sHoqBe7GGWxURc6"))});c.click(function(a){$("#model-background").css({'display':'none'});document.documentElement.style.overflow='';document.documentElement.style.height="";c.removeClass("showQR").addClass("hideQR");setTimeout(function(a){e.fadeOut(300,function(a){c.removeClass("hideQR")});$("#DonateText,#donateBox,#github").removeClass("blur")},600)})});</script>
+
+</div>
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2017/12/21/5a3b5fdca0710.png)">
+    
+            <p class="article-headline-p">
+                关于
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Dinphy - 简乐</strong>
+        <span>5月 17, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB5ElEQVR42u3aO3LDMAwFQN//0kmbImIeCDmyhGXlcSyKmwJDfF5fj1gvDAwMDAwMDIyPYbzi9fP36x1+eWWwZ34GDAyMmYw/QtvBK48Out7haM/8DBgYGJMZeZBNDrc+7vpzFOgxMDAwglcm4Ti/XGJgYGC8L+Am6WjyFAYGBsZZSWweWPOS3AW5OAYGxg0Ze42Bcz9f1t/AwMD4eEZ5xCFuEiRHvGxmBAMD41aMvFiWv7hTbiv8szAwMEYy9kppnYCbB2IMDIzJjLxYn18H85JZsufhUxgYGCMZyWjFXrOz81Q54GJgYDyaUW1V5knvWYkrBgbGTEanebmX6J42ooGBgTGS0bnSdUJtXqrDwMCYzMgblvn1MU9Qk4R5c9gCAwPjEYw8Za3i1+D8rxgYGBiddmM1NO+V2zAwMDCSQ+TNgLzodkJDFAMDYwwjD4LV8lw1+GJgYGAkwxZ7rcq9sJsvDAwMjOqqjk30r4lRCxMDA+PRjGrgSwJrp4Ww2RjAwMAYwOgE2U7pv9VGxcDAGMl4xxBqPnhRDuUYGBgYcQFu70CdKyYGBgZGNclMvt886DroY2BgjGRUr3p5MyDZ81/LbRgYGDdkVC9562fzgBsNVWBgYIxn3HdhYGBgYGBgYFy6vgFTbs8U/px3dwAAAABJRU5ErkJggg==">
+    
+</ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/about/index.html" class="leancloud-views_num" data-flag-title="关于">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=关于&url=https://dinphy.github.io/about/index.html&pic=https://dinphy.github.io/img/favicon.ico&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=关于&url=https://dinphy.github.io/about/index.html&via=Dinphy - 简乐" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://dinphy.github.io/about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>佛曰：万发缘生，皆系缘分</p>
+</blockquote>
+<div id="aplayer1" class="aplayer" title="if (piano arrange)" author="折倉俊則" url="0000Mzli2dE2ps" pic="https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130" lrc="lrc/pure.lrc"></div>
+
+<p>在众多博客中与你相遇，想必是一种缘分。</p>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><ul>
+<li>热爱自由、讨厌被约束</li>
+<li>互联网上<strong>多数情况</strong>下言辞温和</li>
+<li>喜欢看小说，有一部 Kindle</li>
+<li>喜欢玩 FPS 游戏，可惜枪法一般</li>
+<li>喜欢研究新技术，可惜没多少耐心</li>
+<li><del>最大愿望的是「每逢佳节胖三斤」</del></li>
+<li>兴趣爱好广泛，技能点点得比较分散</li>
+<li>对生活质量有一定的追求，宁缺毋滥</li>
+<li>半吊子前端，钟爱 Python，折腾 Golang</li>
+<li>轻（zhòng）微（dù）强迫症，喜欢简约、美好的事物</li>
+<li>没有 <a href="https://typora.io/" target="_blank" rel="noopener">Typora</a> 就不会写博客<del>，没有 <a href="https://www.gnu.org/software/emacs/" target="_blank" rel="noopener">Emacs</a> 就不会写代码</del></li>
+</ul>
+<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
+<li><strong>电子邮件</strong>：WincerChan<span style="display:none">fuck</span>@gmail.com（每天定时检查 Inbox）</li>
+<li>社交网络：<del>微博</del>（已弃用） Twitter（不怎么发推）：<a href="https://twitter.com/wincer_chan" target="_blank" rel="noopener">@wincer_chan</a> </li>
+<li>即时通讯：QQ：（只加朋友） Telegram：<a href="https://t.me/Tivsae" target="_blank" rel="noopener">@Tivsae</a></li>
+<li>网站评论：如果是和文章有关的问题，建议直接评论，同时Disqus 会自动将评论推送至 Inbox</li>
+</ul>
+<p>本人比较注重在网上的个人隐私，如有需要请通过以上几种方式同我联系。</p>
+<h2 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h2><p>本博客名称为 <code>Wincer&#39;s Blog</code>，建站于公元 2017 年 5 月 5 日。<del>托管于 GitHub</del> 目前托管于自购的 VPS 中，基于 Hexo 构建。</p>
+<p>博客大事年表（啊喂，博客才不满一年，叫「月表」或者「日表」更合适吧）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">时间</th>
+<th style="text-align:center">事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2017 年 05 月 05 日</td>
+<td style="text-align:center"><a href="../posts/4a17b156/">GitHub Pages 建站，使用 NexT 主题</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2017 年 05 月 07 日</td>
+<td style="text-align:center"><a href="../posts/daaac5bb/">万网购买域名 wincer.top</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2017 年 06 月 16 日</td>
+<td style="text-align:center"><a href="../posts/444a2b9d/">利用 Cloudflare 反代实现全站 HTTPS</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2017 年 06 月 29 日</td>
+<td style="text-align:center"><a href="../posts/cd8ce2d7/">NameCheap 购买域名 itswincer.com</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2017 年 07 月 25 日</td>
+<td style="text-align:center"><a href="../posts/a0df572f/">使用 ServiceWorker 技术</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2017 年 09 月 13 日</td>
+<td style="text-align:center"><a href="../posts/dfc84766/">全站启用 HSTS</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2017 年 11 月 27 日</td>
+<td style="text-align:center"><a href="../posts/a9d193c6/">启用 localStorage 技术</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2018 年 01 月 22 日</td>
+<td style="text-align:center"><a href="../posts/b3085a7/">网站迁移至自购的 VPS</a></td>
+</tr>
+</tbody>
+</table>
+<p>博客的部分文章加密，博客设计的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外<strong>并且永不打算备案</strong>，也不会担心会出什么事。</p>
+<p>欢迎诸君订阅 RSS。</p>
+<h2 id="打钱，请～"><a href="#打钱，请～" class="headerlink" title="打钱，请～"></a>打钱，请～</h2>
+<ul id="donateBox" class="list pos-f tr3">
+	<li id="BTC" data-footnote="Bitcoin adress">
+		<button id="BTCBn">Bitcoin</button>
+	</li>
+	<li id="LTC" data-footnote="Litecoin address">
+		<button id="LTCLn">Litecoin</button>
+	</li>
+	<li id="PayPal" data-footnote="Paypal address">
+		<a href="https://paypal.me/tivsae" target="_blank">PayPal</a>
+	</li>
+</ul>
+<div id="model-background"></div>
+<div id="QRBox" class="pos-f left-100">
+		<img id="MainBox">
+	<p id="title"></p>
+</div>
+
+
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Dinphy - 简乐's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        2027821710<span style="display:none">fuck</span>@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a class="obfus" href="" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                文章分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline/" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags/" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">label</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/life/" title="生活栈">
+                
+                    <i class="material-icons sidebar-material-icons">book</i>
+                
+                生活栈
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about/" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="订阅">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                订阅
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">6</span>
+            </a>
+        </li>
+        
+    
+</ul>
+<script>
+let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});
+</script>
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/dinphy" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Dinphy - 简乐
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+<script>    
+var element = document.querySelector("#aplayer1");
+  async function syncHand() {
+      new APlayer({
+          element: element,
+          narrow: false,
+          autoplay: false,
+          showlrc: 3,
+          mutex: true,
+          theme: "#ad7a86",
+          mode: "random",
+          listmaxheight: '263px',
+          music: [{
+              title: element.getAttribute('title'),
+              author: element.getAttribute('author'),
+              url: await getMusic(element.getAttribute('url')),
+              pic: element.getAttribute('pic'),
+              lrc: element.getAttribute('lrc')
+          }]
+      })
+  }
+  if (element !== null) { 
+      syncHand(); }
+  </script>
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/lazyload.min.js", true)</script>
+
+
+
+    <script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/js.min.js", true)</script>
+
+
+
+    <script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/nprogress.js", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 300);
+</script>
+
+
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz', '4pmmj56YRbawceTeHCkLMT7n');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/hanabi-browser-bundle.js", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+    
+        <script>lsloader.load("sw_js","/sw-reg.js", true)</script>
+    
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+    console.clear();
+console.log(` %c © Dinphy | Date: ${new Date().toLocaleDateString()} %c https://github.com/dinphy/MyBlog `,"color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;","background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;") 
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
