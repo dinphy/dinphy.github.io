@@ -313,8 +313,17 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
                 
     <!-- Paradox Post Header -->
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2017/12/21/5a3b5fdca0710.png)">
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
     
             <p class="article-headline-p">
                 关于
@@ -336,7 +345,7 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
     <!-- Author Name & Date -->
     <div>
         <strong>Dinphy - 简乐</strong>
-        <span>5月 17, 2018</span>
+        <span>发表于：2018 年 05 月 17 日</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -436,29 +445,18 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
 </blockquote>
 <div id="aplayer1" class="aplayer" title="if (piano arrange)" author="折倉俊則" url="0000Mzli2dE2ps" pic="https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130" lrc="lrc/pure.lrc"></div>
 
-<p>在众多博客中与你相遇，想必是一种缘分。</p>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><ul>
-<li>热爱自由、讨厌被约束</li>
-<li>互联网上<strong>多数情况</strong>下言辞温和</li>
-<li>喜欢看小说，有一部 Kindle</li>
-<li>喜欢玩 FPS 游戏，可惜枪法一般</li>
-<li>喜欢研究新技术，可惜没多少耐心</li>
-<li><del>最大愿望的是「每逢佳节胖三斤」</del></li>
-<li>兴趣爱好广泛，技能点点得比较分散</li>
-<li>对生活质量有一定的追求，宁缺毋滥</li>
-<li>半吊子前端，钟爱 Python，折腾 Golang</li>
-<li>轻（zhòng）微（dù）强迫症，喜欢简约、美好的事物</li>
-<li>没有 <a href="https://typora.io/" target="_blank" rel="noopener">Typora</a> 就不会写博客<del>，没有 <a href="https://www.gnu.org/software/emacs/" target="_blank" rel="noopener">Emacs</a> 就不会写代码</del></li>
+<p>在偌大的互联网中与你相遇，想必是一种缘分。</p>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><blockquote>
+<p>热爱职业讨厌虚假，喜欢真诚与喜欢自由。<br>经常与学生打交道，是他们叫顺口的老王。<br>不喜欢泡在游戏中，只喜欢网络上到处逛。<br>喜欢折腾手机电脑，钟爱文字也偶尔小作。</p>
+</blockquote>
+<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><blockquote>
+<ul>
+<li><strong>电子邮件</strong>：2027821710<span style="display:none">fuck</span>@qq.com</li>
+<li>网站评论：如果是和文章有关的问题，建议直接评论。</li>
 </ul>
-<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li><strong>电子邮件</strong>：WincerChan<span style="display:none">fuck</span>@gmail.com（每天定时检查 Inbox）</li>
-<li>社交网络：<del>微博</del>（已弃用） Twitter（不怎么发推）：<a href="https://twitter.com/wincer_chan" target="_blank" rel="noopener">@wincer_chan</a> </li>
-<li>即时通讯：QQ：（只加朋友） Telegram：<a href="https://t.me/Tivsae" target="_blank" rel="noopener">@Tivsae</a></li>
-<li>网站评论：如果是和文章有关的问题，建议直接评论，同时Disqus 会自动将评论推送至 Inbox</li>
-</ul>
+</blockquote>
 <p>本人比较注重在网上的个人隐私，如有需要请通过以上几种方式同我联系。</p>
-<h2 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h2><p>本博客名称为 <code>Wincer&#39;s Blog</code>，建站于公元 2017 年 5 月 5 日。<del>托管于 GitHub</del> 目前托管于自购的 VPS 中，基于 Hexo 构建。</p>
-<p>博客大事年表（啊喂，博客才不满一年，叫「月表」或者「日表」更合适吧）：</p>
+<h2 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h2><p>本站名称为 <code>Dinphy - 简乐 | 生活不易，快乐就好</code>，建站于公元 2018 年 5 月 18 日。托管于 GitHub ，基于<a href="https://blog.itswincer.com/" target="_blank" rel="noopener">Wincer’s Blog</a> 开源项目 Hexo 构建，主题为<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">Hexo-theme-Material</a>。</p>
 <table>
 <thead>
 <tr>
@@ -468,51 +466,23 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">2017 年 05 月 05 日</td>
-<td style="text-align:center"><a href="../posts/4a17b156/">GitHub Pages 建站，使用 NexT 主题</a></td>
+<td style="text-align:center">2018 年 05 月 17 日</td>
+<td style="text-align:center"><a href="https://dinphy.github.io">基于 Hexo 搭建本站</a></td>
 </tr>
 <tr>
-<td style="text-align:center">2017 年 05 月 07 日</td>
-<td style="text-align:center"><a href="../posts/daaac5bb/">万网购买域名 wincer.top</a></td>
-</tr>
-<tr>
-<td style="text-align:center">2017 年 06 月 16 日</td>
-<td style="text-align:center"><a href="../posts/444a2b9d/">利用 Cloudflare 反代实现全站 HTTPS</a></td>
-</tr>
-<tr>
-<td style="text-align:center">2017 年 06 月 29 日</td>
-<td style="text-align:center"><a href="../posts/cd8ce2d7/">NameCheap 购买域名 itswincer.com</a></td>
-</tr>
-<tr>
-<td style="text-align:center">2017 年 07 月 25 日</td>
-<td style="text-align:center"><a href="../posts/a0df572f/">使用 ServiceWorker 技术</a></td>
-</tr>
-<tr>
-<td style="text-align:center">2017 年 09 月 13 日</td>
-<td style="text-align:center"><a href="../posts/dfc84766/">全站启用 HSTS</a></td>
-</tr>
-<tr>
-<td style="text-align:center">2017 年 11 月 27 日</td>
-<td style="text-align:center"><a href="../posts/a9d193c6/">启用 localStorage 技术</a></td>
-</tr>
-<tr>
-<td style="text-align:center">2018 年 01 月 22 日</td>
-<td style="text-align:center"><a href="../posts/b3085a7/">网站迁移至自购的 VPS</a></td>
+<td style="text-align:center">2018 年 05 月 18 日</td>
+<td style="text-align:center"><a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">使用 Material主题</a></td>
 </tr>
 </tbody>
 </table>
-<p>博客的部分文章加密，博客设计的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外<strong>并且永不打算备案</strong>，也不会担心会出什么事。</p>
 <p>欢迎诸君订阅 RSS。</p>
-<h2 id="打钱，请～"><a href="#打钱，请～" class="headerlink" title="打钱，请～"></a>打钱，请～</h2>
+<h2 id="赞助一下，请"><a href="#赞助一下，请" class="headerlink" title="赞助一下，请~"></a>赞助一下，请~</h2>
 <ul id="donateBox" class="list pos-f tr3">
-	<li id="BTC" data-footnote="Bitcoin adress">
-		<button id="BTCBn">Bitcoin</button>
+	<li id="BTC" data-footnote="支付宝">
+		<button id="BTCBn">支付宝</button>
 	</li>
-	<li id="LTC" data-footnote="Litecoin address">
-		<button id="LTCLn">Litecoin</button>
-	</li>
-	<li id="PayPal" data-footnote="Paypal address">
-		<a href="https://paypal.me/tivsae" target="_blank">PayPal</a>
+	<li id="LTC" data-footnote="微信">
+		<button id="LTCLn">微信</button>
 	</li>
 </ul>
 <div id="model-background"></div>
@@ -590,7 +560,7 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
 
     <!-- Sidebar toggle button -->
     <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
-        <i class="material-icons">clear_all</i>
+        <i class="material-icons">format_indent_decrease</i>
         <span class="mdl-button__ripple-container">
             <span class="mdl-ripple">
             </span>
@@ -603,9 +573,8 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
     </div>
 
     <!-- Sidebar Email -->
-    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+    <a data-toggle="dropdown" class="sidebar-brand">
         2027821710<span style="display:none">fuck</span>@qq.com
-        <b class="caret"></b>
     </a>
 </div>
 
