@@ -301,71 +301,10 @@ table {
 
     <!-- Pin on top -->
     
+        
+    
 
     <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://s1.ax1x.com/2017/12/24/vGU0K.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/posts/a40f8cd0/">NexT 主题配置备份</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            基本设置参照 NexT 使用文档，设置中文语言、头像、作者、网站描述和 URL 等。
-动态背景修改 themes/next/layout/_layout.swig:
-加上下面内容：
-12&lt;script type="text/javascript" src="js/src/particle.js&gt;&lt;script&gt;&lt;script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"&gt;&lt;/script&gt;
-目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 true，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/posts/a40f8cd0/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Dinphy - 简乐's avatar">
-            </div>
-            <div>
-                <strong>Dinphy - 简乐</strong>
-                <span>5月 31, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/博客栈/">博客栈</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
     
         
             
@@ -492,7 +431,7 @@ table {
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="" target="_blank" title="Email Me">
+                    <a class="obfus" href="" target="_blank" title="Email Me">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
@@ -531,7 +470,7 @@ table {
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -599,12 +538,19 @@ table {
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">6</span>
+                <span class="sidebar-badge">5</span>
             </a>
         </li>
         
     
 </ul>
+<script>
+let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});
+</script>
 
         <!-- Sidebar Footer -->
         <!--
@@ -796,7 +742,7 @@ var element = document.querySelector("#aplayer1");
     <!-- Leancloud -->
     <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
     <script>
-        AV.initialize('EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz', '4pmmj56YRbawceTeHCkLMT7n');
+        AV.initialize('rRa1XVVgoUC5AartIX0Qkuvc-gzGzoHsz', '2dxHQNJ3091jhePfiLCYh4rM');
     </script>
     <script type="text/ls-javascript" id="leancloud-views-script">
     function showTime(Counter) {
@@ -884,6 +830,8 @@ var element = document.querySelector("#aplayer1");
     <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+   
 
 
 

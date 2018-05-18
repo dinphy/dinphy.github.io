@@ -387,15 +387,6 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
 
     
         
-            <!-- Busuanzi Views -->
-            <a class="post_share-link" href="#">
-                <li class="mdl-menu__item">
-                    <span id="busuanzi_container_page_pv">
-                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
-                    </span>
-                </li>
-            </a>
-        
     
 
     <!-- Share Weibo -->
@@ -409,20 +400,8 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=关于&url=https://dinphy.github.io/about/index.html&via=Dinphy - 简乐" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
 
     <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://dinphy.github.io/about/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
     
 
     <!-- Share Google+ -->
@@ -432,6 +411,12 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
     
 
     <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Dinphy - 简乐&title=关于&summary=生活不易,快乐就好&pics=https://dinphy.github.io/img/favicon.ico&url=https://dinphy.github.io/about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
     
 
     <!-- Share Telegram -->
@@ -548,6 +533,29 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
                 <!-- Post Comments -->
                 
                     
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz",
+        appKey: "4pmmj56YRbawceTeHCkLMT7n",
+        placeholder: "您的忠言将助我成长，说点啥吧",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
+</script>
+
                 
             </div>
 
@@ -608,7 +616,7 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="" target="_blank" title="Email Me">
+                    <a class="obfus" href="" target="_blank" title="Email Me">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
@@ -647,7 +655,7 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -715,12 +723,19 @@ Math.ceil(74+74*(4-a)/a)+"px");$("#donateBox>#LTC, #BTC").click(function(b){$("#
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">6</span>
+                <span class="sidebar-badge">5</span>
             </a>
         </li>
         
     
 </ul>
+<script>
+let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});
+</script>
 
         <!-- Sidebar Footer -->
         <!--
@@ -904,7 +919,7 @@ var element = document.querySelector("#aplayer1");
     <!-- Leancloud -->
     <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
     <script>
-        AV.initialize('EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz', '4pmmj56YRbawceTeHCkLMT7n');
+        AV.initialize('rRa1XVVgoUC5AartIX0Qkuvc-gzGzoHsz', '2dxHQNJ3091jhePfiLCYh4rM');
     </script>
     <script type="text/ls-javascript" id="leancloud-views-script">
     function showTime(Counter) {
@@ -992,6 +1007,8 @@ var element = document.querySelector("#aplayer1");
     <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+   
 
 
 

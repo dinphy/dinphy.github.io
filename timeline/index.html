@@ -697,6 +697,30 @@ table {
    	   		
 			<div class="md-timeline-block">
                 		<div class="md-timeline-date blue">
+                   			<div class="md-date">5月 17 2018</div>
+                		</div>
+
+                		<div class="md-timeline-content">
+                    			<div class="md-timeline-title"><a href="/posts/a40f8cd0/">Material 主题配置</a></div>
+					<div class="md-timeline-info">
+						<span class="md-timeline-info-span">Categories:
+							<a class="category-link" href="/categories/学习笔记/">学习笔记</a>
+						</span>
+						<span class="md-timeline-info-span">Tags:
+							<a class="tag-link" href="/tags/Material/">Material</a>, <a class="tag-link" href="/tags/blog/">blog</a>, <a class="tag-link" href="/tags/web/">web</a>, <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
+						</span>
+						
+					</div>
+					<p class="md-timeline-excerpt">
+						
+							基本设置
+						...
+					</p>
+                    		</div>
+			</div>	
+   		
+			<div class="md-timeline-block">
+                		<div class="md-timeline-date blue">
                    			<div class="md-date">5月 16 2018</div>
                 		</div>
 
@@ -715,32 +739,6 @@ table {
 						
 							
 我喜欢夏天，尤其是在我工作的地方。我在学校上班，感觉累了就到池塘边歇息，看池中的金鱼嬉戏打闹；觉得热了就到大树下乘凉，安静...
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">4月 19 2018</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/posts/65e48179/">《代码整洁之道》读书笔记</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/文字阁/">文字阁</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/代码/">代码</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							
-相对于任何宏伟愿景，对细节的关注甚至是更为关键的专业性基础。首先，开发者通过小型实践获得可用于大型实践的技能和信用度。其次，宏大建筑中最细小的部分，比如关不紧的门、有点儿没铺平的地板，甚至是凌乱的桌面，都会将整个大局的魅力毁灭殆尽。这就是整洁代码之所系。
-
 						...
 					</p>
                     		</div>
@@ -792,34 +790,6 @@ table {
 加密文章网上针对 Hexo 博客加密文章的办法有两种：
 js 的阻塞机制在 themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig 中的 \ 标签后添加以下代码：
 12345678910&lt;script&gt;    (function()&#123;        if('&#123;&#123; page.password &#125;&#125;')&#123;            if (prompt('请输入文章密码', '') !== '&#123;&#123; page.password &#125;&#125;')&#123;                alert('密码错误');                history.back();            &#125;        &#125;    &#125;)();&lt;/script&gt;
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">5月 31 2017</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/posts/a40f8cd0/">NexT 主题配置备份</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/博客栈/">博客栈</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-link" href="/tags/NexT/">NexT</a>, <a class="tag-link" href="/tags/博客/">博客</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							基本设置参照 NexT 使用文档，设置中文语言、头像、作者、网站描述和 URL 等。
-动态背景修改 themes/next/layout/_layout.swig:
-加上下面内容：
-12&lt;script type="text/javascript" src="js/src/particle.js&gt;&lt;script&gt;&lt;script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"&gt;&lt;/script&gt;
-目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 true，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
 						...
 					</p>
                     		</div>
@@ -910,7 +880,7 @@ js 的阻塞机制在 themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig 中
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="" target="_blank" title="Email Me">
+                    <a class="obfus" href="" target="_blank" title="Email Me">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
@@ -949,7 +919,7 @@ js 的阻塞机制在 themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig 中
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/业余小作/">业余小作<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/业余小作/生活感悟/">生活感悟<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -1017,12 +987,19 @@ js 的阻塞机制在 themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig 中
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">6</span>
+                <span class="sidebar-badge">5</span>
             </a>
         </li>
         
     
 </ul>
+<script>
+let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});
+</script>
 
         <!-- Sidebar Footer -->
         <!--
@@ -1206,7 +1183,7 @@ var element = document.querySelector("#aplayer1");
     <!-- Leancloud -->
     <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
     <script>
-        AV.initialize('EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz', '4pmmj56YRbawceTeHCkLMT7n');
+        AV.initialize('rRa1XVVgoUC5AartIX0Qkuvc-gzGzoHsz', '2dxHQNJ3091jhePfiLCYh4rM');
     </script>
     <script type="text/ls-javascript" id="leancloud-views-script">
     function showTime(Counter) {
@@ -1294,6 +1271,8 @@ var element = document.querySelector("#aplayer1");
     <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+   
 
 
 
