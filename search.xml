@@ -62,12 +62,14 @@
       
       <categories>
           
-          <category> 分享境 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> web </tag>
             
             <tag> Markdown </tag>
             
