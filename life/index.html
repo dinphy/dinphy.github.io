@@ -7,7 +7,7 @@
         https://github.com/viosey/hexo-theme-material
         Version: 1.5.2 -->
     <script>
-        window.materialVersion = "1.5.5"
+        window.materialVersion = "1.5.8"
         // Delete localstorage with these tags
         window.oldVersion = [
             'codestartv1',
@@ -21,7 +21,7 @@
     <!-- dns prefetch -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source"/>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source"/>
 
 
     <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
@@ -77,8 +77,8 @@
     <!-- Disable Fucking Bloody Baidu Tranformation -->
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/css/material.min.css">
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -213,13 +213,13 @@ table {
 <!-- Import Material Icons -->
 
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/css/material-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/css/material-icons.css">
 
 
 
     <!-- Import jQuery -->
     
-        <script>lsloader.load("jq_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/jquery.min.js", true)</script>
+        <script>lsloader.load("jq_js","https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js", true)</script>
     
 
     <!-- WebAPP Icons -->
@@ -957,9 +957,12 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Dinphy - 简乐
+            Copyright&nbsp;©&nbsp;2017&nbsp;-Dinphy - 简乐
             
         </div>
+        <script type="text/javascript">
+        document.querySelector('#copyright').innerText = `Copyright © 2017 - ${(new Date()).getFullYear()} Dinphy - 简乐`;
+        </script>
 
         <!-- Paradox Footer Right Section -->
 
@@ -1006,15 +1009,15 @@ var element = document.querySelector("#aplayer1");
 
                     <!-- Import JS File -->
 
-    <script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/lazyload.min.js", true)</script>
+    <script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/js/lazyload.min.js", true)</script>
 
 
 
-    <script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/js.min.js", true)</script>
+    <script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/js/js.min.js", true)</script>
 
 
 
-    <script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/nprogress.js", true)</script>
+    <script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/js/nprogress.js", true)</script>
 
 
 <script type="text/ls-javascript" id="NProgress-script">
@@ -1153,7 +1156,7 @@ var element = document.querySelector("#aplayer1");
 
 
     
-        <script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.7/source/js/hanabi-browser-bundle.js", true)</script>
+        <script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.8/source/js/hanabi-browser-bundle.js", true)</script>
     
 
 
