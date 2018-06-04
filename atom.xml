@@ -158,13 +158,13 @@
       <category term="学习参考" scheme="https://dinphy.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
     
     
-      <category term="学习笔记" scheme="https://dinphy.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="web技术" scheme="https://dinphy.github.io/tags/web%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="blog" scheme="https://dinphy.github.io/tags/blog/"/>
-    
       <category term="hexo" scheme="https://dinphy.github.io/tags/hexo/"/>
+    
+      <category term="学习笔记" scheme="https://dinphy.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="blog" scheme="https://dinphy.github.io/tags/blog/"/>
     
       <category term="github" scheme="https://dinphy.github.io/tags/github/"/>
     
