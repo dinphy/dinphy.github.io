@@ -162,11 +162,11 @@
     
       <category term="hexo" scheme="https://dinphy.github.io/tags/hexo/"/>
     
-      <category term="github" scheme="https://dinphy.github.io/tags/github/"/>
-    
       <category term="学习笔记" scheme="https://dinphy.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
       <category term="blog" scheme="https://dinphy.github.io/tags/blog/"/>
+    
+      <category term="github" scheme="https://dinphy.github.io/tags/github/"/>
     
   </entry>
   
