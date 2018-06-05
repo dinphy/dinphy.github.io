@@ -1,4 +1,4 @@
-title: Material 风格的 Hexo 主题teal使用
+title: Hexo 主题 teal 使用
 category:
   - 学习参考
 tags:

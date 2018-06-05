@@ -1,4 +1,4 @@
-title: 优化hexo文章网址链接URL唯一且永久化
+title: hexo-abbrlink 插件使用
 categories:
   - 学习参考
   - ''

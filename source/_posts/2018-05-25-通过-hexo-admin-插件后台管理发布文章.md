@@ -1,4 +1,4 @@
-title: 通过 hexo-admin 插件后台管理发布文章
+title: hexo-admin 插件使用
 author: Dinphy - 简乐
 abbrlink: 96d8dc65
 tags:
