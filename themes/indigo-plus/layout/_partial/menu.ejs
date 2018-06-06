@@ -1,0 +1,89 @@
+<aside id="menu" <% if((is_post() || page.layout === 'page') && theme.hideMenu){ %>class="hide"<% } %> >
+	<div class="inner flex-row-vertical">
+		<a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+			<i class="icon icon-lg icon-outdent"></i>
+		</a>
+		<div class="brand-wrap">
+		  <div class="brand">
+			<a href="<%- config.root %>" class="avatar waves-effect waves-circle waves-light">
+			  <img src="<%- url_for(theme.avatar) %>">
+			</a>
+			<hgroup class="introduce">
+			  <h5 class="nickname"><%- config.author %></h5>
+			  <%- mail_to(theme.email, theme.email, {class: 'mail'}) %>
+
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 <%- site.posts.length %> 篇，约 <%- totalcount(site) %> 字</b></div>
+				<%
+				  for (var i in theme.socail) {
+					link = theme.socail[i];
+				%>
+					<li class="waves-block socail-icon %>">
+					  <a href="<%- url_for(link) %>" target="_blank">
+						<i class="icon icon-lg icon-<%= i %>" aria-hidden="true"></i>
+					  </a>
+					</li>
+				<% } %>
+			</hgroup>
+		  </div>
+		</div>
+		<div class="scroll-wrap flex-col">
+			<%
+				var menuItem1, menuItem2, menuItem3, menuItem4, menuItem5, isActive = function(item) {
+				var pageUrl = url_for(page.path)
+				return item.url === '/' ? pageUrl === url_for(item.url + 'index.html') : _.startsWith(pageUrl, url_for(item.url))
+			};
+				menuItem1 = theme.menu['home'];
+				menuItem2 = theme.menu['th-list'];
+				menuItem3 = theme.menu['archives'];
+				menuItem4 = theme.menu['tags'];
+				menuItem5 = theme.menu['user'];
+			%>
+			<div  class="sidebar">
+				<ul class="sidebar-menu">	 
+					<li class="waves-block waves-effect<% if(isActive(menuItem1)){ %> active<% } %>">
+						<a href="<%- url_for(menuItem1.url) %>" <% if(menuItem1.target){ %>target="_blank"<% } %> >
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<%=(menuItem1.text || _.startCase('home')) %>
+						</a>
+					</li>
+					<li class="waves-block waves-effect<% if(isActive(menuItem2)){ %> active<% } %>">
+						<a href="<%- url_for(menuItem2.url) %>" <% if(menuItem2.target){ %>target="_blank"<% } %> >
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
+							<%=(menuItem2.text || _.startCase('th-list')) %>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+							<ul class="treeview-menu">
+								<li>
+								<%- list_categories({
+									show_count: false,
+									style: 'none',
+									separator: '</li><li>'
+								}) %>
+							</ul>				
+					</li>					
+					<li class="waves-block waves-effect<% if(isActive(menuItem3)){ %> active<% } %>">
+						<a href="<%- url_for(menuItem3.url) %>" <% if(menuItem3.target){ %>target="_blank"<% } %> >
+							<i class="fa fa-archive" aria-hidden="true"></i>
+							<%=(menuItem3.text || _.startCase('archives')) %>
+						</a>
+					</li>
+					<li class="waves-block waves-effect<% if(isActive(menuItem4)){ %> active<% } %>">
+						<a href="<%- url_for(menuItem4.url) %>" <% if(menuItem4.target){ %>target="_blank"<% } %> >
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<%=(menuItem4.text || _.startCase('tags')) %>
+						</a>
+					</li>
+					<li class="waves-block waves-effect<% if(isActive(menuItem5)){ %> active<% } %>">
+						<a href="<%- url_for(menuItem5.url) %>" <% if(menuItem5.target){ %>target="_blank"<% } %> >
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<%=(menuItem5.text || _.startCase('user')) %>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$.sidebarMenu($('.sidebar-menu'))
+			</script>
+		</div>
+	</div>
+</aside>

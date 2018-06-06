@@ -1,0 +1,22 @@
+.music {
+    position: fixed;
+    bottom: 90px;
+    right: 9px;
+    display: block;
+    transition: transform 0.25s ease-in-out;
+    transform: translateX(0px);
+
+    &.min-music {
+        transform: translateX(262px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .music {
+        display: none;
+
+        > iframe {
+            display: none;
+        }
+    }
+}
