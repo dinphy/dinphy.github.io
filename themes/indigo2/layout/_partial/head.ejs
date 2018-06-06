@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="lizhooh">
+    <meta name="google" content="notranslate">
+    <meta name="url" content="http://me.lizhooh.com">
+    <link rel="manifest" href="/manifest.json">
+    <% if(theme.color){ %>
+    <meta name="theme-color" content="<%=theme.color%>">
+    <% } %>
+    <% if(theme.google_site_verification){ %>
+    <meta name="google-site-verification" content="<%- theme.google_site_verification%>">
+    <% }%>
+    <% if(theme.canonical){ %>
+    <link rel="canonical" href="<%- (theme.canonical + url_for(page.path)).replace(/index\.html$/, '') %>">
+    <% }%>
+    <%
+        var title = page.title;
+
+        if (is_archive()){
+            title = theme.archives_title || 'Archives';
+
+            if (is_month()){
+            title += ': ' + page.year + '/' + page.month;
+            } else if (is_year()){
+            title += ': ' + page.year;
+            }
+        } else if (is_category()){
+            title = (theme.categories_title || 'Categories') + ': ' + page.category;
+        } else if (is_tag()){
+            title = (theme.tags_title || 'Tags') + ': ' + page.tag;
+        }
+    %>
+    <title><% if (title){ %><%= title %> | <% } %><%= config.title %> | <%= config.subtitle.replace(/<[^>]*>/g, '') %></title>
+    <%
+        var keyWords = config.keywords;
+        if(page.tags){
+        keyWords = [];
+
+        _.isArray(page.tags) ? ( keyWords = page.tags )
+            : page.tags.each(function(k){
+                keyWords.push(k.name);
+            });
+    }
+    %>
+    <meta name="keywords" content="<%= theme.keyWords %>">
+    <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+    <% if (theme.rss){ %>
+        <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+    <%- favicon_tag(theme.favicon) %>
+    <link rel="stylesheet" href="<%= url_for('/css/style.css?v='+ theme_version()) %>">
+
+    <!--<script src="<%- url_for('/js/vconsole.min.js') %>"></script> -->
+    <script>
+        window.lazyScripts=[];
+    </script>
+
+    <script>
+        // 判断是否是IE浏览器，包括Edge浏览器
+        function IEVersion() {
+            var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; // 判断是否IE<11浏览器
+            var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; // 判断是否IE的Edge浏览器
+            var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                return fIEVersion >= 7 && fIEVersion <= 10 ? fIEVersion : 6;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        if (IEVersion() !== -1) {
+            var text = '检测到你使用的是 IE ' + IEVersion() + ' 内核浏览器，本博客使用了最新的前端技术，为了获得最佳的体验，请使用 Chrome、Opera、Firefox 等现代浏览器打开。';
+            alert(text)
+        }
+</script>
+</head>

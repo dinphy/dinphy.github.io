@@ -1,0 +1,63 @@
+<header class="top-header" id="header">
+    <!-- 正文 -->
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis"><%=title %></div>
+
+        <% if(theme.search){ %>
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search" title="搜索">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        <% }%>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="theme-toggle" title="夜间模式">
+          <i class="icon icon-lg icon-moon-o" style="font-weight: bold"></i>
+        </a>
+        <% if(theme.share){ %>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare" title="分享">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        <% } %>
+    </div>
+</header>
+<header class="content-header <%-hdClass %>" style="<%- page.image && "background-image: url('" +  page.image + "');" %>">
+
+    <!--<div class="container fade-scale">-->
+    <div class="container" id="container-header">
+        <h1 class="title"><%=title %></h1>
+
+        <div class="meta-rest">
+            <h1><%- page.title %></h1>
+            <section>
+                <img src="<%- theme.avatar %>" class="avatar" />
+                <div>
+                    <span class="name"><%- theme.author %></span>
+                    <span class="summary"><%- theme.career %></span>
+                    <span class="summary"><%- theme.summary %></span>
+                </div>
+            </section>
+        </div>
+
+        <h3 class="subtitle">
+            <% if(is_post()){ %>
+                <%- partial('post/head-meta') %>
+            <% } else if(is_home()){ %>
+                <%- config.subtitle %>
+            <% } else if (page.layout === 'page' && page.description) {%>
+                <%- page.description %>
+            <% } %>
+        </h3>
+    </div>
+
+    <%- partial('tags-bar', {
+        type: hdClass.split('-')[0]
+    }) %>
+
+</header>
