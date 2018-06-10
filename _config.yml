@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://dinphy.github.io
+url: http://www.dinphy.wang
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink/
@@ -91,11 +91,12 @@ theme: indigo-plus
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repository: git@github.com:dinphy/dinphy.github.io.git
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH:mm:ss")}}'
-  
+- type: baidu_url_submitter
+
 # rss
 feed:
   type: atom
@@ -128,3 +129,10 @@ admin:
   password_hash: $2a$10$Cjsi8jHIzInUtkSBaK9tnOyv3oqqcJPS2MF3Mz6FlGj2JNQYlwVhm
   secret: Life is not easy, happiness is good
   deployCommand: 'hexo-deploy.sh'
+
+#baidu push | 百度主动推送
+baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: www.dinphy.wang # 在百度站长平台中注册的域名
+  token: EC9v8uvM0ph9kZZJ # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
