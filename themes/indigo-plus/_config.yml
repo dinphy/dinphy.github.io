@@ -72,6 +72,11 @@ socail:
   github:                 https://github.com/dinphy
   coffee:                 http://www.cnblogs.com/dinphy/
 
+#友情链接  
+links:
+  三步枫: https://blog.adymilk.cn/
+  申请链接: menu/about.html
+
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: #33AAFF
 # 页面标题

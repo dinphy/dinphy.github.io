@@ -29,7 +29,8 @@
     "hexo-symbols-count-time": "^0.4.2",
     "hexo-wordcount": "^3.0.2",
     "less": "^3.0.4",
-    "style-loader": "^0.21.0"
+    "style-loader": "^0.21.0",
+    "tippy.js": "^2.5.2"
   },
   "devDependencies": {
     "stylus": "^0.54.5",
