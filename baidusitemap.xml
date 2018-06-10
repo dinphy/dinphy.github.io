@@ -3,6 +3,32 @@
 
 
     
+  <url>
+    <loc>http://www.dinphy.wang/posts/6198b0cf/</loc>
+    <lastmod>2018-06-10T08:38:34.452Z</lastmod>
+    <data>
+        <display>
+        <title>hexo 百度搜索引擎推送优化</title>
+        <pubTime>2018-06-10T07:55:00.000Z</pubTime>
+        
+        <tag>web技术</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>百度搜索</tag>
+         
+        <tag>SEO优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.dinphy.wang/posts/fc4ce5e0/</loc>
@@ -82,11 +108,11 @@
          
         <tag>hexo</tag>
          
-        <tag>github</tag>
-         
         <tag>学习笔记</tag>
          
         <tag>blog</tag>
+         
+        <tag>github</tag>
          
          
            

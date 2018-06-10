@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- <meta name="referrer" content="never"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="dinphy">
+    <meta name="google" content="notranslate">
+    <meta name="url" content="https://dinphy.github.io">
+    <link rel="manifest" href="/manifest.json">
+    
+    
+    
+    <link rel="canonical" href="https://dinphy.github.io/posts/6198b0cf/">
+    
+    
+    <title>hexo 百度搜索引擎推送优化 | Dinphy - 简乐 | 生活不易,快乐就好</title>
+    
+    <meta name="keywords" content="Dinphy 的网站，我的博客，我来作主 &lt;br /&gt; 教师的业余生活，快乐的人生。">
+    <meta name="description" content="我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入site:&amp;lt;域名&amp;gt;,会发现没有记录，这就是说明我们的网站并没有被百度收录，所以下文就是解决这个问题的。 让百度收录你的站点我们可以直接点击下面的“网址提交”来提交我们的网站。 验证网站所有权 登录百度站长平台：zhanzhang.baidu.com，只要有百度旗下的账号就可以登录。 登录成功之后在站点管理中点击 添加网">
+<meta name="keywords" content="web技术,hexo,百度搜索,SEO优化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 百度搜索引擎推送优化">
+<meta property="og:url" content="http://www.dinphy.wang/posts/6198b0cf/index.html">
+<meta property="og:site_name" content="Dinphy - 简乐">
+<meta property="og:description" content="我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入site:&amp;lt;域名&amp;gt;,会发现没有记录，这就是说明我们的网站并没有被百度收录，所以下文就是解决这个问题的。 让百度收录你的站点我们可以直接点击下面的“网址提交”来提交我们的网站。 验证网站所有权 登录百度站长平台：zhanzhang.baidu.com，只要有百度旗下的账号就可以登录。 登录成功之后在站点管理中点击 添加网">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-10T08:38:34.452Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo 百度搜索引擎推送优化">
+<meta name="twitter:description" content="我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入site:&amp;lt;域名&amp;gt;,会发现没有记录，这就是说明我们的网站并没有被百度收录，所以下文就是解决这个问题的。 让百度收录你的站点我们可以直接点击下面的“网址提交”来提交我们的网站。 验证网站所有权 登录百度站长平台：zhanzhang.baidu.com，只要有百度旗下的账号就可以登录。 登录成功之后在站点管理中点击 添加网">
+    
+        <link rel="alternative" href="/atom.xml" title="Dinphy - 简乐" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=2.0.0">
+
+    <!--<script src="/js/vconsole.min.js"></script> -->
+    <script>
+        window.lazyScripts=[];
+    </script>
+
+    <script>
+        // 判断是否是IE浏览器，包括Edge浏览器
+        function IEVersion() {
+            var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; // 判断是否IE<11浏览器
+            var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; // 判断是否IE的Edge浏览器
+            var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                return fIEVersion >= 7 && fIEVersion <= 10 ? fIEVersion : 6;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        if (IEVersion() !== -1) {
+            var text = '检测到你使用的是 IE ' + IEVersion() + ' 内核浏览器，本博客使用了最新的前端技术，为了获得最佳的体验，请使用 Chrome、Opera、Firefox 等现代浏览器打开。';
+            alert(text)
+        }
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/css/sidebar-menu.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="/js/sidebar-menu.js" ></script>
+
+</head>
+
+
+<body>
+    <script>
+        + function () {
+            var S = window.localStorage;
+
+            var theme = S.getItem('theme');
+            var body = document.querySelector('body');
+            if (body === null) {
+                console.log('找不到 body 节点');
+                return;
+            }
+            if (theme === 'night') {
+                body.classList.add('night-mode');
+            }
+
+            function setTheme() {
+                var theme = S.getItem('theme');
+                var body = document.querySelector('body');
+                if (body === null) {
+                    console.log('找不到 body 节点');
+                    return;
+                }
+                if (theme !== 'night') {
+                    body.classList.add('night-mode');
+                    S.setItem('theme', 'night');
+                }
+                else {
+                    body.classList.remove('night-mode');
+                    S.setItem('theme', 'not-night');
+                }
+            }
+
+            function load() {
+                var path = window.location.pathname;
+                var theme = document.querySelector('#theme-toggle');
+                theme.onclick = setTheme;
+
+                if (document.body.clientWidth < 960) {
+                    return;
+                }
+
+                // if (!/\/\d{2,4}/.test(window.location.pathname)) {
+                //     return;
+                // }
+
+                if (!(path === '/' || /\/page\//.test(path))) {
+                    return;
+                }
+
+                
+            }
+            window.onload = load;
+        } ();
+    </script>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+	<div class="inner flex-row-vertical">
+		<a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+			<i class="icon icon-lg icon-outdent"></i>
+		</a>
+		<div class="brand-wrap">
+		  <div class="brand">
+			<a href="/" class="avatar waves-effect waves-circle waves-light">
+			  <img src="/img/avatar.jpg">
+			</a>
+			<hgroup class="introduce">
+			  <h5 class="nickname">Dinphy - 简乐</h5>
+			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
+
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 11 篇，约 7.2k 字</b></div>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="https://github.com/dinphy" target="_blank">
+						<i class="icon icon-lg icon-github" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="http://www.cnblogs.com/dinphy/" target="_blank">
+						<i class="icon icon-lg icon-coffee" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+			</hgroup>
+		  </div>
+		</div>
+		<div class="scroll-wrap flex-col">
+			
+			<div  class="sidebar">
+				<ul class="sidebar-menu">	 
+					<li class="waves-block waves-effect">
+						<a href="/"  >
+							<i class="fa fa-home" aria-hidden="true"></i>
+							主页
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/categories"  >
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
+							文章分类
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+							<ul class="treeview-menu">
+								<li>
+								<a class="category-link" href="/categories/业余小作/">业余小作</a></li><li><a class="category-link" href="/categories/学习参考/">学习参考</a></li><li><a class="category-link" href="/categories/生活感悟/">生活感悟</a>
+							</ul>				
+					</li>					
+					<li class="waves-block waves-effect">
+						<a href="/archives"  >
+							<i class="fa fa-archive" aria-hidden="true"></i>
+							归档
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/tags"  >
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							标签
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/menu/about.html"  >
+							<i class="fa fa-user" aria-hidden="true"></i>
+							关于
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$.sidebarMenu($('.sidebar-menu'))
+			</script>
+		</div>
+	</div>
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <!-- 正文 -->
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-indent"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">hexo 百度搜索引擎推送优化</div>
+
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search" title="搜索">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="theme-toggle" title="夜间模式">
+          <i class="icon icon-lg icon-moon-o" style="font-weight: bold"></i>
+        </a>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare" title="分享">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header" style="">
+
+    <!--<div class="container fade-scale">-->
+    <div class="container" id="container-header">
+        <h1 class="title">hexo 百度搜索引擎推送优化</h1>
+
+        <div class="meta-rest">
+            <h1>hexo 百度搜索引擎推送优化</h1>
+            <section>
+                <img src="/img/avatar.jpg" class="avatar" />
+                <div>
+                    <span class="name">Dinphy</span>
+                    <span class="summary">一枚教师，不懂教学</span>
+                    <span class="summary">学无先后，达者为师</span>
+                </div>
+            </section>
+        </div>
+
+        <h3 class="subtitle">
+            
+                <time datetime="2018-06-10T07:55:00.000Z" itemprop="datePublished" class="page-time">
+    2018-06-10
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+            
+        </h3>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>本文要点</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#让百度收录你的站点"><span class="post-toc-number">1.</span> <span class="post-toc-text">让百度收录你的站点</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#验证网站所有权"><span class="post-toc-number">2.</span> <span class="post-toc-text">验证网站所有权</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#生成网站地图"><span class="post-toc-number">3.</span> <span class="post-toc-text">生成网站地图</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#向百度提交链接"><span class="post-toc-number">4.</span> <span class="post-toc-text">向百度提交链接</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#主动推送"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">主动推送</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#设置自动推送"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">设置自动推送</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#sitemap"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">sitemap</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<article id="post-2018-06-10-hexo-百度搜索引擎推送优化"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">hexo 百度搜索引擎推送优化</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018 年 06 月 10 日 15:55" datetime="2018-06-10T07:55:00.000Z"  itemprop="datePublished">
+    2018-06-10
+</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            <span style="color: dodgerblue">
+                约 <span style="font-size: 14px;"> 1,261</span> 字
+            </span>
+            <span>
+                将阅读<span style="font-size: 14px; color: orange;">  12.5  </span> 分钟
+            </span>
+        </div>
+
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>我们在刚建站的时候各个搜索引擎是没有收录我们网站的，在搜索引擎中输入<code>site:&lt;域名&gt;</code>,会发现没有记录，这就是说明我们的网站并没有被百度收录，所以下文就是解决这个问题的。</p>
+<h5 id="让百度收录你的站点"><a href="#让百度收录你的站点" class="headerlink" title="让百度收录你的站点"></a>让百度收录你的站点</h5><p>我们可以直接点击下面的“网址提交”来提交我们的网站。</p>
+<h5 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h5><ul>
+<li>登录百度站长平台：<a href="https://ziyuan.baidu.com/?castk=40323uq72cf42a5a5d360" target="_blank" rel="noopener">zhanzhang.baidu.com</a>，只要有百度旗下的账号就可以登录。</li>
+<li>登录成功之后在站点管理中点击 <a href="https://ziyuan.baidu.com/site/siteadd" target="_blank" rel="noopener">添加网站</a>，然后输入你的站点地址，建议输入的网站为www开头的，不要输入github.io的，因为github是不允许百度的spider爬取github上的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名。</li>
+<li>在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：<blockquote>
+<p>文件验证<br>html标签验证<br>cname解析验证</p>
+</blockquote>
+</li>
+</ul>
+<p>使用哪一种方式都可以，都是比较简单的，但是一定要注意，使用文件验证文件存放的位置需要放在 <code>source</code> 文件夹下，如果是 html 文件那么 hexo 就会将其编译，所以必须要加上的<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">----------</span><br><span class="line">layout:<span class="literal">false</span></span><br><span class="line">----------</span><br></pre></td></tr></table></figure></p>
+<p>这样就不会被hexo编译。（个人推荐文件验证和cname验证，cname验证最为简单，只需加一条解析就好。</p>
+<h5 id="生成网站地图"><a href="#生成网站地图" class="headerlink" title="生成网站地图"></a>生成网站地图</h5><p>我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎</p>
+<ul>
+<li><p>安装sitemap插件</p>
+<blockquote>
+<p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save</p>
+</blockquote>
+</li>
+<li><p>修改博客配置文件</p>
+</li>
+</ul>
+<p>在根目录 _config.yml 配置文件中修改 url 为你的站点地址。</p>
+<ul>
+<li>执行生成命令，然后部署到站点上</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>执行完之后就会在网站根目录生成 <code>sitemap.xml</code> 文件和 <code>baidusitemap.xml</code> 文件。</p>
+<h5 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h5><p>然后我们就可以将我们生成的 sitemap 文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和sitemap三种。</p>
+<blockquote>
+<p><strong>如何选择链接提交方式</strong><br>1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。<br>2、自动推送：最为便捷的提交方式，请将自动推送的JS代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。<br>3、sitemap：您可以定期将网站链接放到sitemap中，然后将sitemap提交给百度。百度会周期性的抓取检查您提交的sitemap，对其中的链接进行处理，但收录速度慢于主动推送。<br>4、手动提交：一次性提交链接给百度，可以使用此种方式。</p>
+</blockquote>
+<p>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法。从效率上来说：</p>
+<blockquote>
+<p>主动推送&gt;自动推送&gt;sitemap</p>
+</blockquote>
+<h6 id="主动推送"><a href="#主动推送" class="headerlink" title="主动推送"></a>主动推送</h6><ul>
+<li><p>安装插件</p>
+<blockquote>
+<p>npm install hexo-baidu-url-submit –save</p>
+</blockquote>
+</li>
+<li><p>新增字段</p>
+</li>
+</ul>
+<p>然后在根目录下的 <code>_config.yml</code> 配置文件中新增字段如下：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#baidu push | 百度主动推送</span><br><span class="line">baidu_url_submit:</span><br><span class="line">  count: 100 # 提交最新的一个链接</span><br><span class="line">  host: www.dinphy.wang # 在百度站长平台中注册的域名</span><br><span class="line">  token: EC9v8uvM0ph9kZZJ # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>加入新的deploy</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> - type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
+<p>这样执行 <code>hexo deploy</code> 的时候，新的链接就会被推送了。</p>
+<h6 id="设置自动推送"><a href="#设置自动推送" class="headerlink" title="设置自动推送"></a>设置自动推送</h6><p>在主题配置文件下设置,将baidu_push设置为true：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span><br><span class="line">baidu_push: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p>然后就会将以下代码自动推送到百度，位置是 <code>themes\indigo\layout\_partial\plugins\baidu.ejs</code> ,这样每次访问博客中的页面就会自动向百度提交sitemap。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">':'</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">'https'</span>) &#123;</span><br><span class="line">        bp.src = <span class="string">'https://zz.bdstatic.com/linksubmit/push.js'</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        bp.src = <span class="string">'http://push.zhanzhang.baidu.com/push.js'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&#123;% endif %&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h6 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h6><p>将我们上一步生成的sitemap文件提交到百度就可以了。</p>
+<p>站点被百度收录会花一定的时间，耐心等待即可。</p>
+<p>可以随时关注，在百度搜索 <code>site:cherryblog.site</code> 查看收录结果。</p>
+
+        </div>
+
+        <div class="post-copyright">
+
+        <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;list-style: none;font-size:14px;">
+	            <b>本文标题：</b> hexo 百度搜索引擎推送优化<br>
+	            <b>最后更新：</b>2018 年 06 月 10 日 - 16:06<br>
+	            <b>本文链接：</b><a href="http://www.dinphy.wang/posts/6198b0cf/">http://www.dinphy.wang/posts/6198b0cf/</a><br>
+	                 
+	                    <b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>
+	                
+        </blockquote>
+
+<br><br>
+    <footer>
+        <a href="http://www.dinphy.wang">
+            <img src="/img/avatar.jpg" alt="Dinphy - 简乐">
+            Dinphy - 简乐
+        </a>
+    </footer>
+</div>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SEO优化/">SEO优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web技术/">web技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/百度搜索/">百度搜索</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dinphy.wang/posts/6198b0cf/&title=《hexo 百度搜索引擎推送优化》 — Dinphy - 简乐&pic=http://www.dinphy.wang/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dinphy.wang/posts/6198b0cf/&title=《hexo 百度搜索引擎推送优化》 — Dinphy - 简乐&source=生活不易,快乐就好" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dinphy.wang/posts/6198b0cf/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo 百度搜索引擎推送优化》 — Dinphy - 简乐&url=http://www.dinphy.wang/posts/6198b0cf/&via=http://www.dinphy.wang" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dinphy.wang/posts/6198b0cf/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/fc4ce5e0/" id="post-next" class="post-nav-link">
+        <div style="text-align:right;">下一篇 <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <!-- <h4 class="title">再“战”高考</h4> -->
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz",
+            appKey: "4pmmj56YRbawceTeHCkLMT7n",
+            avatar: "mm",
+            placeholder: "Hi,留下您的足迹吧~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢您的鼓励，扫一扫吧(๑•ᴗ•๑)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.gif" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.gif" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        <p>
+            <!-- 
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss" aria-hidden="true"></i></a></span>
+             -->
+            
+    <span id="busuanzi_container_site_uv style='display:none'">
+        <i class="fa fa-area-chart"></i> &nbsp;您目前是第&nbsp;<i id="busuanzi_value_site_uv"></i>&nbsp;位访问者
+    </span>
+    <span id="busuanzi_container_site_pv style='display:none'">
+        <i class="fa fa-eye"></i> &nbsp;流量已达&nbsp;<i id="busuanzi_value_site_pv"></i>&nbsp;次
+    </span>
+
+
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Dinphy - 简乐 &copy; 2017 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/dinphy/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+    <div style="text-align:center;">
+	<b>友情链接：</b>
+	
+		<li style="display:inline;list-style:none;padding-left:5px;padding-right:5px;">
+		  <a href="https://blog.adymilk.cn/" target="_blank">三步枫</a>
+		</li>
+	
+		<li style="display:inline;list-style:none;padding-left:5px;padding-right:5px;">
+		  <a href="/menu/about.html" target="_blank">申请链接</a>
+		</li>
+	
+    </div>    
+</footer>
+
+
+
+    </main>
+
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dinphy.wang/posts/6198b0cf/&title=《hexo 百度搜索引擎推送优化》 — Dinphy - 简乐&pic=http://www.dinphy.wang/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dinphy.wang/posts/6198b0cf/&title=《hexo 百度搜索引擎推送优化》 — Dinphy - 简乐&source=生活不易,快乐就好" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dinphy.wang/posts/6198b0cf/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo 百度搜索引擎推送优化》 — Dinphy - 简乐&url=http://www.dinphy.wang/posts/6198b0cf/&via=http://www.dinphy.wang" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dinphy.wang/posts/6198b0cf/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAB00lEQVR42u3ay46DMAwF0P7/T3ekWXVR4NoOGTQ6WaGKhgMLK368XvF6/67P6891/vvRbuf3jBYuLu6Y+z5dOfeI0nvVw1fCxcXdyK0Gr+TFjvY5v76w4eLiPoybHFPyEIaLi/s/uPlj8vwFFxf3ydwk0PQOOue73Zir4eLiDri9guna69vru7i4uIu6EklhNNmtV2T5sg8uLu4WblLiPAdV70mOUBdhDhcX92ZuHrB6TdZ50eRLCMPFxb2ZO0ly8kA2Gd0oxGBcXNxF3Dw5qTZQJ0eoQzouLu4Wbt74TJKTZBSjV3y5SIRwcXGXcieDF5PWSN5kXTYngouLW+ROGp9J6TMvwi6b58LFxR1w88NNrwFTLZ4mSRcuLu5+bq+BmvyrmkTh4uL+FTcvhlZbJnmCVBgCw8XF3cKthpLeaEXSds0luLi4d3OTlkavdJI3ZgpPx8XF3cjtlUqrLZkFBVlcXNyN3OpgxHu8euVUXFzcPdxeqKqOYvRGN0ZBFhcXd8zNg84qSt6YOazi4OLibuGuCl7nMXKU/ODi4j6Sm49h5elN3qDFxcV9Mrd6JKq2Wy72wcXF3cidFEl7CVL1A+Hi4u7kztuovaRoMrCFi4t7G/cHi/W0e7VIfk0AAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!--<script src="//cdn.bootcss.com/node-waves/0.7.5/waves.min.js"></script>-->
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/waves.min.js"></script>
+<script src="/js/main.min.js?v=2.0.0"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script async src="/js/search.min.js?v=2.0.0"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+    <div class="music" id="music"></div>
+</body>
+</html>
