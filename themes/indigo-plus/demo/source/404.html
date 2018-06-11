@@ -1,0 +1,78 @@
+---
+layout: post
+comments: false
+abbrlink: '0'
+---
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>404</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8;">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="robots" content="all">
+	<meta name="robots" content="index,follow">
+</head>
+<style>
+	body, .container {
+		background-color: #fff;
+	}
+	img {
+		box-shadow: none !important;
+	}
+	img._404 {
+		max-width: 380px;
+		max-height: 380px;
+		width: 100%;
+		height: 100%;
+	}
+	span._404 {
+		font-size: 32px;
+		display: block;
+	}
+	.flex {
+		display: flex;
+	}
+	.flex-column {
+		flex-direction: column;
+	}
+	.flex-1 {
+		flex: 1;
+	}
+
+	.ai-center {
+		align-items: center;
+	}
+	.box {
+		padding: 20px;
+		padding-left: 60px;
+		min-height: 360px;
+	}
+	.ai-end {
+	   align-items: flex-end;
+	}
+</style>
+<body>
+    <div class="flex ai-center">
+        <img class="_404" src="/img/404.svg">
+        <div class="box flex flex-column">
+            <span class="_404">喔~糟糕 404</span>
+            <span>一叶浮萍归大海，人生何处不相逢？</span>
+			<span>欢迎你，这是荒无人烟的地方！</span>
+            <br>
+            <span>你找的是：<span id="title"></span></span>
+            <span>此文章可能已删除或者已经改名了！</span>
+            <div class="flex flex-1 ai-end">
+                点击&nbsp;&nbsp;<a href="/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;首页</a>&nbsp;&nbsp;返回
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var title = document.getElementById("title");
+        var url = window.location.href;
+        var index = url.slice(0, url.length - 1).lastIndexOf('/') + 1;
+        title.style.color = '#f34';
+        title.innerText = decodeURI(url.slice(index).replace(/(\.html|\/)$/, ''));
+    </script>
+</body>
+</html>
