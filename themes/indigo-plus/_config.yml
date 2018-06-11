@@ -85,9 +85,9 @@ archives_title: 归档
 categories_title: 分类
 
 # 文章截断
-excerpt_render: false
+excerpt_render: true
 excerpt_length: 280
-excerpt_link: 展开全文...
+excerpt_link: 展开全文
 mathjax: false
 archive_yearly: true
 

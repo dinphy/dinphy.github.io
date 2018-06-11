@@ -21,6 +21,7 @@ date: 2018-06-04 10:43:00
 > hexo init
 > npm install
 
+<!--more-->
 indigo 主题的所有依赖文件列表 package.json :
 ```js
 {
