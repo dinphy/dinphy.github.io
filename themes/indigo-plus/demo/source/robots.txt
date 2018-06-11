@@ -43,4 +43,7 @@ Disallow: /categories/*
 Disallow: /tags/*
 Disallow: /archives/*
 
-Sitemap: https://dinphy.github.io/sitemap.xml
+Sitemap: http://www.dinphy.wang/sitemap.xml
+Sitemap: http://www.dinphy.wang/baidusitemap.xml
+Sitemap: http://dinphy.wang/sitemap.xml
+Sitemap: http://dinphy.wang/baidusitemap.xml

@@ -1,4 +1,4 @@
-title: 通过 hexo-admin 插件后台管理发布文章
+title: hexo-admin 插件使用
 author: Dinphy - 简乐
 abbrlink: 96d8dc65
 tags:
@@ -15,6 +15,8 @@ date: 2018-05-25 15:07:00
 - 先使用官方的方法安装hexo-admin插件`npm install --save hexo-admin`
 - 然后使用我FORK过来的[hexo-admin](https://github.com/dinphy/hexo-admin)
 - 将我FORK过来的hexo-admin克隆下来到hexo根目录
+
+<!--more-->
 >git clone https://github.com/dinphy/hexo-admin.git
 - 进入克隆下来的hexo-admin目录，执行`npm link`;
 - 在 hexo 根目录下执行 `npm link hexo-admin`;

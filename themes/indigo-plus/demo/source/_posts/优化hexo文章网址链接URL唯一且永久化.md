@@ -1,4 +1,4 @@
-title: 优化hexo文章网址链接URL唯一且永久化
+title: hexo-abbrlink 插件使用
 categories:
   - 学习参考
   - ''
@@ -26,6 +26,7 @@ abbrlink:
 	alg: crc32
 	rep: hex
 ```
+<!--more-->
 这样就确保了文章链接的唯一化，只要不修改md文件的abbrlink的值，url就永久不会改变。如此md文件名和文件内容也可以随便改了。
 
 ### 添加robots.txt
