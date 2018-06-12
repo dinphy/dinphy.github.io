@@ -63,7 +63,7 @@ abbrlink: '0'
 	<div class="settings">
 		<i class="icon"></i>
 		<p><i>很抱歉！没有找到您要访问的页面！</i></p>
-		<p><span id="num">5</span> 秒后将自动跳转到首页</p>
+		<p><span id="num">10</span> 秒后将自动跳转到首页</p>
 		<b>你找的是：<span id="title"></span></b>
 		<div>
 			<a href="/" title="返回首页">返回首页</a>
@@ -79,7 +79,7 @@ abbrlink: '0'
 		$_num.html(num);
 		if(num===0){
 			//跳转地址写在这里
-			window.location.href="#";
+			window.location.href="/";
 		}
 	},1000);
 	//返回按钮单击事件
