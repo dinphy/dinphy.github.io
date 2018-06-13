@@ -258,18 +258,19 @@
 	//屏幕宽度在120到760之间
     @media screen and (min-width: 120px) and (max-width: 760px) {
         .post-list, .article-card {
-            max-width: 761px;
+            max-width: 700;
         }
 
         .post-list {
             display: flex;
             flex-wrap: wrap;
+			-webkit-justify-content: center;
             justify-content: center;
             box-shadow: none;
 
             > li {
-                width: (761px - 8px * 2) / 2;
-                margin: 0 auto;
+                width: (670px - 8px * 2) / 2;
+                margin: 1px auto;
                 padding: 0;
 
                 > article {
@@ -280,7 +281,7 @@
                     flex-direction: column;
                     border: none;
                     background-color: rgba(255, 255, 255, 1);
-                    box-shadow: 0 2px 5px rgba(1, 1, 1, 0.34);
+                    box-shadow: 0 5px 12px rgba(1, 1, 1, 0.34);
                 }
             }
         }
