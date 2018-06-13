@@ -15,20 +15,9 @@
     <%- partial('post/title', { hasLink: true }) %>
 
     <div class="post-content" id="post-content" itemprop="postContent">
-
-    <% if(theme.excerpt_render) { %>
-        <%- post.excerpt || post.content %>
-    <% } else { %>
-        <%- post.excerpt ? strip_html(post.excerpt) : truncate(strip_html(post.content), {
-            length: theme.excerpt_length
-        }) %>
-    <% } %>
-	<div style="text-align:center;padding:5px;">
-		<a href="<%- url_for(post.path) %>" class="post-more waves-effect waves-button">
-		<span style="padding-right:5px;"><%-theme.excerpt_link%></span>
-		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-		</a>
-	</div>
+		<% if(theme.excerpt_render) { %>
+			<%- post.excerpt || post.content %>
+		<% } %>
     </div>
     <% if(post.tags && post.tags.length){ %>
     <div class="post-footer">
@@ -36,3 +25,9 @@
     </div>
     <% } %>
 </article>
+<div class="more">
+	<a href="<%- url_for(post.path) %>">
+		<%-theme.excerpt_link%>
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>

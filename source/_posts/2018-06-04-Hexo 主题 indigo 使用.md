@@ -3,8 +3,8 @@ author: Dinphy - 简乐
 abbrlink: f52ea714
 tags:
   - web技术
-  - hexo
   - github
+  - 主题
 categories:
   - 学习参考
 date: 2018-06-04 10:43:00
@@ -21,7 +21,6 @@ date: 2018-06-04 10:43:00
 > hexo init
 > npm install
 
-<!--more-->
 indigo 主题的所有依赖文件列表 package.json :
 ```js
 {

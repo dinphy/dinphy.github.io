@@ -4,6 +4,7 @@ abbrlink: 96d8dc65
 tags:
   - web技术
   - hexo
+  - 插件使用
 categories:
   - 学习参考
 date: 2018-05-25 15:07:00
@@ -16,7 +17,6 @@ date: 2018-05-25 15:07:00
 - 然后使用我FORK过来的[hexo-admin](https://github.com/dinphy/hexo-admin)
 - 将我FORK过来的hexo-admin克隆下来到hexo根目录
 
-<!--more-->
 >git clone https://github.com/dinphy/hexo-admin.git
 - 进入克隆下来的hexo-admin目录，执行`npm link`;
 - 在 hexo 根目录下执行 `npm link hexo-admin`;
