@@ -4,6 +4,7 @@
 
     
     
+    
   <url>
     <loc>http://www.dinphy.wang/posts/909dea05/</loc>
     <lastmod>2018-06-11T13:22:54.532Z</lastmod>
@@ -103,20 +104,16 @@
 
     
   <url>
-    <loc>http://www.dinphy.wang/posts/8e1e451e/</loc>
+    <loc>http://www.dinphy.wang/posts/31143271/</loc>
     <lastmod>2018-06-11T13:22:54.530Z</lastmod>
     <data>
         <display>
-        <title>Hexo 主题 teal 使用</title>
-        <pubTime>2018-05-20T10:35:00.000Z</pubTime>
+        <title>hexo-abbrlink 插件使用</title>
+        <pubTime>2018-05-19T04:16:00.000Z</pubTime>
         
         <tag>web技术</tag>
          
         <tag>hexo</tag>
-         
-        <tag>学习笔记</tag>
-         
-        <tag>blog</tag>
          
         <tag>github</tag>
          
@@ -131,14 +128,18 @@
 
     
   <url>
-    <loc>http://www.dinphy.wang/posts/31143271/</loc>
+    <loc>http://www.dinphy.wang/posts/8e1e451e/</loc>
     <lastmod>2018-06-11T13:22:54.530Z</lastmod>
     <data>
         <display>
-        <title>hexo-abbrlink 插件使用</title>
-        <pubTime>2018-05-19T04:16:00.000Z</pubTime>
+        <title>Hexo 主题 teal 使用</title>
+        <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
+        <tag>学习笔记</tag>
+         
         <tag>web技术</tag>
+         
+        <tag>blog</tag>
          
         <tag>hexo</tag>
          
@@ -173,7 +174,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://www.dinphy.wang/posts/f77a468f/</loc>

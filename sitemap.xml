@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dinphy.wang/404.html</loc>
+    
+    <lastmod>2018-06-12T07:01:50.995Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dinphy.wang/menu/about.html</loc>
     
     <lastmod>2018-06-11T13:22:54.533Z</lastmod>
@@ -37,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://www.dinphy.wang/posts/8e1e451e/</loc>
+    <loc>http://www.dinphy.wang/posts/31143271/</loc>
     
     <lastmod>2018-06-11T13:22:54.530Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.dinphy.wang/posts/31143271/</loc>
+    <loc>http://www.dinphy.wang/posts/8e1e451e/</loc>
     
     <lastmod>2018-06-11T13:22:54.530Z</lastmod>
     
@@ -54,13 +61,6 @@
     <loc>http://www.dinphy.wang/posts/a33ad06e/</loc>
     
     <lastmod>2018-06-11T13:22:54.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dinphy.wang/404.html</loc>
-    
-    <lastmod>2018-06-11T13:16:44.540Z</lastmod>
     
   </url>
   
