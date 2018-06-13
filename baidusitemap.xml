@@ -3,6 +3,32 @@
 
 
     
+  <url>
+    <loc>http://www.dinphy.wang/posts/6198b0cf/</loc>
+    <lastmod>2018-06-13T10:17:39.736Z</lastmod>
+    <data>
+        <display>
+        <title>hexo 百度搜索引擎推送优化</title>
+        <pubTime>2018-06-10T07:55:00.000Z</pubTime>
+        
+        <tag>web技术</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>百度搜索</tag>
+         
+        <tag>SEO优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -22,30 +48,6 @@
         <tag>封装</tag>
          
         <tag>纯净</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dinphy.wang/posts/1eb48005/</loc>
-    <lastmod>2018-06-11T13:22:54.531Z</lastmod>
-    <data>
-        <display>
-        <title>hexo + github搭建的网站域名绑定</title>
-        <pubTime>2018-06-04T02:35:00.000Z</pubTime>
-        
-        <tag>web技术</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
          
          
            
@@ -104,22 +106,18 @@
 
     
   <url>
-    <loc>http://www.dinphy.wang/posts/8e1e451e/</loc>
-    <lastmod>2018-06-11T13:22:54.530Z</lastmod>
+    <loc>http://www.dinphy.wang/posts/1eb48005/</loc>
+    <lastmod>2018-06-11T13:22:54.531Z</lastmod>
     <data>
         <display>
-        <title>Hexo 主题 teal 使用</title>
-        <pubTime>2018-05-20T10:35:00.000Z</pubTime>
+        <title>hexo + github搭建的网站域名绑定</title>
+        <pubTime>2018-06-04T02:35:00.000Z</pubTime>
         
         <tag>web技术</tag>
          
         <tag>hexo</tag>
          
         <tag>github</tag>
-         
-        <tag>学习笔记</tag>
-         
-        <tag>blog</tag>
          
          
            
@@ -144,6 +142,34 @@
         <tag>hexo</tag>
          
         <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dinphy.wang/posts/8e1e451e/</loc>
+    <lastmod>2018-06-11T13:22:54.530Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo 主题 teal 使用</title>
+        <pubTime>2018-05-20T10:35:00.000Z</pubTime>
+        
+        <tag>web技术</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>学习笔记</tag>
+         
+        <tag>blog</tag>
          
          
            
@@ -235,32 +261,6 @@
            
              
               <breadCrumb title="生活感悟" url="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dinphy.wang/posts/6198b0cf/</loc>
-    <lastmod>2018-06-11T03:06:54.065Z</lastmod>
-    <data>
-        <display>
-        <title>hexo 百度搜索引擎推送优化</title>
-        <pubTime>2018-06-10T07:55:00.000Z</pubTime>
-        
-        <tag>web技术</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>百度搜索</tag>
-         
-        <tag>SEO优化</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
           
         </display>
     </data>
