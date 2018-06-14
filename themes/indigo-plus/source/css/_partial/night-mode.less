@@ -23,52 +23,52 @@
     .header-icon {
         color: #dedede;
     }
-	
-	.icon-sun-o:before {
-		//icon-moon-o
-		content: "\f186";
+
+    .icon-sun-o:before {
+	//icon-moon-o
+	content: "\f186";
+    }
+
+    #comments.vcomment {
+	background: #222;
+	border: 1px solid #333;
+	.vinput {
+		&:focus {
+			border-bottom: 1px solid #333
+		}
 	}
-	
-	#comments.vcomment {
-		background: #222;
-		border: 1px solid #333;
-			.vinput {
-				&:focus {
-					border-bottom: 1px solid #333
-				}
-			}
-			.vwrap {
-				border: 1px solid #333
-			}
-			.vcount,
-			.vnum,
-			.vname,
-			.vnick,
-			.vmail,
-			.vlink,
-			.vcontent p {
-				color: #ddd;
-				border-bottom: 1px solid #333;
-			}
-			.vemoji-btn,
-			.vpreview-btn,
-			.col a {
-				color: #999;
-			}
-			.vemojis {
-				background: #fff;
-				opacity: 0.4;
-			}
-			.vcard {
-				section {
-					border-bottom: 1px solid #333
-				}
-			}
+	.vwrap {
+		border: 1px solid #333
 	}
-	
-	.links {
+	.vcount,
+	.vnum,
+	.vname,
+	.vnick,
+	.vmail,
+	.vlink,
+	.vcontent p {
 		color: #ddd;
+		border-bottom: 1px solid #333;
 	}
+	.vemoji-btn,
+	.vpreview-btn,
+	.col a {
+		color: #999;
+	}
+	.vemojis {
+		background: #fff;
+		opacity: 0.4;
+	}
+	.vcard {
+		section {
+			border-bottom: 1px solid #333
+		}
+	}
+    }
+
+    .links {
+	color: #ddd;
+    }
 	
     & *::-webkit-scrollbar,
     &::-webkit-scrollbar {
