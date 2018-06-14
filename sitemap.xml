@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dinphy.wang/menu/about.html</loc>
+    
+    <lastmod>2018-06-14T10:43:34.405Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dinphy.wang/posts/a2aa53fc/</loc>
     
     <lastmod>2018-06-14T10:36:37.475Z</lastmod>
@@ -96,13 +103,6 @@
     <loc>http://www.dinphy.wang/404.html</loc>
     
     <lastmod>2018-06-12T07:01:50.995Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dinphy.wang/menu/about.html</loc>
-    
-    <lastmod>2018-06-11T13:22:54.533Z</lastmod>
     
   </url>
   
