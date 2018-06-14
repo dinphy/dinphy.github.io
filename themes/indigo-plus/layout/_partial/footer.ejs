@@ -13,17 +13,17 @@
                 <% if (theme.ICP_license) { %>
                 <a href="http://www.miitbeian.gov.cn/" target="_blank"><%- theme.ICP_license %></a><br>
                 <% } %>
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/dinphy/hexo-theme-indigo" target="_blank">indigo</a>
+                本站基于 <a href="http://hexo.io/" target="_blank">Hexo</a> 搭建
             </span>
         </p>
     </div>
-    <div style="text-align:center;">
+    <div class="links">
 	<b>友情链接：</b>
 	<%
 	  for (var i in theme.links) {
 		link = theme.links[i];
 	%>
-		<li style="display:inline;list-style:none;padding-left:5px;padding-right:5px;">
+		<li>
 		  <a href="<%- url_for(link) %>" target="_blank"><%= i %></a>
 		</li>
 	<% } %>
