@@ -28,7 +28,31 @@
 		//icon-moon-o
 		content: "\f186";
 	}
-
+	
+	#comments.vcomment {
+		background: #222;
+		border: 1px solid #333;
+			.vinput {
+				&:focus {
+					border-bottom: 1px solid #333
+				}
+			}
+			.vwrap {
+				border: 1px solid #333
+			}
+			.vnick,
+			.vmail,
+			.vlink {
+				color: #999;
+				border-bottom: 1px solid #333;
+			}
+			.vcard {
+				section {
+					border-bottom: 1px solid #333
+				}
+			}
+	}
+	
     & *::-webkit-scrollbar,
     &::-webkit-scrollbar {
         &-track-piece {
