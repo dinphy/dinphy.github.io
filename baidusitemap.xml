@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/a2aa53fc/</loc>
+    <lastmod>2018-06-15T02:17:59.356Z</lastmod>
+    <data>
+        <display>
+        <title>习惯就好</title>
+        <pubTime>2018-06-14T09:37:00.000Z</pubTime>
+        
+        <tag>好习惯</tag>
+         
+        <tag>培养</tag>
+         
+         
+           
+             
+              <breadCrumb title="业余小作" url="http://www.dinphy.wang/categories/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/8b51e2ad/</loc>
-    <lastmod>2018-06-15T01:45:01.378Z</lastmod>
+    <lastmod>2018-06-15T01:54:26.015Z</lastmod>
     <data>
         <display>
         <title>使用JQuery中的attr()获取和设置元素属性</title>
@@ -27,28 +49,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://www.dinphy.wang/posts/a2aa53fc/</loc>
-    <lastmod>2018-06-14T10:36:37.475Z</lastmod>
-    <data>
-        <display>
-        <title>习惯就好</title>
-        <pubTime>2018-06-14T09:37:00.000Z</pubTime>
-        
-        <tag>好习惯</tag>
-         
-        <tag>培养</tag>
-         
-         
-           
-             
-              <breadCrumb title="业余小作" url="http://www.dinphy.wang/categories/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://www.dinphy.wang/posts/e2ef2032/</loc>
@@ -128,9 +128,9 @@
         <title>小儿难养</title>
         <pubTime>2018-06-06T02:07:00.000Z</pubTime>
         
-        <tag>生活感悟</tag>
-         
         <tag>业余小作</tag>
+         
+        <tag>生活感悟</tag>
          
          
            
@@ -222,9 +222,9 @@
         <title>月下江边行</title>
         <pubTime>2018-05-25T06:24:00.000Z</pubTime>
         
-        <tag>生活感悟</tag>
-         
         <tag>业余小作</tag>
+         
+        <tag>生活感悟</tag>
          
          
            
@@ -244,9 +244,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>web技术</tag>
+         
+        <tag>学习笔记</tag>
          
         <tag>blog</tag>
          
