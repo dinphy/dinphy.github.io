@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>使用JQuery中的attr()获取和设置元素属性</title>
+      <link href="/posts/8b51e2ad/"/>
+      <url>/posts/8b51e2ad/</url>
+      <content type="html"><![CDATA[<h5 id="attr-函数简介"><a href="#attr-函数简介" class="headerlink" title="attr() 函数简介"></a>attr() 函数简介</h5><p>jquery 中用 attr() 方法来获取和设置元素属性,attr 是 attribute（属性）的缩写，在jQuery DOM操作中会经常用到attr()，attr()有4个表达式。</p><h5 id="语法定义"><a href="#语法定义" class="headerlink" title="语法定义"></a>语法定义</h5><blockquote><p>$(selector).attr(attribute)<br>$(selector).attr(attribute,value)<br>$(selector).attr(attribute,function(index,oldvalue))<br>$(selector).attr({attribute:value, attribute:value …})</p></blockquote><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td>selector</td><td>获取将要设置属性的元素。</td></tr><tr><td>attribute</td><td>规定要获取其值的属性或名称。</td></tr><tr><td>value</td><td>规定属性的值。</td></tr><tr><td>function(index,oldvalue)</td><td>该函数可接收并使用选择器的 index 值和当前属性值。</td></tr><tr><td>attribute:value</td><td>规定一个或多个属性/值对。</td></tr></tbody></table><h5 id="实例运用"><a href="#实例运用" class="headerlink" title="实例运用"></a>实例运用</h5><ul><li>HTML结构<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"javascript:;"</span> id=<span class="string">"theme-toggle"</span> title=<span class="string">"黑白切换"</span>&gt;</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"icon icon-lg icon-sun-o"</span> style=<span class="string">"font-weight: bold"</span>&gt;&lt;/i&gt;</span><br><span class="line">&lt;<span class="regexp">/a&gt;</span></span><br></pre></td></tr></table></figure></li></ul><p>这是本站黑夜白天模式切换的一个案例，此行的木碧是获取 a 元素中的 title 属性，然后将其值修改，为了避免 a 元素和页面上的其他元素混淆，这里定义了一个 id ，通过 id 来获取比较唯一。</p><ul><li>script脚本<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (theme !== <span class="string">'night'</span>) &#123;</span><br><span class="line">body.classList.add(<span class="string">'night-mode'</span>);</span><br><span class="line">S.setItem(<span class="string">'theme'</span>, <span class="string">'night'</span>);</span><br><span class="line">$(<span class="string">'#theme-toggle'</span>).attr(<span class="string">'title'</span>,<span class="string">'当前是夜间模式'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">body.classList.remove(<span class="string">'night-mode'</span>);</span><br><span class="line">S.setItem(<span class="string">'theme'</span>, <span class="string">'not-night'</span>);</span><br><span class="line">$(<span class="string">'#theme-toggle'</span>).attr(<span class="string">'title'</span>,<span class="string">'当前是日间模式'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>这里用到的是 attr() 中的第二种语法：</p><blockquote><p>$(selector).attr(attribute,value)</p></blockquote><h5 id="更多参考"><a href="#更多参考" class="headerlink" title="更多参考"></a>更多参考</h5><ul><li><a href="http://www.w3school.com.cn/jquery/attributes_attr.asp" target="_blank" rel="noopener">jQuery 属性操作 - attr() 方法</a></li><li><a href="https://blog.csdn.net/IT_beast/article/details/52203305" target="_blank" rel="noopener">JQuery中attr()获取和设置元素属性</a></li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 学习参考 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JQuery </tag>
+            
+            <tag> attr </tag>
+            
+            <tag> 设置属性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>习惯就好</title>
       <link href="/posts/a2aa53fc/"/>
       <url>/posts/a2aa53fc/</url>
