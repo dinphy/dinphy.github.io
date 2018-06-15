@@ -27,10 +27,12 @@
                 if (theme !== 'night') {
                     body.classList.add('night-mode');
                     S.setItem('theme', 'night');
+					$('#theme-toggle').attr('title','当前是夜间模式');
                 }
                 else {
                     body.classList.remove('night-mode');
                     S.setItem('theme', 'not-night');
+					$('#theme-toggle').attr('title','当前是日间模式');
                 }
             }
 
