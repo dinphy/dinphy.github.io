@@ -41,19 +41,11 @@ var Pages = React.createClass({
     Router.transitionTo('page', {pageId: id})
   },
 
-  fetchSinglePostData: function(id) {
-    api.page(id).then((data) => {
-      this.setState({
-        current: data
-      });
-    });
-  },
-
   render: function () {
     if (!this.state.pages) {
       return <div className='pages'>Loading...</div>
     }
-    var current = this.state.current || {}
+    var current = this.state.pages[this.state.selected] || {}
     var url = window.location.href.replace(/^.*\/\/[^\/]+/, '').split('/')
     var rootPath = url.slice(0, url.indexOf('admin')).join('/')
     return <div className="posts">
@@ -67,13 +59,13 @@ var Pages = React.createClass({
                 "posts_post--selected": i === this.state.selected
               })}
               onDoubleClick={this.goTo.bind(null, page._id)}
-              onClick={this.fetchSinglePostData.bind(this, page._id)}
+              onClick={this.setState.bind(this, {selected: i}, null)}
             >
               <span className="posts_post-title">
                 {page.title}
               </span>
               <span className="posts_post-date">
-                {moment(page.date).format('MMM Do YYYY')}
+                {moment(page.date).format('YYYY-MM-DD')}
               </span>
               <a className='posts_perma-link' target="_blank" href={rootPath + '/' + page.path}>
                 <i className='fa fa-link'/>
@@ -89,7 +81,7 @@ var Pages = React.createClass({
         'posts_display': true,
         'posts_display--draft': current.isDraft
       })}>
-        {current.isDraft && <div className="posts_draft-message">Draft</div>}
+        {current.isDraft && <div className="posts_draft-message">草稿</div>}
         <Rendered
           ref="rendered"
           className="posts_content"

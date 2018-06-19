@@ -129,7 +129,7 @@ admin:
   username: dinphy
   password_hash: $2a$10$Cjsi8jHIzInUtkSBaK9tnOyv3oqqcJPS2MF3Mz6FlGj2JNQYlwVhm
   secret: Life is not easy, happiness is good
-  deployCommand: 'hexo-deploy.sh'
+  deployCommand: 'deploy.sh'
 
 #baidu push | 百度主动推送
 baidu_url_submit:

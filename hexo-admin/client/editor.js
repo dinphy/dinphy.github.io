@@ -10,8 +10,12 @@ var Rendered = require('./rendered')
 var CheckGrammar = require('./check-grammar')
 var ConfigDropper = require('./config-dropper')
 var RenameFile = require('./rename-file')
+var PopGallery = require('./pop-gallery')
 
 var Editor = React.createClass({
+
+  // cmRef: null,
+
   propTypes: {
     post: PT.object,
     raw: PT.string,
@@ -23,22 +27,36 @@ var Editor = React.createClass({
     onPublish: PT.func.isRequired,
     onUnpublish: PT.func.isRequired,
     tagsCategoriesAndMetadata: PT.object,
-    adminSettings: PT.object
+    adminSettings: PT.object,
+
   },
 
   getInitialState: function() {
-    var url = window.location.pathname.split('/')
-    var rootPath = url.slice(0, url.indexOf('admin')).join('/')
+    //FIXME, use href is right!
+    var url = window.location.href.split('/')
+    var rootPath = url.slice(0, url.indexOf('admin')).join('/');
+    var completeURL = rootPath+'/'+this.props.post.path;
     return {
-      previewLink: path.join(rootPath, this.props.post.path),
+      postPath: this.props.post.path,
+      previewLink: completeURL,
       checkingGrammar: false,
+      openGallery: false
     }
   },
 
-  handlePreviewLink: function(previewLink) {
-    console.log('updating preview link')
+  // TODO, ...just for test
+  componentDidMount: function() {
+
+  },
+
+  // recreate previewLink
+  handlePreviewLink: function(postNewPath) {
+    var url = window.location.href.split('/')
+    var rootPath = url.slice(0, url.indexOf('admin')).join('/');
+    var completeURL = rootPath+'/'+postNewPath;
     this.setState({
-      previewLink: path.join(previewLink)
+      postPath: postNewPath,
+      previewLink: completeURL
     })
   },
 
@@ -57,12 +75,30 @@ var Editor = React.createClass({
   onCheckGrammar: function () {
     this.setState({
       checkingGrammar: !this.state.checkingGrammar
-    })
+    });
+  },
+
+  // TODO, ...add real image address...
+  onAddImage: function () {
+    this.setState({
+      // mdImg: '![image]()',
+      openGallery: !this.state.openGallery
+    });
+  },
+
+  // hide the gallery
+  handleEditFocus: function () {
+    this.setState({openGallery: false});
+  },
+
+  handleImgSelect: function (img) {
+    this.setState({
+      //mdImg: '![image](/images/'+img+')',
+	  mdImg: '![](https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/'+img+')',
+    });
   },
 
   render: function () {
-    var link = this.state.previewLink;
-    link = '/' + link;
     return <div className={cx({
       "editor": true,
       "editor--draft": this.props.isDraft
@@ -72,32 +108,46 @@ var Editor = React.createClass({
           className='editor_title'
           value={this.props.title}
           onChange={this.handleChangeTitle}/>
+
         {!this.props.isPage && <ConfigDropper
           post={this.props.post}
           tagsCategoriesAndMetadata={this.props.tagsCategoriesAndMetadata}
           onChange={this.props.onChange}/>}
+
         {!this.props.isPage && (this.props.isDraft ?
+          /* this is a comment for publish button */
           <button className="editor_publish" onClick={this.props.onPublish}>
-            Publish
+            发布
           </button> :
           <button className="editor_unpublish" onClick={this.props.onUnpublish}>
-            Unpublish
+            取消发布
           </button>)}
+
           {!this.props.isPage && (this.props.isDraft ?
-          <button className="editor_remove" title="Remove"
+          <button className="editor_remove" title="删除"
                   onClick={this.props.onRemove}>
             <i className="fa fa-trash-o" aria-hidden="true"/>
           </button> :
-          <button className="editor_remove" title="Can't Remove Published Post"
+          <button className="editor_remove" title="无法删除已发布的文章"
                   onClick={this.props.onRemove} disabled>
             <i className="fa fa-trash-o" aria-hidden="true"/>
           </button>)}
+
           {!this.props.isPage &&
-          <button className="editor_checkGrammar" title="Check for Writing Improvements"
+          <button className="editor_checkGrammar" title="检查写作改进"
                   onClick={this.onCheckGrammar}>
             <i className="fa fa-check-circle-o"/>
           </button>}
+          {/* add image button */}
+          {!this.props.isPage &&
+            <button className="editor_addImage" title="添加图像到文章"
+                    onClick={this.onAddImage}>
+              <i className="fa fa-picture-o"/>
+            </button>
+          }
+
       </div>
+
       <div className="editor_main">
         <div className="editor_edit">
           <div className="editor_md-header">
@@ -110,20 +160,23 @@ var Editor = React.createClass({
                 handlePreviewLink={this.handlePreviewLink} /></span>
           </div>
           <CodeMirror
+            mdImg={this.state.mdImg}
+            onFocus={this.handleEditFocus}
+            forceLineNumbers={this.state.checkingGrammar}
             onScroll={this.handleScroll}
             initialValue={this.props.raw}
             onChange={this.props.onChangeContent}
-            forceLineNumbers={this.state.checkingGrammar}
             adminSettings={this.props.adminSettings} />
         </div>
+        {/* end of editor */}
         <div className="editor_display">
           <div className="editor_display-header">
             <span className="editor_word-count">
-              {this.props.wordCount} words
+              {this.props.wordCount} 个字
             </span>
-            Preview
-            {' '}<a className="editor_perma-link" href={'/' + this.state.previewLink} target="_blank">
-              <i className="fa fa-link"/> {this.state.previewLink}
+            预览
+            {' '}<a className="editor_perma-link" href={this.state.previewLink} target="_blank">
+              <i className="fa fa-link"/> {this.state.postPath}
             </a>
           </div>
           {!this.state.checkingGrammar && <Rendered
@@ -134,9 +187,13 @@ var Editor = React.createClass({
             toggleGrammar={this.onCheckGrammar}
             raw={this.props.updatedRaw} />}
         </div>
+        {/* end of editor_display */}
       </div>
+      {/* end of editor_main */}
+      {this.state.openGallery && <PopGallery onChange={this.handleImgSelect}/>}
     </div>;
-  }
-})
+    {/* end of editor template */}
+  }// end of render()
+})// end of component
 
 module.exports = Editor

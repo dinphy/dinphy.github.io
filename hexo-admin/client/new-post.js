@@ -2,7 +2,6 @@
 var React = require('react')
 var PT = React.PropTypes
 var api = require('./api')
-var Router = require('react-router');
 
 var NewPost = React.createClass({
   propTypes: {
@@ -13,7 +12,7 @@ var NewPost = React.createClass({
     return {
       showing: false,
       loading: true,
-      text: 'Untitled'
+      text: '请输入文件名'
     }
   },
 
@@ -46,12 +45,8 @@ var NewPost = React.createClass({
     e.preventDefault();
     this.setState({loading: true, showing: false})
     api.newPost(this.state.text).then((post) => {
-      this.setState({showing: false, text: 'Untitled'})
-      if (this.props.onNew) {
-        this.props.onNew(post)
-      } else {
-        Router.transitionTo('post', {postId: post._id})
-      }
+      this.setState({showing: false, text: '请输入文章标题'})
+      this.props.onNew(post)
     }, (err) => {
       console.error('Failed! to make post', err)
     })
@@ -72,7 +67,7 @@ var NewPost = React.createClass({
       return <div className="new-post" onClick={this._onShow}>
         <div className="new-post_button">
           <i className="fa fa-plus"/>{' '}
-          New Post
+          新建文章
         </div>
       </div>
     }
@@ -86,13 +81,9 @@ var NewPost = React.createClass({
         onChange={this._onChange}
         />
       <i className="fa fa-check-circle new-post_ok"
-        onMouseDown={this._onSubmit}
-        onTouchStart={this._onSubmit}
-        ></i>
+        onMouseDown={this._onSubmit} ></i>
       <i className="fa fa-times-circle new-post_cancel"
-        onMouseDown={this._onCancel} 
-        onTouchStart={this._onCancel} 
-        ></i>
+        onMouseDown={this._onCancel} ></i>
     </div>
   }
 })

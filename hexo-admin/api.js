@@ -142,6 +142,21 @@ module.exports = function (app, hexo) {
     })
   }
 
+  //TODO, get gallery data
+  use('gallery/list', function (req, res) {
+    var json = 'hexo-admin-ehc-images.json';
+    var file = path.join(hexo.source_dir, json);
+    var content = fs.readFileSync(file);
+    res.done(JSON.parse(content));
+  });
+  //TODO, save new uploads to json
+  use('gallery/set', function (req, res) {
+    res.done({
+      result: 'success'
+    })
+  });
+
+
   use('tags-categories-and-metadata', function (req, res) {
     res.done(tagsCategoriesAndMetadata())
   });
@@ -193,18 +208,8 @@ module.exports = function (app, hexo) {
   });
 
   use('pages/list', function (req, res) {
-   var page = hexo.model('Page').filter(function(item) {
-    return item.path && /^pages\//.test(item.path)
-   })
-   res.done(page.toArray().map(addIsDraft).map(function(item) { 
-      return {
-        isDraft: item.isDraft,
-        title: item.title,
-        date: item.date,
-        path: item.path,
-        _id: item._id
-      };
-   }));
+   var page = hexo.model('Page')
+   res.done(page.toArray().map(addIsDraft));
   });
 
   use('pages/new', function (req, res, next) {
@@ -216,11 +221,7 @@ module.exports = function (app, hexo) {
       return res.send(400, 'No title given');
     }
 
-    hexo.post.create({
-      title: req.body.title,
-      layout: 'page',
-      date: new Date()
-    })
+    hexo.post.create({title: req.body.title, layout: 'page', date: new Date()})
     .error(function(err) {
       console.error(err, err.stack)
       return res.send(500, 'Failed to create page')
@@ -277,15 +278,7 @@ module.exports = function (app, hexo) {
 
   use('posts/list', function (req, res) {
    var post = hexo.model('Post')
-   res.done(post.toArray().map(addIsDraft).map(function(item) { 
-      return {
-        isDraft: item.isDraft,
-        title: item.title,
-        date: item.date,
-        path: item.path,
-        _id: item._id
-      };
-   }));
+   res.done(post.toArray().map(addIsDraft));
   });
 
   use('posts/new', function (req, res, next) {
@@ -379,7 +372,7 @@ module.exports = function (app, hexo) {
       imagePrefix = settings.options.imagePrefix ? settings.options.imagePrefix : imagePrefix
     }
 
-    var msg = 'upload successful'
+    var msg = 'uploaded!'
     var i = 0
     while (fs.existsSync(path.join(hexo.source_dir, imagePath, imagePrefix + i +'.png'))) {
       i +=1
@@ -417,15 +410,20 @@ module.exports = function (app, hexo) {
       if (err) {
         console.log(err)
       }
+      console.log('hexo.config.url: '+hexo.config.url);
       hexo.source.process().then(function () {
         res.done({
-          src: path.join(hexo.config.root + filename),
+          // FIXME, use image URL to display image rather than relative path @2018/02/04
+          src: hexo.config.url + filename,
+          // src: path.join(hexo.config.root + filename),
           msg: msg
         })
       });
     })
   });
 
+  // using deploy to generate static pages
+  // @2018/01/22
   use('deploy', function(req, res, next) {
     if (req.method !== 'POST') return next()
     if (!hexo.config.admin || !hexo.config.admin.deployCommand) {
@@ -444,4 +442,5 @@ module.exports = function (app, hexo) {
       res.done({error: e.message})
     }
   });
+
 }

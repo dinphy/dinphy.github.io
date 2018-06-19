@@ -143,28 +143,28 @@ var ConfigDropper = React.createClass({
   config: function () {
     return <div className="config">
       <div className="config_section">
-        <div className="config_section-title">Date</div>
+        <div className="config_section-title">日期</div>
         <input
           className="config_date"
           value={this.state.date}
           onChange={this._onChangeDate}/>
       </div>
       <div className="config_section">
-        <div className="config_section-title">Author</div>
+        <div className="config_section-title">作者</div>
         <input
             className="config_author"
             value={this.state.author}
             onChange={this._onChangeAuthor}/>
       </div>
       <div className="config_section">
-        <div className="config_section-title">Tags</div>
+        <div className="config_section-title">标签</div>
         <AutoList
           options={this.props.tagsCategoriesAndMetadata.tags}
           values={this.state.tags}
           onChange={this._onChange.bind(null, 'tags')}/>
       </div>
       <div className="config_section">
-        <div className="config_section-title">Categories</div>
+        <div className="config_section-title">分类</div>
         <AutoList
           options={this.props.tagsCategoriesAndMetadata.categories}
           values={this.state.categories}
@@ -178,14 +178,21 @@ var ConfigDropper = React.createClass({
     var metadata = this.props.tagsCategoriesAndMetadata.metadata;
     var self = this;
     return metadata.map(function(name, index){
+      var component = (_.isArray(self.state[name]))
+      ? <AutoList
+          options={[]}
+          values={self.state[name]}
+          onChange={self._onChange.bind(null, name)} />
+      : <input
+          className="config_metadata"
+          value={self.state[name]}
+          name={name}
+          onChange={self._onChangeMetadata}/>
+
       return (
         <div key={index} className="config_section">
           <div className="config_section-title">{name}</div>
-          <input
-            className="config_metadata"
-            value={self.state[name]}
-            name={name}
-            onChange={self._onChangeMetadata}/>
+          {component}
         </div>
       )
     })
@@ -196,7 +203,7 @@ var ConfigDropper = React.createClass({
         "config-dropper": true,
         "config-dropper--open": this.state.open
       })}
-           title="Settings">
+           title="文章属性设置">
       <div className="config-dropper_handle"
            onClick={this._toggleShow}>
         <i className="fa fa-gear"/>
