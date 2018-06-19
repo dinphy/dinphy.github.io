@@ -4,6 +4,55 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/a373e8ef/</loc>
+    <lastmod>2018-06-19T10:26:24.053Z</lastmod>
+    <data>
+        <display>
+        <title>起风了</title>
+        <pubTime>2018-06-18T03:35:00.000Z</pubTime>
+        
+        <tag>端午</tag>
+         
+        <tag>蜻蜓</tag>
+         
+        <tag>小时候</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活感悟" url="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://www.dinphy.wang/posts/b7bc064e/</loc>
+    <lastmod>2018-06-15T23:18:50.860Z</lastmod>
+    <data>
+        <display>
+        <title>一款简洁的 hexo 编辑器</title>
+        <pubTime>2018-06-15T23:47:46.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>editor</tag>
+         
+        <tag>markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/a2aa53fc/</loc>
     <lastmod>2018-06-15T02:17:59.356Z</lastmod>
     <data>
@@ -244,9 +293,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>web技术</tag>
-         
         <tag>学习笔记</tag>
+         
+        <tag>web技术</tag>
          
         <tag>blog</tag>
          

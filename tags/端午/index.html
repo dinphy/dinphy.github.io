@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- <meta name="referrer" content="never"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="dinphy">
+    <meta name="google" content="notranslate">
+    <meta name="url" content="http://www.dinphy.wang/">
+    <link rel="manifest" href="/manifest.json">
+    
+    
+    
+    <link rel="canonical" href="http://www.dinphy.wang//tags/端午/">
+    
+    
+    <title>标签: 端午 | Dinphy - 简乐 | 生活不易,快乐就好</title>
+    
+    <meta name="keywords" content="Dinphy 的网站，我的博客，我来作主 &lt;br /&gt; 教师的业余生活，快乐的人生。">
+    <meta name="description" content="生活不易,快乐就好">
+<meta name="keywords" content="小王,dinphy,定飞,国庆">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dinphy - 简乐">
+<meta property="og:url" content="http://www.dinphy.wang/tags/端午/index.html">
+<meta property="og:site_name" content="Dinphy - 简乐">
+<meta property="og:description" content="生活不易,快乐就好">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dinphy - 简乐">
+<meta name="twitter:description" content="生活不易,快乐就好">
+    
+        <link rel="alternative" href="/atom.xml" title="Dinphy - 简乐" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=2.0.0">
+
+    <!--<script src="/js/vconsole.min.js"></script> -->
+    <script>
+        window.lazyScripts=[];
+    </script>
+
+    <script>
+        // 判断是否是IE浏览器，包括Edge浏览器
+        function IEVersion() {
+            var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; // 判断是否IE<11浏览器
+            var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; // 判断是否IE的Edge浏览器
+            var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                return fIEVersion >= 7 && fIEVersion <= 10 ? fIEVersion : 6;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        if (IEVersion() !== -1) {
+            var text = '检测到你使用的是 IE ' + IEVersion() + ' 内核浏览器，本博客使用了最新的前端技术，为了获得最佳的体验，请使用 Chrome、Opera、Firefox 等现代浏览器打开。';
+            alert(text)
+        }
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/css/sidebar-menu.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="/js/sidebar-menu.js" ></script>
+
+</head>
+
+
+<body>
+    <script>
+        + function () {
+            var S = window.localStorage;
+
+            var theme = S.getItem('theme');
+            var body = document.querySelector('body');
+            if (body === null) {
+                console.log('找不到 body 节点');
+                return;
+            }
+            if (theme === 'night') {
+                body.classList.add('night-mode');
+            }
+
+            function setTheme() {
+                var theme = S.getItem('theme');
+                var body = document.querySelector('body');
+                if (body === null) {
+                    console.log('找不到 body 节点');
+                    return;
+                }
+                if (theme !== 'night') {
+                    body.classList.add('night-mode');
+                    S.setItem('theme', 'night');
+                    $('#theme-toggle').attr('title','当前是夜间模式');
+                }
+                else {
+                    body.classList.remove('night-mode');
+                    S.setItem('theme', 'not-night');
+                    $('#theme-toggle').attr('title','当前是日间模式');
+                }
+            }
+
+            function load() {
+                var path = window.location.pathname;
+                var theme = document.querySelector('#theme-toggle');
+                theme.onclick = setTheme;
+
+                if (document.body.clientWidth < 960) {
+                    return;
+                }
+
+                // if (!/\/\d{2,4}/.test(window.location.pathname)) {
+                //     return;
+                // }
+
+                if (!(path === '/' || /\/page\//.test(path))) {
+                    return;
+                }
+
+                
+            }
+            window.onload = load;
+        } ();
+    </script>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu"  >
+	<div class="inner flex-row-vertical">
+		<a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+			<i class="icon icon-lg icon-outdent"></i>
+		</a>
+		<div class="brand-wrap">
+		  <div class="brand">
+			<a href="/" class="avatar waves-effect waves-circle waves-light">
+			  <img src="/img/avatar.jpg">
+			</a>
+			<hgroup class="introduce">
+			  <h5 class="nickname">Dinphy - 简乐</h5>
+			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
+
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 16 篇，约 9.7k 字</b></div>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="https://github.com/dinphy" target="_blank">
+						<i class="icon icon-lg icon-github" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="http://www.cnblogs.com/dinphy/" target="_blank">
+						<i class="icon icon-lg icon-coffee" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+			</hgroup>
+		  </div>
+		</div>
+		<div class="scroll-wrap flex-col">
+			
+			<div  class="sidebar">
+				<ul class="sidebar-menu">	 
+					<li class="waves-block waves-effect">
+						<a href="/"  >
+							<i class="fa fa-home" aria-hidden="true"></i>
+							主页
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/categories"  >
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
+							文章分类
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+							<ul class="treeview-menu">
+								<li>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">2</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">10</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">4</span></a>
+							</ul>				
+					</li>					
+					<li class="waves-block waves-effect">
+						<a href="/archives"  >
+							<i class="fa fa-archive" aria-hidden="true"></i>
+							归档
+						</a>
+					</li>
+					<li class="waves-block waves-effect active">
+						<a href="/tags"  >
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							标签
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/menu/about.html"  >
+							<i class="fa fa-user" aria-hidden="true"></i>
+							关于
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$.sidebarMenu($('.sidebar-menu'))
+			</script>
+		</div>
+	</div>
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <!-- 正文 -->
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-indent"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">标签: 端午</div>
+
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search" title="搜索">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="theme-toggle" title="黑白切换">
+          <i class="icon icon-lg icon-sun-o" style="font-weight: bold"></i>
+        </a>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare" title="分享">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header tags-header" style="">
+
+    <!--<div class="container fade-scale">-->
+    <div class="container" id="container-header">
+        <h1 class="title">标签: 端午</h1>
+
+        <div class="meta-rest">
+            <h1></h1>
+            <section>
+                <img src="/img/avatar.jpg" class="avatar" />
+                <div>
+                    <span class="name">Dinphy</span>
+                    <span class="summary">一枚教师，不懂教学</span>
+                    <span class="summary">学无先后，达者为师</span>
+                </div>
+            </section>
+        </div>
+
+        <h3 class="subtitle">
+            
+        </h3>
+    </div>
+
+     
+<div class="tabs-bar container">
+    <nav class="tags-list">
+        <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
+            ">全部</a>
+         
+
+            <a href="/tags/学习笔记/" style="-webkit-order:6;order:6" class="tags-list-item waves-effect waves-button waves-light">学习笔记</a>
+
+         
+
+            <a href="/tags/web技术/" style="-webkit-order:7;order:7" class="tags-list-item waves-effect waves-button waves-light">web技术</a>
+
+         
+
+            <a href="/tags/blog/" style="-webkit-order:8;order:8" class="tags-list-item waves-effect waves-button waves-light">blog</a>
+
+         
+
+            <a href="/tags/Markdown/" style="-webkit-order:9;order:9" class="tags-list-item waves-effect waves-button waves-light">Markdown</a>
+
+         
+
+            <a href="/tags/语法/" style="-webkit-order:10;order:10" class="tags-list-item waves-effect waves-button waves-light">语法</a>
+
+         
+
+            <a href="/tags/github/" style="-webkit-order:11;order:11" class="tags-list-item waves-effect waves-button waves-light">github</a>
+
+         
+
+            <a href="/tags/hexo/" style="-webkit-order:12;order:12" class="tags-list-item waves-effect waves-button waves-light">hexo</a>
+
+         
+
+            <a href="/tags/插件使用/" style="-webkit-order:13;order:13" class="tags-list-item waves-effect waves-button waves-light">插件使用</a>
+
+         
+
+            <a href="/tags/业余小作/" style="-webkit-order:14;order:14" class="tags-list-item waves-effect waves-button waves-light">业余小作</a>
+
+         
+
+            <a href="/tags/生活感悟/" style="-webkit-order:15;order:15" class="tags-list-item waves-effect waves-button waves-light">生活感悟</a>
+
+         
+
+            <a href="/tags/主题/" style="-webkit-order:16;order:16" class="tags-list-item waves-effect waves-button waves-light">主题</a>
+
+         
+
+            <a href="/tags/高考/" style="-webkit-order:17;order:17" class="tags-list-item waves-effect waves-button waves-light">高考</a>
+
+         
+
+            <a href="/tags/感悟/" style="-webkit-order:18;order:18" class="tags-list-item waves-effect waves-button waves-light">感悟</a>
+
+         
+
+            <a href="/tags/域名绑定/" style="-webkit-order:19;order:19" class="tags-list-item waves-effect waves-button waves-light">域名绑定</a>
+
+         
+
+            <a href="/tags/win7/" style="-webkit-order:20;order:20" class="tags-list-item waves-effect waves-button waves-light">win7</a>
+
+         
+
+            <a href="/tags/封装/" style="-webkit-order:21;order:21" class="tags-list-item waves-effect waves-button waves-light">封装</a>
+
+         
+
+            <a href="/tags/纯净/" style="-webkit-order:22;order:22" class="tags-list-item waves-effect waves-button waves-light">纯净</a>
+
+         
+
+            <a href="/tags/JQuery/" style="-webkit-order:23;order:23" class="tags-list-item waves-effect waves-button waves-light">JQuery</a>
+
+         
+
+            <a href="/tags/attr/" style="-webkit-order:24;order:24" class="tags-list-item waves-effect waves-button waves-light">attr</a>
+
+         
+
+            <a href="/tags/设置属性/" style="-webkit-order:25;order:25" class="tags-list-item waves-effect waves-button waves-light">设置属性</a>
+
+         
+
+            <a href="/tags/好习惯/" style="-webkit-order:26;order:26" class="tags-list-item waves-effect waves-button waves-light">好习惯</a>
+
+         
+
+            <a href="/tags/培养/" style="-webkit-order:27;order:27" class="tags-list-item waves-effect waves-button waves-light">培养</a>
+
+         
+
+            <a href="/tags/editor/" style="-webkit-order:28;order:28" class="tags-list-item waves-effect waves-button waves-light">editor</a>
+
+         
+
+            <a href="/tags/markdown/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">markdown</a>
+
+         
+
+            <a href="/tags/端午/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light active">端午</a>
+
+         
+
+            <a href="/tags/蜻蜓/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">蜻蜓</a>
+
+         
+
+            <a href="/tags/小时候/" style="-webkit-order:3;order:3" class="tags-list-item waves-effect waves-button waves-light">小时候</a>
+
+         
+
+            <a href="/tags/SEO优化/" style="-webkit-order:4;order:4" class="tags-list-item waves-effect waves-button waves-light">SEO优化</a>
+
+         
+
+            <a href="/tags/校园/" style="-webkit-order:5;order:5" class="tags-list-item waves-effect waves-button waves-light">校园</a>
+
+        
+    </nav>
+    <!-- PC show more-->
+    <div class="tags-list-more">
+        <a href="javascript:;" onclick="BLOG.tabBar(this)" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
+    </div>
+</div>
+
+
+</header>
+
+<div class="container body-wrap fade">
+    
+            <div class="waterfall">
+          
+
+            <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2018 年 06 月 18 日 11:35" datetime="2018-06-18T03:35:00.000Z"  itemprop="datePublished">
+    Jun 18, 2018
+</time>
+
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/生活感悟/">生活感悟</a></li></ul>
+
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/a373e8ef/">起风了</a>
+    </h3>
+  
+
+
+
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小时候/">小时候</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/端午/">端午</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/蜻蜓/">蜻蜓</a></li></ul>
+
+    </div>
+    
+  </article>
+</div>
+
+
+        
+            </div>
+        
+    
+</div>
+
+
+        <footer class="footer">
+    <div class="top">
+        <p>
+            <!-- 
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss" aria-hidden="true"></i></a></span>
+             -->
+            
+    <span id="busuanzi_container_site_uv style='display:none'">
+        <i class="fa fa-area-chart"></i> &nbsp;您目前是第&nbsp;<i id="busuanzi_value_site_uv"></i>&nbsp;位访问者
+    </span>
+    <span id="busuanzi_container_site_pv style='display:none'">
+        <i class="fa fa-eye"></i> &nbsp;流量已达&nbsp;<i id="busuanzi_value_site_pv"></i>&nbsp;次
+    </span>
+
+
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Dinphy - 简乐 &copy; 2017 - 2018</span>
+            <span>
+                
+                本站基于 <a href="http://hexo.io/" target="_blank">Hexo</a> 搭建
+            </span>
+        </p>
+    </div>
+    <div class="links">
+	<b>友情链接：</b>
+	
+		<li>
+		  <a href="https://blog.adymilk.cn/" target="_blank">三步枫</a>
+		</li>
+	
+		<li>
+		  <a href="https://www.zxnest.cn/" target="_blank">珍惜小窝</a>
+		</li>
+	
+		<li>
+		  <a href="/menu/about.html" target="_blank">申请链接</a>
+		</li>
+	
+    </div>    
+</footer>
+
+
+
+    </main>
+
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dinphy.wang/tags/端午/&title=Dinphy - 简乐&pic=http://www.dinphy.wang/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dinphy.wang/tags/端午/&title=Dinphy - 简乐&source=生活不易,快乐就好" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dinphy.wang/tags/端午/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Dinphy - 简乐&url=http://www.dinphy.wang/tags/端午/&via=http://www.dinphy.wang" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dinphy.wang/tags/端午/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwElEQVR42u3ay4pDIRAFwPz/T2dgtkPkHF+5DOUqJKJlFk3b7esVj/fv+PT931/H88dzNgxcXNxl7ns4Ps1ZwSXrf9oLFxf3JjfZbByGxvPnghouLu7zuUnQGR8smYOLi/u/uXNHwsXFfQ63DUZtkMpTom13NVxc3AVuWzA98flgfRcXF7fkzqUj4xQkT2Lq3XFxca9wV0oVeeKSl1CT9i0uLu5p7krhI0lT2mbtUp6Fi4u7ibvrTVQSqlaKI7i4uE/gtqEnXzo5av2/4uLiHuCOCxZJobNt0640cnBxce9zxylLHs7ygJUE0/rGhouLu4mbQPOEJn/GkZdccXFx73Pba8/kZlNxCRcX9z53JVS1h8//lDqc4eLiHuC2Zc25pkvbUJns8ODi4i5w87JFUjBtRxsWcXFxv8Vtn03MIdqHHbi4uDe5+dLtcnsPgIuLe5O7npSs3LHqRiwuLu4Vbj7yFmy+Zf5sCxcX9z537kFVO3OliVtEX1xc3K3cuXbpXGN1qUSCi4v7MO7cE432qMU7EVxc3Edy524l7TUJFxf3W9z2StMWQLc1XXBxca9w5wqm7aUoCY5FooOLi3uK+wOBO3GwynIwMAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!--<script src="//cdn.bootcss.com/node-waves/0.7.5/waves.min.js"></script>-->
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/waves.min.js"></script>
+<script src="/js/main.min.js?v=2.0.0"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script async src="/js/search.min.js?v=2.0.0"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+    <div class="music" id="music"></div>
+</body>
+</html>
