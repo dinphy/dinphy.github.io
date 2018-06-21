@@ -6,24 +6,21 @@
     <%
         if(is_tag()) { %>
             <div class="waterfall">
-          <% page.posts.each(function(post){ %>
-
-            <%- partial('_partial/archive', {post: post, date_format: 'MMM D, YYYY'}) %>
-
-        <% }) %>
+				<% page.posts.each(function(post){ %>
+					<%- partial('_partial/archive', {post: post, date_format: 'MMM D, YYYY'}) %>
+				<% }) %>
             </div>
         <% } else {
             site.tags.each(function(tag){  %>
-
-            <h3 class="archive-separator" id="tag-<%=tag.name %>"><%=tag.name %></h3>
-
-            <div class="waterfall">
-            <% tag.posts.each(function(post){  %>
-
-                <%- partial('_partial/archive', {post: post, date_format: 'MMM D, YYYY'}) %>
-
-            <% }) %>
-            </div>
+			<div class="tagcloud-container">
+				<div class="tagcloud">
+					
+					<a href="/tags/<%- tag.name %>">
+						<h4 id="tag-<%=tag.name %>"><%=tag.name %></h4>
+					</a>
+					<img src="/img/tagcloud.png">
+				</div>
+			</div>
         <% })
         }
     %>
