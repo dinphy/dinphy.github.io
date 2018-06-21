@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- <meta name="referrer" content="never"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="dinphy">
+    <meta name="google" content="notranslate">
+    <meta name="url" content="http://www.dinphy.wang/">
+    <link rel="manifest" href="/manifest.json">
+    
+    
+    
+    <link rel="canonical" href="http://www.dinphy.wang//posts/7c6b7673/">
+    
+    
+    <title>Word分栏页码，Ctrl + F9高级功能 | Dinphy - 简乐 | 生活不易,快乐就好</title>
+    
+    <meta name="keywords" content="Dinphy 的网站，我的博客，我来作主 &lt;br /&gt; 教师的业余生活，快乐的人生。">
+    <meta name="description" content="在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。  这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。效果图：                                                                                                用到的知识有：  分栏 插入页脚 Ctrl">
+<meta name="keywords" content="word,办公技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Word分栏页码，Ctrl + F9高级功能">
+<meta property="og:url" content="http://www.dinphy.wang/posts/7c6b7673/index.html">
+<meta property="og:site_name" content="Dinphy - 简乐">
+<meta property="og:description" content="在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。  这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。效果图：                                                                                                用到的知识有：  分栏 插入页脚 Ctrl">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG">
+<meta property="og:updated_time" content="2018-06-21T04:26:40.358Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Word分栏页码，Ctrl + F9高级功能">
+<meta name="twitter:description" content="在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。  这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。效果图：                                                                                                用到的知识有：  分栏 插入页脚 Ctrl">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG">
+    
+        <link rel="alternative" href="/atom.xml" title="Dinphy - 简乐" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=2.0.0">
+
+    <!--<script src="/js/vconsole.min.js"></script> -->
+    <script>
+        window.lazyScripts=[];
+    </script>
+
+    <script>
+        // 判断是否是IE浏览器，包括Edge浏览器
+        function IEVersion() {
+            var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; // 判断是否IE<11浏览器
+            var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; // 判断是否IE的Edge浏览器
+            var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                return fIEVersion >= 7 && fIEVersion <= 10 ? fIEVersion : 6;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        if (IEVersion() !== -1) {
+            var text = '检测到你使用的是 IE ' + IEVersion() + ' 内核浏览器，本博客使用了最新的前端技术，为了获得最佳的体验，请使用 Chrome、Opera、Firefox 等现代浏览器打开。';
+            alert(text)
+        }
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/css/sidebar-menu.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="/js/sidebar-menu.js" ></script>
+
+</head>
+
+
+<body>
+    <script>
+        + function () {
+            var S = window.localStorage;
+
+            var theme = S.getItem('theme');
+            var body = document.querySelector('body');
+            if (body === null) {
+                console.log('找不到 body 节点');
+                return;
+            }
+            if (theme === 'night') {
+                body.classList.add('night-mode');
+            }
+
+            function setTheme() {
+                var theme = S.getItem('theme');
+                var body = document.querySelector('body');
+                if (body === null) {
+                    console.log('找不到 body 节点');
+                    return;
+                }
+                if (theme !== 'night') {
+                    body.classList.add('night-mode');
+                    S.setItem('theme', 'night');
+                    $('#theme-toggle').attr('title','当前是夜间模式');
+                }
+                else {
+                    body.classList.remove('night-mode');
+                    S.setItem('theme', 'not-night');
+                    $('#theme-toggle').attr('title','当前是日间模式');
+                }
+            }
+
+            function load() {
+                var path = window.location.pathname;
+                var theme = document.querySelector('#theme-toggle');
+                theme.onclick = setTheme;
+
+                if (document.body.clientWidth < 960) {
+                    return;
+                }
+
+                // if (!/\/\d{2,4}/.test(window.location.pathname)) {
+                //     return;
+                // }
+
+                if (!(path === '/' || /\/page\//.test(path))) {
+                    return;
+                }
+
+                
+            }
+            window.onload = load;
+        } ();
+    </script>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+	<div class="inner flex-row-vertical">
+		<a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+			<i class="icon icon-lg icon-outdent"></i>
+		</a>
+		<div class="brand-wrap">
+		  <div class="brand">
+			<a href="/" class="avatar waves-effect waves-circle waves-light">
+			  <img src="/img/avatar.jpg">
+			</a>
+			<hgroup class="introduce">
+			  <h5 class="nickname">Dinphy - 简乐</h5>
+			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
+
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 19 篇，约 11.8k 字</b></div>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="https://github.com/dinphy" target="_blank">
+						<i class="icon icon-lg icon-github" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="http://www.cnblogs.com/dinphy/" target="_blank">
+						<i class="icon icon-lg icon-coffee" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+			</hgroup>
+		  </div>
+		</div>
+		<div class="scroll-wrap flex-col">
+			
+			<div  class="sidebar">
+				<ul class="sidebar-menu">	 
+					<li class="waves-block waves-effect">
+						<a href="/"  >
+							<i class="fa fa-home" aria-hidden="true"></i>
+							主页
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/categories"  >
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
+							文章分类
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+							<ul class="treeview-menu">
+								<li>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">2</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">12</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">5</span></a>
+							</ul>				
+					</li>					
+					<li class="waves-block waves-effect">
+						<a href="/archives"  >
+							<i class="fa fa-archive" aria-hidden="true"></i>
+							归档
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/tags"  >
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							标签
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/menu/about.html"  >
+							<i class="fa fa-user" aria-hidden="true"></i>
+							关于
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$.sidebarMenu($('.sidebar-menu'))
+			</script>
+		</div>
+	</div>
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <!-- 正文 -->
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-indent"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Word分栏页码，Ctrl + F9高级功能</div>
+
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search" title="搜索">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="theme-toggle" title="黑白切换">
+          <i class="icon icon-lg icon-sun-o" style="font-weight: bold"></i>
+        </a>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare" title="分享">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header" style="">
+
+    <!--<div class="container fade-scale">-->
+    <div class="container" id="container-header">
+        <h1 class="title">Word分栏页码，Ctrl + F9高级功能</h1>
+
+        <div class="meta-rest">
+            <h1>Word分栏页码，Ctrl + F9高级功能</h1>
+            <section>
+                <img src="/img/avatar.jpg" class="avatar" />
+                <div>
+                    <span class="name">Dinphy</span>
+                    <span class="summary">一枚教师，不懂教学</span>
+                    <span class="summary">学无先后，达者为师</span>
+                </div>
+            </section>
+        </div>
+
+        <h3 class="subtitle">
+            
+                <time datetime="2018-06-20T04:02:00.000Z" itemprop="datePublished" class="page-time">
+    2018-06-20
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+            
+        </h3>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+
+
+<article id="post-2018-06-20-Word分栏页码，Ctrl-F9高级功能"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Word分栏页码，Ctrl + F9高级功能</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018 年 06 月 20 日 12:02" datetime="2018-06-20T04:02:00.000Z"  itemprop="datePublished">
+    2018-06-20
+</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            <span style="color: dodgerblue">
+                约 <span style="font-size: 14px;"> 144</span> 字
+            </span>
+            <span>
+                将阅读<span style="font-size: 14px; color: orange;">  2.5  </span> 分钟
+            </span>
+        </div>
+
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <blockquote>
+<p>在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。</p>
+</blockquote>
+<p>这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。<br>效果图：<br>
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    <br><strong>用到的知识有：</strong></p>
+<ul>
+<li>分栏</li>
+<li>插入页脚</li>
+<li>Ctrl + F9 功能组合键，插入域代码输入大括号 <code>{ }</code></li>
+</ul>
+<ol>
+<li>奇数栏 <blockquote>
+<p>{ = { page }*2-1} / { = { numpages }*2}</p>
+</blockquote>
+</li>
+</ol>
+<p>可加修饰：</p>
+<blockquote>
+<p>第 { = { page }*2-1} 页 / 共 { = { numpages }*2} 页</p>
+</blockquote>
+<ol start="2">
+<li>偶数栏 <blockquote>
+<p>{ = { page }*2} / { = { numpages }*2}</p>
+</blockquote>
+</li>
+</ol>
+<p>可加修饰：</p>
+<blockquote>
+<p>第 { = { page }*2} 页 / 共 { = { numpages }*2} 页</p>
+</blockquote>
+<p><strong>域代码解释</strong></p>
+<ul>
+<li>page 为页码数</li>
+<li>numpages 为总页码数</li>
+</ul>
+
+        </div>
+
+        <div class="post-copyright">
+
+        <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;list-style: none;font-size:14px;">
+	            <b>本文标题：</b> Word分栏页码，Ctrl + F9高级功能<br>
+	            <b>最后更新：</b>2018 年 06 月 21 日 - 12:06<br>
+	            <b>本文链接：</b><a href="http://www.dinphy.wang/posts/7c6b7673/">http://www.dinphy.wang/posts/7c6b7673/</a><br>
+	                 
+	                    <b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>
+	                
+        </blockquote>
+
+<br><br>
+    <footer>
+        <a href="http://www.dinphy.wang">
+            <img src="/img/avatar.jpg" alt="Dinphy - 简乐">
+            Dinphy - 简乐
+        </a>
+    </footer>
+</div>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/">word</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/办公技巧/">办公技巧</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dinphy.wang/posts/7c6b7673/&title=《Word分栏页码，Ctrl + F9高级功能》 — Dinphy - 简乐&pic=http://www.dinphy.wang/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dinphy.wang/posts/7c6b7673/&title=《Word分栏页码，Ctrl + F9高级功能》 — Dinphy - 简乐&source=生活不易,快乐就好" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dinphy.wang/posts/7c6b7673/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Word分栏页码，Ctrl + F9高级功能》 — Dinphy - 简乐&url=http://www.dinphy.wang/posts/7c6b7673/&via=http://www.dinphy.wang" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dinphy.wang/posts/7c6b7673/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/posts/9e4a787b/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> 上一篇</div>
+        <!-- <h4 class="title">这个端午</h4> -->
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/a373e8ef/" id="post-next" class="post-nav-link">
+        <div style="text-align:right;">下一篇 <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <!-- <h4 class="title">起风了</h4> -->
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz",
+            appKey: "4pmmj56YRbawceTeHCkLMT7n",
+            avatar: "mm",
+            placeholder: "Hi,留下您的足迹吧~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢您的鼓励，扫一扫吧(๑•ᴗ•๑)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.gif" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.gif" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        <p>
+            <!-- 
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss" aria-hidden="true"></i></a></span>
+             -->
+            
+    <span id="busuanzi_container_site_uv style='display:none'">
+        <i class="fa fa-area-chart"></i> &nbsp;您目前是第&nbsp;<i id="busuanzi_value_site_uv"></i>&nbsp;位访问者
+    </span>
+    <span id="busuanzi_container_site_pv style='display:none'">
+        <i class="fa fa-eye"></i> &nbsp;流量已达&nbsp;<i id="busuanzi_value_site_pv"></i>&nbsp;次
+    </span>
+
+
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Dinphy - 简乐 &copy; 2017 - 2018</span>
+            <span>
+                
+                本站基于 <a href="http://hexo.io/" target="_blank">Hexo</a> 搭建
+            </span>
+        </p>
+    </div>
+    <div class="links">
+	<b>友情链接：</b>
+	
+		<li>
+		  <a href="https://blog.adymilk.cn/" target="_blank">三步枫</a>
+		</li>
+	
+		<li>
+		  <a href="https://www.zxnest.cn/" target="_blank">珍惜小窝</a>
+		</li>
+	
+		<li>
+		  <a href="/menu/about.html" target="_blank">申请链接</a>
+		</li>
+	
+    </div>    
+</footer>
+
+
+
+    </main>
+
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dinphy.wang/posts/7c6b7673/&title=《Word分栏页码，Ctrl + F9高级功能》 — Dinphy - 简乐&pic=http://www.dinphy.wang/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dinphy.wang/posts/7c6b7673/&title=《Word分栏页码，Ctrl + F9高级功能》 — Dinphy - 简乐&source=生活不易,快乐就好" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dinphy.wang/posts/7c6b7673/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Word分栏页码，Ctrl + F9高级功能》 — Dinphy - 简乐&url=http://www.dinphy.wang/posts/7c6b7673/&via=http://www.dinphy.wang" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dinphy.wang/posts/7c6b7673/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3awWrDMBAE0Pz/T6fQU0uQO+ONFReeT8EJ7nMPgzSrxyO+nt/X6+efd15/8/rL5Ns3XLi4uGPu8/BaEc+93vHzjw24uLj7ucmfTCIsCbgkHJf3cXFxb8ZtQUlc4uLi/nfuKsiShc7kJXFxcT/FTYImuZO86qa9Gi4u7oA7rznmnzf1u7i4uOOpxHGgtNGTx9bymbi4uFu4x0PTeVGSvGS7HcLFxb2amwdWW31Oti5/RBguLu4W7nwg2j6nHdn+WpHh4uJu4baUFjpZQi1zFxcX92JuPiLNh6aTtnP5ZFxc3I3cthJtS5D8+EU9DcbFxd3IvXADcyoEcXFxP8XNf9PeyUHH/z5cXNw93HaMOg+7vIjBxcX9FHe++UmWNTmuGKXg4uJexp0ct5qXpHl04uLi7uS2NWi9OQmWR8nL4OLi7ufmVUg7js1r06iUwcXF3chtD0bk9Wj+nJOTH1xc3Au4baC0o5Q81NpvcXFxr+a25UUbQ3nVElWouLi4G7lteLVj1zdsfnBxcW/JPXeI6tyAdmnDxcW9MTevSPKQiopaXFzcjdy2JM1HL3klGh3LwMXF3cJtC9N2aZIf8sDFxb0B9wtlQmzDs3GPSQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!--<script src="//cdn.bootcss.com/node-waves/0.7.5/waves.min.js"></script>-->
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/waves.min.js"></script>
+<script src="/js/main.min.js?v=2.0.0"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script async src="/js/search.min.js?v=2.0.0"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+    <div class="music" id="music"></div>
+</body>
+</html>

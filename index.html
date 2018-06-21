@@ -146,7 +146,7 @@
 			  <h5 class="nickname">Dinphy - 简乐</h5>
 			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
 
-			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 16 篇，约 9.7k 字</b></div>
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 19 篇，约 11.8k 字</b></div>
 				
 					<li class="waves-block socail-icon ">
 					  <a href="https://github.com/dinphy" target="_blank">
@@ -181,7 +181,7 @@
 						</a>
 							<ul class="treeview-menu">
 								<li>
-								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">2</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">10</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">4</span></a>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">2</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">12</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">5</span></a>
 							</ul>				
 					</li>					
 					<li class="waves-block waves-effect">
@@ -276,6 +276,237 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-2018-06-20-CSS3-图片响应式卡片样式学习"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 06 月 20 日 17:30" datetime="2018-06-20T09:30:00.000Z"  itemprop="datePublished">
+    2018-06-20
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 325 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/91edd881/">CSS3 图片响应式卡片样式学习</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<p>网络上很流行的卡片式网页，尝试了一下，其实不难。</p>
+<h5 id="展示效果"><a href="#展示效果" class="headerlink" title="展示效果"></a><strong>展示效果</strong></h5>
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/555.PNG" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    
+<h5 id="案例展示"><a href="#案例展示" class="headerlink" title="案例展示"></a><strong>案例展示</strong></h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;测试卡片式图片&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">&lt;style&gt;</span></span><br><span class="line"><span class="regexp">	div.a &#123;</span></span><br><span class="line"><span class="regexp">	  width: 120px;</span></span><br><span class="line"><span class="regexp">	  height: 90px;</span></span><br><span class="line"><span class="regexp">	  background-color: white;</span></span><br><span class="line"><span class="regexp">	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);</span></span><br><span class="line"><span class="regexp">	  float: left;</span></span><br><span class="line"><span class="regexp">	  margin: 5px 5px;</span></span><br><span class="line"><span class="regexp">	  padding: 10px 0 10px 0;</span></span><br><span class="line"><span class="regexp">	&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">	div.a &gt; a img&#123;</span></span><br><span class="line"><span class="regexp">		margin: 0 auto;</span></span><br><span class="line"><span class="regexp">		display: block;</span></span><br><span class="line"><span class="regexp">	  &#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">	div.b &#123;</span></span><br><span class="line"><span class="regexp">	  text-align: center;</span></span><br><span class="line"><span class="regexp">	  padding: 2px 10px;</span></span><br><span class="line"><span class="regexp">	&#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>style&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">	&lt;h2 style="text-align: center"&gt;响应式卡片&lt;/</span>h2&gt;</span><br><span class="line"></span><br><span class="line">	&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"a"</span>&gt;</span><br><span class="line">	  &lt;a href=<span class="string">"#"</span>&gt;&lt;img src="111.PNG"&gt;&lt;/a&gt;</span><br><span class="line">	  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"b"</span>&gt;</span><br><span class="line">		&lt;p&gt;卡片一&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;/</span>div&gt;</span><br><span class="line">	&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">	&lt;div class="a"&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;a href="#"&gt;&lt;img src="222.PNG"&gt;&lt;/</span>a&gt;</span><br><span class="line">	  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"b"</span>&gt;</span><br><span class="line">		&lt;p&gt;卡片二&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;/</span>div&gt;</span><br><span class="line">	&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">	&lt;div class="a"&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;a href="#"&gt;&lt;img src="333.PNG"&gt;&lt;/</span>a&gt;</span><br><span class="line">	  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"b"</span>&gt;</span><br><span class="line">		&lt;p&gt;卡片三&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;/</span>div&gt;</span><br><span class="line">	&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">	&lt;div class="a"&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;a href="#"&gt;&lt;img src="444.PNG"&gt;&lt;/</span>a&gt;</span><br><span class="line">	  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"b"</span>&gt;</span><br><span class="line">		&lt;p&gt;卡片四&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">	  &lt;/</span>div&gt;</span><br><span class="line">	&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br><span class="line">&lt;<span class="regexp">/html&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a><strong>案例分析</strong></h5><ul>
+<li>容器 a 固定高和宽，设定背景颜色，加上阴影效果，卡片向左浮动，卡片之间设置间隔距离，设置图片内边距。</li>
+<li>容器 b 文本居中，设置文本内边距。</li>
+<li>图片于卡片中自动居中。</li>
+</ul>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/卡片/">卡片</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/91edd881/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-06-20-这个端午"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 06 月 20 日 16:17" datetime="2018-06-20T08:17:00.000Z"  itemprop="datePublished">
+    2018-06-20
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/生活感悟/">生活感悟</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 1,627 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 12.5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/9e4a787b/">这个端午</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<p>这个端午，我陪着妻子她们一同到外婆家过得，这也是这么多年来过得比较充实和难忘的端午。外婆家在农村，空气很清新，早晚都比较凉爽，除了中午热、蚊子多以外，我觉得和城市比起来，这真的很舒适。</p>
+<p>所以，我写了一篇名叫《<a href="https://www.dinphy.wang/posts/a373e8ef/">起风了</a>》的文章，本文是妻子所写。正文如下：</p>
+<blockquote>
+<p>端午节还没到，老爸便提前一个星期打电话来问我，这个端午是否要回家过，当时我就毫不犹豫的回答他说：要回来！只听见电话那端老爸提高嗓音说：那你们早点回来，最后还特地叮嘱一句：叫上女儿的奶奶一起，当时虽然没有看到老爸的表情，但听到我说要回去过节，我能够想象的出老爸当时一定是满面笑容的！<br>记忆中的端午节不是在外婆家过就是在瞒姨家过，或者就是自己在学校过，像今年这样和父母在他们辛苦修建的房子里一起过节好像还是第一次，心情不用说肯定是非常好的，而这个端午对我来说意义也非同寻常！老天似乎也感受到了这个端午不一样，没有像往常那样大雨倾盆而是晴空万里！<br>端午节的前两天，我、先生、女儿以及女儿的奶奶，我们很早就从铜仁出发前往老家甘龙，而这天正逢那里赶场，知道我们去，老妈一大早没有吃东西就去街上准备端午节的食材以及我们爱吃的东西，当然也免不了给她爱的外孙女买一套漂亮的衣服，当我们到达时，她已经回到家，给我们准备好了丰盛的午餐，老妈不太擅长厨艺，为了这顿饭我想她已经使出了浑身解数，只为表达她对我们的到来感到很欢喜，当我们都在吃饭的时候，她不吃饭而是迫不及待的去拿出她给女儿买的新衣服给她穿上，然后逗着她各种玩，女儿似乎也懂得外婆的爱，穿着新衣服快乐的跑着，一边跑一边喊着外婆，一老一小，高兴极了！<br>在家呆了两天，家里的空气很好，天气凉爽，黎明就能听到各种鸟叫声、公鸡打鸣声以及邻居们早起劳作的谈笑声，一向喜欢睡懒觉的我，在这样的环境中竟不自觉的也早起， 欣赏清晨乡间特有而又熟悉的风景，呼吸着新鲜而甜美的空气，感受着微风带来的阵阵凉意，看着父母忙碌的身影，整个人身心都是那么的愉悦，生活、工作中遇到的种种不悦，此刻都烟消云散，有的只是在家独有的这份轻闲！<br>女儿来到妈妈从小生活的地方，似乎也特别的兴奋，整天楼上楼下的串个不停，即使中午那种特小的我们称之为蛮蛮蚊的蚊子叮得她满身是苞，她也还是玩得不亦乐乎，连午觉也不肯睡，吃东西三心二意，一门心思的玩她认为很稀奇的一些东西！当然外公外婆对她是宠爱的，无论她去玩什么或者是想玩什么，他们都一一的满足，即使我阻止她玩一些我认为不应该玩的东西，在那里我的阻止无疑是多余的，毫无意义！<br>傍晚，吃过晚饭，每人搬一张凳子坐在院子里乘凉，闲谈着生活中点点滴滴的小事，听着田野里热闹的蛙叫声，这个时候，夜间的蚊子往往也是喜欢热闹的，不时的叮下这个咬下那个的找存在感，而我们对它的轻吻除了厌恶以外，别无好感，甚而想要它的性命！而它却不以为然！还是嗡嗡的吵着闹着！<br>端午节当天，老爸老妈一天都在准备着吃的东西，又是炖猪脚，又是包着不同口味的粽子，还准备自家磨豆腐，由于二伯娘家磨了豆腐，给我们端了很多来，老妈才取消了这个项目！但又增加包饺子的计划！总之最后是做了满桌子的菜肴！<br>在农村这家包了粽子，要送给那家，然后那家包了粽子又要送给这家，我们家也一样，大伯娘家包了粽子给我家送来，二伯娘家包了粽子也给我家送来，当然我们包了粽子也要给她们送去，起初我总是不明白，不都是粽子嘛，为什么要送来送去的呢？老爸告诉我，粽子都是一样的，但送粽子的这份心意却各家是各家的，大家吃的不是粽子，吃的是这份情谊！是啊，吃的是这份情谊，粽子家家都有，而这份情谊却是我们最应该珍惜的呢！我喜欢这样的民风，这能给我们的生活带来很多的温馨！<br>愉快而轻松的日子总是过得很快，似乎眨眼间便到了返程的日子，老妈像以往我离开一样，给我准备各种可以带走的自家种的蔬菜，一大包一大包往后备箱里放，老爸也没闲着，扛着一大袋的米放进去，嘴里还问着，这米是不是少了？还是把家里剩下的一起带着吧！这个时候我总是笑着给他们说：太多了，懒得拿！他们总会加上一句：是车子拉又不是你拿！而此时我只能回给他们一个微笑！心里想的、脑海里浮现的却是歌词“总是向您索取却不曾说谢谢您，直到长大以后才懂得您不容易，每次离开都是装着轻松的样子……”<br>随着车轮的滚动，这个端午也就意味着结束了，工作、生活也将回复到以前的模样，只愿以后每个端午都能像这个端午一样过得轻松、快乐！</p>
+</blockquote>
+<blockquote>
+<p>本文转自：<a href="https://user.qzone.qq.com/806498036/blog/1529420752" target="_blank" rel="noopener">学着忘记</a> 的空间</p>
+</blockquote>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/外婆家/">外婆家</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/端午/">端午</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/9e4a787b/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-06-20-Word分栏页码，Ctrl-F9高级功能"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 06 月 20 日 12:02" datetime="2018-06-20T04:02:00.000Z"  itemprop="datePublished">
+    2018-06-20
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 144 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 2.5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/7c6b7673/">Word分栏页码，Ctrl + F9高级功能</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<blockquote>
+<p>在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。</p>
+</blockquote>
+<p>这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。<br>效果图：<br>
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    <br><strong>用到的知识有：</strong></p>
+<ul>
+<li>分栏</li>
+<li>插入页脚</li>
+<li>Ctrl + F9 功能组合键，插入域代码输入大括号 <code>{ }</code></li>
+</ul>
+<ol>
+<li>奇数栏 <blockquote>
+<p>{ = { page }*2-1} / { = { numpages }*2}</p>
+</blockquote>
+</li>
+</ol>
+<p>可加修饰：</p>
+<blockquote>
+<p>第 { = { page }*2-1} 页 / 共 { = { numpages }*2} 页</p>
+</blockquote>
+<ol start="2">
+<li>偶数栏 <blockquote>
+<p>{ = { page }*2} / { = { numpages }*2}</p>
+</blockquote>
+</li>
+</ol>
+<p>可加修饰：</p>
+<blockquote>
+<p>第 { = { page }*2} 页 / 共 { = { numpages }*2} 页</p>
+</blockquote>
+<p><strong>域代码解释</strong></p>
+<ul>
+<li>page 为页码数</li>
+<li>numpages 为总页码数</li>
+</ul>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/">word</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/办公技巧/">办公技巧</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/7c6b7673/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-2018-06-18-起风了"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -343,7 +574,7 @@
             </div>
             <div class="image-caption"></div>
         </figure>
-    打开路灯，过不了一分钟就迎来很多小虫，它们在灯下嬉戏打闹，累了就爬到墙上歇息，歇够了又继续，直到我关掉路灯，然后就不知它们的去向了。<br>推开窗户，蛙声很明朗，蛐蛐蝈蝈也热闹着，又起风了，有点大，我不得不关上纱窗，因为飘起了小雨，夜渐渐的静了下来，雨滴敲打着玻璃窗，我开始想象着，明天的端午是不是和以往一样，早上大雨滂沱，中午山水便涨起来了。<br>记忆中的端午是美好的，可现实总是那么的惨不忍睹。那时我还小，家境不是那么的宽裕，吃穿勉强，住的稍微好点，四面都是石头加石灰浆围起来的墙，房间的隔断是木板，屋顶盖的是瓦，地面上特别是角落的地方有很多老鼠洞，晚上点上几分钟煤油灯整理一下床铺后爸妈就会叫我们睡觉了。每逢端午，爸妈都会提前一两天准备粽子，尽管到了端午的当天桌子上的粽子与别人家的不一样，但我们都觉得满足，吃得很享受。<br>
+    打开路灯，过不了一分钟就迎来很多小虫，它们在灯下嬉戏打闹，累了就爬到墙上歇息，歇够了又继续，直到我关掉路灯，然后就不知它们的去向了。<br>推开窗户，蛙声很明朗，蛐蛐蝈蝈也热闹着，又起风了，有点大，我不得不关上纱窗，因为飘起了小雨，夜渐渐的静了下来，雨滴敲打着玻璃窗，我开始想象着，明天的端午是不是和以往一样，早上大雨滂沱，中午山水便涨起来了。<br>记忆中的端午是美好的，可现实总是那么的惨不忍睹。那时我还小，家境不是那么的宽裕，吃穿勉强，住的稍微好点，四面都是石头加石灰浆围起来的墙，房间的隔断是木板，屋顶盖的是瓦，地面上特别是角落的地方有很多老鼠洞，晚上点上几分钟煤油灯整理一下床铺后爸妈就会叫我们睡觉了。每逢端午，爸妈都会提前一两天准备粽子，尽管到了端午的当天桌子上的粽子与别人家的不一样，但我们都觉得满足，吃得很享受。
         <figure class="image-bubble">
             <div class="img-lightbox">
                 <div class="overlay"></div>
@@ -597,7 +828,7 @@
             </div>
             <div class="image-caption"></div>
         </figure>
-    <br>习惯就好，是一种释然。良好的习惯，这其实是一个养成教育。因为环境的迥异，不论大人小孩，都或多或少的在好习惯与坏习惯的熏陶下慢慢形成自己的习惯。我经常听到有人抱怨自己的工作不如别人好，想换一个工作；自己家的孩子没有别人家的孩子棒，想和人家交换；今天遇到某某某换了新装，自己也想换上；可细细一想，类似的情景多的是了，我们要习惯就好。</p>
+    习惯就好，是一种释然。良好的习惯，这其实是一个养成教育。因为环境的迥异，不论大人小孩，都或多或少的在好习惯与坏习惯的熏陶下慢慢形成自己的习惯。我经常听到有人抱怨自己的工作不如别人好，想换一个工作；自己家的孩子没有别人家的孩子棒，想和人家交换；今天遇到某某某换了新装，自己也想换上；可细细一想，类似的情景多的是了，我们要习惯就好。</p>
 <p>习惯就好，是一种态度。很多人都应该赞同这样一个观点罢——好习惯都是养成的，好孩子都是教出来的，好工作都是自己打拼的，好生活都是靠自己的。我也不例外，对于自身的不足，我们要敢于承认，更要敢于寻找方式弥补自己的不足，使自己更加的充实和完善。</p>
 <p>习惯就好，是一种境界。我们不能拥有马云的财富，但我们和他一样手脚健全，像他说的“人要有梦想，万一实现了呢”这句话，我们也可以有自己的梦想，像蜗牛一样慢没关系，只要朝着梦想的方向一步一步的前进，树再高也能爬到顶端，亦可以眺望远方。</p>
 <p>习惯就好，是一种洒脱。我们不能拥有电视剧里那样和睦的家庭，但我们有自己的方式获取幸福，人生在世开心最重要。既然很多事情是我们无法改变，或者是目前不愿改变的，那何不“习惯就好”呢！</p>
@@ -867,360 +1098,6 @@
 </article>
 <div class="more">
 	<a href="/posts/fc4ce5e0/">
-		展开全文
-		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-	</a>
-</div>
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-2018-06-06-小儿难养"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018 年 06 月 06 日 10:07" datetime="2018-06-06T02:07:00.000Z"  itemprop="datePublished">
-    2018-06-06
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/生活感悟/">生活感悟</a></li></ul>
-
-
-
-        <span style="color: dodgerblue">
-            约 484 字
-        </span>
-        <span>
-            将阅读<span style="color: orange;"> 5 </span> 分钟
-        </span>
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/posts/70b5b646/">小儿难养</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-		
-			<p>有时候，我觉得人们真的很可怜：当拥有时不懂得珍惜，等失去后才觉得可惜。这其实也很可悲，不值得别人怜悯。</p>
-<p>我似乎就是这样的可怜。孩子还小，我总是以“别人家的孩子”的行为习惯要求她这样那样的，殊不知她才学会走路，还不会说话，勉强可以听懂大人说的而已。</p>
-<p>我时常在反省自己，我是不是过早的对她家教了，抑或是让她随性，开心一点。为了这个问题，家人之间也时常意见不合，老的老，小的小，老的偏袒小的，小的不听话，做父母的又想好好教育她，让她有一个好的行为习惯。我在教育她的时候，老的说她还小，慢慢来；我让老的先别管，特别是她想要什么东西又不肯自己动手的时候，她习惯性的就是哭着骗着的，长此以往，这就是一种不良的习惯。</p>
-<p>我不知道这种做法是否正确，她不想动手去拿自己想要的，她就哭，我就让她哭，不管她，直到她停下来为止，不知道能不能纠正她的这种习惯？或者是我过早的要求她了，我该不该再等等看呢？</p>
-<p>在行为规范这一点，也许我是对的，因为好习惯都是养出来的，好孩子都是教出来的；在考虑她年纪尚小这一点，也许我真的过早要求她了。</p>
-<p>不论怎样，在这个家里，她现在正需要我们大人的呵护，同时也需要大人的正确引导；我是教师，她是学生，她是课堂的主体，我是她的引导者，传教者，管理者，更重要的是我是她的父亲，以身作则对她才是最好的引导。</p>
-
-		
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/业余小作/">业余小作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活感悟/">生活感悟</a></li></ul>
-
-    </div>
-    
-</article>
-<div class="more">
-	<a href="/posts/70b5b646/">
-		展开全文
-		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-	</a>
-</div>
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-2018-06-04-Hexo 主题 indigo 使用"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018 年 06 月 04 日 10:43" datetime="2018-06-04T02:43:00.000Z"  itemprop="datePublished">
-    2018-06-04
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
-
-
-
-        <span style="color: dodgerblue">
-            约 1,169 字
-        </span>
-        <span>
-            将阅读<span style="color: orange;"> 15 </span> 分钟
-        </span>
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/posts/f52ea714/">Hexo 主题 indigo 使用</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-		
-			<h5 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h5><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
-<ul>
-<li><a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a></li>
-<li><a href="http://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
-</ul>
-<p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。</p>
-<blockquote>
-<p>npm install -g hexo-cli<br>hexo init<br>npm install</p>
-</blockquote>
-<p>indigo 主题的所有依赖文件列表 package.json :<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="string">"version"</span>: <span class="string">"0.0.0"</span>,</span><br><span class="line">  <span class="string">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"hexo"</span>: &#123;</span><br><span class="line">    <span class="string">"version"</span>: <span class="string">"3.7.1"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"cheerio"</span>: <span class="string">"^1.0.0-rc.2"</span>,</span><br><span class="line">    <span class="string">"condense-whitespace"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo"</span>: <span class="string">"^3.7.1"</span>,</span><br><span class="line">    <span class="string">"hexo-abbrlink"</span>: <span class="string">"^2.0.5"</span>,</span><br><span class="line">    <span class="string">"hexo-admin"</span>: <span class="string">"^2.3.0"</span>,</span><br><span class="line">    <span class="string">"hexo-autoprefixer"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-deployer-git"</span>: <span class="string">"^0.3.1"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-archive"</span>: <span class="string">"^0.1.5"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-category"</span>: <span class="string">"^0.1.3"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-feed"</span>: <span class="string">"^1.2.2"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-index"</span>: <span class="string">"^0.2.1"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-json-content"</span>: <span class="string">"^3.0.1"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-search"</span>: <span class="string">"^2.2.5"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-tag"</span>: <span class="string">"^0.2.0"</span>,</span><br><span class="line">    <span class="string">"hexo-helper-qrcode"</span>: <span class="string">"^1.0.2"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-ejs"</span>: <span class="string">"^0.3.1"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-less"</span>: <span class="string">"^0.2.0"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-marked"</span>: <span class="string">"^0.3.2"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-stylus"</span>: <span class="string">"^0.3.3"</span>,</span><br><span class="line">    <span class="string">"hexo-server"</span>: <span class="string">"^0.2.2"</span>,</span><br><span class="line">    <span class="string">"hexo-symbols-count-time"</span>: <span class="string">"^0.4.2"</span>,</span><br><span class="line">    <span class="string">"hexo-wordcount"</span>: <span class="string">"^3.0.2"</span>,</span><br><span class="line">    <span class="string">"less"</span>: <span class="string">"^3.0.4"</span>,</span><br><span class="line">    <span class="string">"style-loader"</span>: <span class="string">"^0.21.0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"devDependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"stylus"</span>: <span class="string">"^0.54.5"</span>,</span><br><span class="line">    <span class="string">"stylus-loader"</span>: <span class="string">"^3.0.2"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h5><p>安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上，在 Hexo 根目录，执行以下命令。</p>
-<blockquote>
-<p>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:dinphy/hexo-theme-indigo.git themes/indigo</p>
-</blockquote>
-<h5 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h5><p>还是在 Hexo 根目录，如果以下插件已安装过，无需再次安装。</p>
-<ul>
-<li>Less</li>
-</ul>
-<p>用于主题默认使用 less 作为 css 预处理工具。</p>
-<blockquote>
-<p>npm install hexo-renderer-less –save</p>
-</blockquote>
-<ul>
-<li>Feed</li>
-</ul>
-<p>用于生成 rss。</p>
-<blockquote>
-<p>npm install hexo-generator-feed –save</p>
-</blockquote>
-<ul>
-<li>Json-content</li>
-</ul>
-<p>用于生成静态站点数据，用作站内搜索的数据源。</p>
-<blockquote>
-<p>npm install hexo-generator-json-content –save</p>
-</blockquote>
-<ul>
-<li>QRCode</li>
-</ul>
-<p>用于生成微信分享二维码。可选，不安装时会请求 jiathis Api 生成二维码。</p>
-<blockquote>
-<p>npm install hexo-helper-qrcode –save</p>
-</blockquote>
-<ul>
-<li>wordcount</li>
-</ul>
-<p>用于统计文章字数。</p>
-<blockquote>
-<p>npm install hexo-wordcount –save</p>
-</blockquote>
-<ul>
-<li>condense-whitespace</li>
-</ul>
-<p>用于从字符串中移除前导、尾随和重复的空白。</p>
-<blockquote>
-<p>npm install condense-whitespace –save</p>
-</blockquote>
-<ul>
-<li>cheerio</li>
-</ul>
-<p>用于快速、灵活和精益实现核心 jQuery 专为服务器设计。</p>
-<blockquote>
-<p>npm install cheerio –save</p>
-</blockquote>
-<ul>
-<li>hexo-autoprefixer</li>
-</ul>
-<p>用于 Hexo 自动预修插件。</p>
-<blockquote>
-<p>npm install hexo-autoprefixer –save</p>
-</blockquote>
-<ul>
-<li>hexo-symbols-count-time</li>
-</ul>
-<p>用于符号计数和时间阅读的文章插件。</p>
-<blockquote>
-<p>npm install hexo-symbols-count-time –save</p>
-</blockquote>
-<ul>
-<li>hexo-deployer-git</li>
-</ul>
-<p>用于 Git 部署上传。</p>
-<blockquote>
-<p>npm install hexo-deployer-git –save</p>
-</blockquote>
-<ul>
-<li>hexo-generator-search</li>
-</ul>
-<p>用于 Hexo 生成搜索数据的插件。</p>
-<blockquote>
-<p>npm install hexo-generator-search –save</p>
-</blockquote>
-<ul>
-<li>hexo-abbrlink</li>
-</ul>
-<p>用于帖子创建一个和唯一的链接。</p>
-<blockquote>
-<p>npm install hexo-abbrlink –save</p>
-</blockquote>
-<ul>
-<li>hexo-admin</li>
-</ul>
-<p>用于 Hexo 后台管理界面。</p>
-<blockquote>
-<p>npm install hexo-admin –save</p>
-</blockquote>
-<ul>
-<li>stylus-loader stylus</li>
-</ul>
-<p>用于 webpack 的手写笔加载程序。</p>
-<blockquote>
-<p>npm install stylus-loader stylus –save-dev</p>
-</blockquote>
-<ul>
-<li>stylus</li>
-</ul>
-<p>用于提供一种高效、动态和表达方式来生成 CSS。支持缩进语法和常规 CSS 样式。</p>
-<blockquote>
-<p>npm install stylus -g</p>
-</blockquote>
-<ul>
-<li>other</li>
-</ul>
-<p>这些是初始化就有的。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo –save</span><br><span class="line">npm install hexo-generator-index –save</span><br><span class="line">npm install hexo-generator-archive –save</span><br><span class="line">npm install hexo-renderer-ejs –save</span><br><span class="line">npm install hexo-renderer-marked –save</span><br><span class="line">npm install hexo-renderer-stylus –save</span><br><span class="line">npm install hexo-server –save</span><br></pre></td></tr></table></figure>
-<ul>
-<li>遇到了几个棘手的问题</li>
-</ul>
-<p>问题描述如下:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> ERROR D:\MyWeb\hexoTest\themes\indigo\layout\archive.ejs:<span class="number">58</span></span><br><span class="line">    <span class="number">57</span>|                 &lt;/a&gt;</span><br><span class="line"> &gt;&gt; <span class="number">58</span>|                 &lt;a class="catagories" href="/categories/&lt;%- post.categories.data[0].name %&gt;" target="_blank"&gt;</span><br><span class="line">    59|                     &lt;%- post.categories.data[0].name %&gt;</span><br><span class="line">    60|                 &lt;/a&gt;</span><br><span class="line">    <span class="number">61</span>|             &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">Cannot read property <span class="string">'name'</span> <span class="keyword">of</span> <span class="literal">undefined</span></span><br><span class="line"><span class="built_in">TypeError</span>: D:\MyWeb\hexoTest\themes\indigo\layout\archive.ejs:<span class="number">58</span></span><br><span class="line">    <span class="number">56</span>|                     &lt;%- /(？|。|！)$/.test(post.title) ? post.title : post.title + '。' %&gt;</span><br><span class="line">    57|                 &lt;/a&gt;</span><br><span class="line"> &gt;&gt; <span class="number">58</span>|                 &lt;a class="catagories" href="/categories/&lt;%- post.categories.data[0].name %&gt;" target="_blank"&gt;</span><br><span class="line">    59|                     &lt;%- post.categories.data[0].name %&gt;</span><br><span class="line">    60|                 &lt;/a&gt;</span><br><span class="line">    <span class="number">61</span>|             &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">Cannot read property <span class="string">'name'</span> <span class="keyword">of</span> <span class="literal">undefined</span></span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>问题1：<code>Cannot read property &#39;name&#39; of undefined</code></li>
-</ul>
-<p>原因是新建的帖子里面没有分类。</p>
-<blockquote>
-<p>解决办法是：在新建的帖子里添加分类。</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">ERROR D:\testHexo\themes\indigo\layout\layout.ejs:<span class="number">3</span></span><br><span class="line">    <span class="number">1</span>| &lt;!DOCTYPE html&gt;</span><br><span class="line">    2| &lt;html&gt;</span><br><span class="line"> &gt;&gt; 3|     &lt;%- partial('_partial/head') %&gt;</span><br><span class="line">    4|</span><br><span class="line">    5| &lt;body&gt;</span><br><span class="line">    6|     &lt;script&gt;</span><br><span class="line"></span><br><span class="line">D:\testHexo\themes\indigo\layout\_partial\head.ejs:37</span><br><span class="line">    35|         &#125;</span><br><span class="line">    36|     %&gt;</span><br><span class="line"> &gt;&gt; 37|     &lt;title&gt;&lt;% if (title)&#123; %&gt;&lt;%= title %&gt; | &lt;% &#125; %&gt;&lt;%= config.title %&gt; | &lt;%= config.subtitle.replace(/&lt;[^&gt;]*&gt;/g, '') %&gt;&lt;/title&gt;</span><br><span class="line">    38|     &lt;%</span><br><span class="line">    39|         var keyWords = config.keywords;</span><br><span class="line">    40|         if(page.tags)&#123;</span><br><span class="line"></span><br><span class="line">Cannot read property 'replace' of null</span><br><span class="line">TypeError: D:\testHexo\themes\indigo\layout\layout.ejs:3</span><br><span class="line">    1| &lt;!DOCTYPE html&gt;</span><br><span class="line">    2| &lt;html&gt;</span><br><span class="line"> &gt;&gt; 3|     &lt;%- partial('_partial/head') %&gt;</span><br><span class="line">    4|</span><br><span class="line">    5| &lt;body&gt;</span><br><span class="line">    6|     &lt;script&gt;</span><br><span class="line"></span><br><span class="line">D:\testHexo\themes\indigo\layout\_partial\head.ejs:37</span><br><span class="line">    35|         &#125;</span><br><span class="line">    36|     %&gt;</span><br><span class="line"> &gt;&gt; 37|     &lt;title&gt;&lt;% if (title)&#123; %&gt;&lt;%= title %&gt; | &lt;% &#125; %&gt;&lt;%= config.title %&gt; | &lt;%= config.subtitle.replace(/&lt;[^&gt;]*&gt;/g, '') %&gt;&lt;/title&gt;</span><br><span class="line">    38|     &lt;%</span><br><span class="line">    39|         var keyWords = config.keywords;</span><br><span class="line">    40|         if(page.tags)&#123;</span><br><span class="line"></span><br><span class="line">Cannot read property 'replace' of null</span><br></pre></td></tr></table></figure>
-<ul>
-<li>问题2：<code>Cannot read property &#39;replace&#39; of null</code></li>
-</ul>
-<p>原因是根目录下的 <code>_config.yml</code> 没有定义 <code>subtitle</code> 。</p>
-<blockquote>
-<p>解决办法是：删除根目录下的 <code>node_modules</code> 文件夹，重新执行 <code>npm install</code>，然后在根目录下 <code>_config.yml</code> 中定义 <code>subtitle</code>。</p>
-</blockquote>
-<p><strong>例如：</strong></p>
-<blockquote>
-<p>subtitle: 生活不易,快乐就好</p>
-</blockquote>
-<p>本文到此结束。</p>
-
-		
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web技术/">web技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/主题/">主题</a></li></ul>
-
-    </div>
-    
-</article>
-<div class="more">
-	<a href="/posts/f52ea714/">
-		展开全文
-		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-	</a>
-</div>
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-2018-06-04-hexo-github搭建的网站域名绑定"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018 年 06 月 04 日 10:35" datetime="2018-06-04T02:35:00.000Z"  itemprop="datePublished">
-    2018-06-04
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
-
-
-
-        <span style="color: dodgerblue">
-            约 306 字
-        </span>
-        <span>
-            将阅读<span style="color: orange;"> 2.5 </span> 分钟
-        </span>
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/posts/1eb48005/">hexo + github搭建的网站域名绑定</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-		
-			<p>使用hexo + github搭建web网上教程很多，千篇一律的就是那几个步骤。</p>
-<ol>
-<li>新建一个github仓库：<code>username.github.io</code></li>
-<li>在本地新建一个空文件夹用于初始化 hexo 站点：<code>npm install hexo-cli -g</code> 和 <code>hexo init</code>。</li>
-<li>git clone 自己喜欢的主题，然后配置根目录和主题目录下的 <code>_config.yml</code> 文件。</li>
-<li>安装主题相应的依赖和插件 <code>npm install</code>。</li>
-<li>生成静态页面：<code>hexo g</code>。</li>
-<li>本地测试：<code>localhost:4000</code>。</li>
-<li>配置本地与 github 仓库的 keygen ，配置 <code>git config --global user.name</code> 账号和 <code>git config --global user.email</code> 邮箱，deploy 中也要配置 repo 。</li>
-<li>上传 github 仓库：<code>hexo d</code>。</li>
-</ol>
-<p>本文重要的不要上面这些，下面的才是重点。</p>
-<p>对于域名绑定难易程度看个人。</p>
-<p><strong> 具体如下：</strong></p>
-<ul>
-<li>申请域名</li>
-</ul>
-<blockquote>
-<p>阿里云，西部数据，新网，万网，国外的，随便找一个提供商申请即可。</p>
-</blockquote>
-<ul>
-<li>域名解析<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">主机名   域名类型       对应值</span><br><span class="line">@        CNAME     dinphy.github.io</span><br><span class="line">www      CNAME     dinphy.github.io</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>(主机名默认是@)</p>
-<ul>
-<li>github 仓库添加 CNAME（用来解析域名）</li>
-</ul>
-<p>在CNAME中添加如下内容：</p>
-<blockquote>
-<p><a href="http://www.dinphy.wang">www.dinphy.wang</a></p>
-</blockquote>
-<p>添加的内容其实就是注册的域名。</p>
-<p>到此本文结束。</p>
-
-		
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web技术/">web技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名绑定/">域名绑定</a></li></ul>
-
-    </div>
-    
-</article>
-<div class="more">
-	<a href="/posts/1eb48005/">
 		展开全文
 		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 	</a>
