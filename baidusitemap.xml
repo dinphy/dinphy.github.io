@@ -4,8 +4,57 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/0/</loc>
+    <lastmod>2018-06-22T06:01:19.433Z</lastmod>
+    <data>
+        <display>
+        <title>感谢失败</title>
+        <pubTime>2018-06-22T04:44:00.000Z</pubTime>
+        
+        <tag>感谢</tag>
+         
+        <tag>懂得</tag>
+         
+        <tag>雨露</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活感悟" url="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dinphy.wang/posts/0/</loc>
+    <lastmod>2018-06-22T06:01:09.290Z</lastmod>
+    <data>
+        <display>
+        <title>感谢失败</title>
+        <pubTime>2018-06-22T04:44:00.000Z</pubTime>
+        
+        <tag>感谢</tag>
+         
+        <tag>懂得</tag>
+         
+        <tag>雨露</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活感悟" url="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/f3fd11c6/</loc>
-    <lastmod>2018-06-22T02:34:16.354Z</lastmod>
+    <lastmod>2018-06-22T04:29:34.697Z</lastmod>
     <data>
         <display>
         <title>win7 开机启动 hexo server</title>
@@ -72,7 +121,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://www.dinphy.wang/posts/a2aa53fc/</loc>
@@ -268,11 +316,11 @@
         <title>Markdown 学习参考</title>
         <pubTime>2018-05-15T13:00:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>Markdown</tag>
          
         <tag>语法</tag>
+         
+        <tag>学习笔记</tag>
          
          
            
@@ -454,9 +502,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>web技术</tag>
+         
+        <tag>学习笔记</tag>
          
         <tag>blog</tag>
          
@@ -480,9 +528,9 @@
         
         <tag>web技术</tag>
          
-        <tag>github</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>github</tag>
          
          
            
