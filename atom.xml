@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dinphy.wang/"/>
-  <updated>2018-06-22T02:04:05.113Z</updated>
+  <updated>2018-06-22T02:34:16.354Z</updated>
   <id>http://www.dinphy.wang/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win7 开机启动 hexo server</title>
+    <link href="http://www.dinphy.wang/posts/f3fd11c6/"/>
+    <id>http://www.dinphy.wang/posts/f3fd11c6/</id>
+    <published>2018-06-22T02:14:00.000Z</published>
+    <updated>2018-06-22T02:34:16.354Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了更方便的使用 hexo 写文章，这里有一种通过脚本实现，可以开机启动hexo server的方法。需要创建2个脚本，一个为vbs脚本，一个为bat脚本。</p><blockquote><p>Hexo安装 hexo-admin 组件以后，所有的操作都可以在浏览器中轻松完成了，但是有一个问题就是每次开机都需要运行一次 <code>hexo s</code></p></blockquote><p><strong>vbs脚本放到启动文件夹，用于运行bat脚本，而bat脚本用于启动 <code>hexo server</code></strong></p><h5 id="创建vbs脚本"><a href="#创建vbs脚本" class="headerlink" title="创建vbs脚本"></a>创建vbs脚本</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set ws=WScript.CreateObject(<span class="string">"WScript.Shell"</span>)</span><br><span class="line">ws.Run <span class="string">"D:\\webProject\\Hexo-blog\\hexo-server.bat /start"</span>,<span class="number">0</span></span><br></pre></td></tr></table></figure><h5 id="将vbs脚本放到启动文件夹"><a href="#将vbs脚本放到启动文件夹" class="headerlink" title="将vbs脚本放到启动文件夹"></a>将vbs脚本放到启动文件夹</h5><p>将创建的vbs脚本保存到 win7 或 win10 的启动文件夹目录：</p><blockquote><p>C:\Users\你的用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\hexo-server.vbs</p></blockquote><h5 id="创建bat脚本"><a href="#创建bat脚本" class="headerlink" title="创建bat脚本"></a>创建bat脚本</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D:</span><br><span class="line">cd D:<span class="regexp">/webProject/</span>Hexo-Blog</span><br><span class="line">hexo s -d</span><br></pre></td></tr></table></figure><p>bat脚本保存文件名和上面要对应，例如上面是 <code>hexo-server.bat</code>,保存一样即可。</p><p>这样就能实现开机启动 <code>hexo server</code> 了，剩下的一切都可以交给浏览器和hexo-admin了。</p><blockquote><p>原文地址：<a href="https://segmentfault.com/a/1190000008078142" target="_blank" rel="noopener">https://segmentfault.com/a/1190000008078142</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;为了更方便的使用 hexo 写文章，这里有一种通过脚本实现，可以开机启动hexo server的方法。需要创建2个脚本，一个为vbs脚本，一个为bat脚本。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hexo安装 hexo-admin 组件以后，所有的操作都可以在浏览器中轻松
+      
+    
+    </summary>
+    
+      <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+    
+    
+      <category term="开机启动" scheme="http://www.dinphy.wang/tags/%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/"/>
+    
+      <category term="vbs" scheme="http://www.dinphy.wang/tags/vbs/"/>
+    
+      <category term="bat" scheme="http://www.dinphy.wang/tags/bat/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 颜色值 RGBA(R,G,B,A)</title>
@@ -399,9 +430,9 @@
       <category term="生活感悟" scheme="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
-    
       <category term="生活感悟" scheme="http://www.dinphy.wang/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
     
   </entry>
   
@@ -521,9 +552,9 @@
       <category term="生活感悟" scheme="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
-    
       <category term="生活感悟" scheme="http://www.dinphy.wang/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
     
   </entry>
   

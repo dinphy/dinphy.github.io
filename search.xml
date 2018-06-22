@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>win7 开机启动 hexo server</title>
+      <link href="/posts/f3fd11c6/"/>
+      <url>/posts/f3fd11c6/</url>
+      <content type="html"><![CDATA[<p>为了更方便的使用 hexo 写文章，这里有一种通过脚本实现，可以开机启动hexo server的方法。需要创建2个脚本，一个为vbs脚本，一个为bat脚本。</p><blockquote><p>Hexo安装 hexo-admin 组件以后，所有的操作都可以在浏览器中轻松完成了，但是有一个问题就是每次开机都需要运行一次 <code>hexo s</code></p></blockquote><p><strong>vbs脚本放到启动文件夹，用于运行bat脚本，而bat脚本用于启动 <code>hexo server</code></strong></p><h5 id="创建vbs脚本"><a href="#创建vbs脚本" class="headerlink" title="创建vbs脚本"></a>创建vbs脚本</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set ws=WScript.CreateObject(<span class="string">"WScript.Shell"</span>)</span><br><span class="line">ws.Run <span class="string">"D:\\webProject\\Hexo-blog\\hexo-server.bat /start"</span>,<span class="number">0</span></span><br></pre></td></tr></table></figure><h5 id="将vbs脚本放到启动文件夹"><a href="#将vbs脚本放到启动文件夹" class="headerlink" title="将vbs脚本放到启动文件夹"></a>将vbs脚本放到启动文件夹</h5><p>将创建的vbs脚本保存到 win7 或 win10 的启动文件夹目录：</p><blockquote><p>C:\Users\你的用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\hexo-server.vbs</p></blockquote><h5 id="创建bat脚本"><a href="#创建bat脚本" class="headerlink" title="创建bat脚本"></a>创建bat脚本</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D:</span><br><span class="line">cd D:<span class="regexp">/webProject/</span>Hexo-Blog</span><br><span class="line">hexo s -d</span><br></pre></td></tr></table></figure><p>bat脚本保存文件名和上面要对应，例如上面是 <code>hexo-server.bat</code>,保存一样即可。</p><p>这样就能实现开机启动 <code>hexo server</code> 了，剩下的一切都可以交给浏览器和hexo-admin了。</p><blockquote><p>原文地址：<a href="https://segmentfault.com/a/1190000008078142" target="_blank" rel="noopener">https://segmentfault.com/a/1190000008078142</a></p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> 学习参考 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开机启动 </tag>
+            
+            <tag> vbs </tag>
+            
+            <tag> bat </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>CSS 颜色值 RGBA(R,G,B,A)</title>
       <link href="/posts/e8811676/"/>
       <url>/posts/e8811676/</url>
@@ -307,9 +332,9 @@
       
         <tags>
             
-            <tag> 业余小作 </tag>
-            
             <tag> 生活感悟 </tag>
+            
+            <tag> 业余小作 </tag>
             
         </tags>
       
@@ -405,9 +430,9 @@
       
         <tags>
             
-            <tag> 业余小作 </tag>
-            
             <tag> 生活感悟 </tag>
+            
+            <tag> 业余小作 </tag>
             
         </tags>
       
