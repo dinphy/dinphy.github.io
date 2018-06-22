@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- <meta name="referrer" content="never"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="dinphy">
+    <meta name="google" content="notranslate">
+    <meta name="url" content="http://www.dinphy.wang/">
+    <link rel="manifest" href="/manifest.json">
+    
+    
+    
+    <link rel="canonical" href="http://www.dinphy.wang//page/3/">
+    
+    
+    <title>Dinphy - 简乐 | 生活不易,快乐就好</title>
+    
+    <meta name="keywords" content="Dinphy 的网站，我的博客，我来作主 &lt;br /&gt; 教师的业余生活，快乐的人生。">
+    <meta name="description" content="生活不易,快乐就好">
+<meta name="keywords" content="小王,dinphy,定飞,国庆">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dinphy - 简乐">
+<meta property="og:url" content="http://www.dinphy.wang/page/3/index.html">
+<meta property="og:site_name" content="Dinphy - 简乐">
+<meta property="og:description" content="生活不易,快乐就好">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dinphy - 简乐">
+<meta name="twitter:description" content="生活不易,快乐就好">
+    
+        <link rel="alternative" href="/atom.xml" title="Dinphy - 简乐" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=2.0.0">
+
+    <!--<script src="/js/vconsole.min.js"></script> -->
+    <script>
+        window.lazyScripts=[];
+    </script>
+
+    <script>
+        // 判断是否是IE浏览器，包括Edge浏览器
+        function IEVersion() {
+            var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; // 判断是否IE<11浏览器
+            var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; // 判断是否IE的Edge浏览器
+            var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                return fIEVersion >= 7 && fIEVersion <= 10 ? fIEVersion : 6;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        if (IEVersion() !== -1) {
+            var text = '检测到你使用的是 IE ' + IEVersion() + ' 内核浏览器，本博客使用了最新的前端技术，为了获得最佳的体验，请使用 Chrome、Opera、Firefox 等现代浏览器打开。';
+            alert(text)
+        }
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/css/sidebar-menu.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="/js/sidebar-menu.js" ></script>
+
+</head>
+
+
+<body>
+    <script>
+        + function () {
+            var S = window.localStorage;
+
+            var theme = S.getItem('theme');
+            var body = document.querySelector('body');
+            if (body === null) {
+                console.log('找不到 body 节点');
+                return;
+            }
+            if (theme === 'night') {
+                body.classList.add('night-mode');
+            }
+
+            function setTheme() {
+                var theme = S.getItem('theme');
+                var body = document.querySelector('body');
+                if (body === null) {
+                    console.log('找不到 body 节点');
+                    return;
+                }
+                if (theme !== 'night') {
+                    body.classList.add('night-mode');
+                    S.setItem('theme', 'night');
+                    $('#theme-toggle').attr('title','当前是夜间模式');
+                }
+                else {
+                    body.classList.remove('night-mode');
+                    S.setItem('theme', 'not-night');
+                    $('#theme-toggle').attr('title','当前是日间模式');
+                }
+            }
+
+            function load() {
+                var path = window.location.pathname;
+                var theme = document.querySelector('#theme-toggle');
+                theme.onclick = setTheme;
+
+                if (document.body.clientWidth < 960) {
+                    return;
+                }
+
+                // if (!/\/\d{2,4}/.test(window.location.pathname)) {
+                //     return;
+                // }
+
+                if (!(path === '/' || /\/page\//.test(path))) {
+                    return;
+                }
+
+                
+            }
+            window.onload = load;
+        } ();
+    </script>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu"  >
+	<div class="inner flex-row-vertical">
+		<a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+			<i class="icon icon-lg icon-outdent"></i>
+		</a>
+		<div class="brand-wrap">
+		  <div class="brand">
+			<a href="/" class="avatar waves-effect waves-circle waves-light">
+			  <img src="/img/avatar.jpg">
+			</a>
+			<hgroup class="introduce">
+			  <h5 class="nickname">Dinphy - 简乐</h5>
+			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
+
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 21 篇，约 12.7k 字</b></div>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="https://github.com/dinphy" target="_blank">
+						<i class="icon icon-lg icon-github" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+					<li class="waves-block socail-icon ">
+					  <a href="http://www.cnblogs.com/dinphy/" target="_blank">
+						<i class="icon icon-lg icon-coffee" aria-hidden="true"></i>
+					  </a>
+					</li>
+				
+			</hgroup>
+		  </div>
+		</div>
+		<div class="scroll-wrap flex-col">
+			
+			<div  class="sidebar">
+				<ul class="sidebar-menu">	 
+					<li class="waves-block waves-effect">
+						<a href="/"  >
+							<i class="fa fa-home" aria-hidden="true"></i>
+							主页
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/categories"  >
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
+							文章分类
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+							<ul class="treeview-menu">
+								<li>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">13</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">5</span></a>
+							</ul>				
+					</li>					
+					<li class="waves-block waves-effect">
+						<a href="/archives"  >
+							<i class="fa fa-archive" aria-hidden="true"></i>
+							归档
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/tags"  >
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							标签
+						</a>
+					</li>
+					<li class="waves-block waves-effect">
+						<a href="/menu/about.html"  >
+							<i class="fa fa-user" aria-hidden="true"></i>
+							关于
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$.sidebarMenu($('.sidebar-menu'))
+			</script>
+		</div>
+	</div>
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <!-- 正文 -->
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-indent"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Dinphy - 简乐</div>
+
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search" title="搜索">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="theme-toggle" title="黑白切换">
+          <i class="icon icon-lg icon-sun-o" style="font-weight: bold"></i>
+        </a>
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare" title="分享">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header index-header" style="">
+
+    <!--<div class="container fade-scale">-->
+    <div class="container" id="container-header">
+        <h1 class="title">Dinphy - 简乐</h1>
+
+        <div class="meta-rest">
+            <h1></h1>
+            <section>
+                <img src="/img/avatar.jpg" class="avatar" />
+                <div>
+                    <span class="name">Dinphy</span>
+                    <span class="summary">一枚教师，不懂教学</span>
+                    <span class="summary">学无先后，达者为师</span>
+                </div>
+            </section>
+        </div>
+
+        <h3 class="subtitle">
+            
+                生活不易,快乐就好
+            
+        </h3>
+    </div>
+
+    
+
+</header>
+
+<div class="container body-wrap index">
+
+    <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-05-17-Markdown入门参考"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 05 月 15 日 21:00" datetime="2018-05-15T13:00:00.000Z"  itemprop="datePublished">
+    2018-05-15
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 876 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 10 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/e2ef2032/">Markdown 学习参考</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<blockquote>
+<p>Markdown 学习参考</p>
+<ul>
+<li><a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown | 指导文档</a></li>
+<li><a href="https://pandao.github.io/editor.md/examples/dynamic-create-editormd.html" target="_blank" rel="noopener">Editor.md | 在线编辑器</a></li>
+</ul>
+</blockquote>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>以下分别代表一至五级标题：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#h1</span><br><span class="line">##h2</span><br><span class="line">###h3</span><br><span class="line">####h4</span><br><span class="line">#####h5</span><br></pre></td></tr></table></figure>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>在段落等内容前使用 <code>&gt;</code> 符号，可以将这段内容标记为<strong>引用</strong>的内容：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;引用内容</span><br><span class="line">&gt;&gt;二级引用</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用内容</p>
+<blockquote>
+<p>二级引用</p>
+</blockquote>
+</blockquote>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 可以作为标记</span><br><span class="line">+ 也可以</span><br><span class="line">- 同样可以</span><br></pre></td></tr></table></figure>
+<ul>
+<li>可以作为标记</li>
+</ul>
+<ul>
+<li>也可以</li>
+</ul>
+<ul>
+<li>同样可以</li>
+</ul>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>以数字和<span class="code">`. `</span>开始；</span><br><span class="line"><span class="bullet">3. </span>数字的顺序并不会影响生成的列表序列；</span><br></pre></td></tr></table></figure>
+<ol>
+<li>以数字和 <code>.</code> 开始；</li>
+<li>数字的顺序并不会影响生成的列表序列；</li>
+</ol>
+<h4 id="嵌套的列表"><a href="#嵌套的列表" class="headerlink" title="嵌套的列表"></a>嵌套的列表</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 第一层</span><br><span class="line">	+ <span class="number">1</span><span class="number">-1</span></span><br><span class="line">	+ <span class="number">1</span><span class="number">-2</span></span><br><span class="line"><span class="number">2.</span> 无序列表和有序列表可以随意嵌套</span><br><span class="line">	<span class="number">1.</span> <span class="number">2</span><span class="number">-1</span></span><br><span class="line">    <span class="number">2.</span> <span class="number">2</span><span class="number">-2</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>第一层<ul>
+<li>1-1</li>
+<li>1-2</li>
+</ul>
+</li>
+<li>无序列表和有序列表可以随意嵌套<ol>
+<li>2-1</li>
+<li>2-2</li>
+</ol>
+</li>
+</ol>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><p>在代码的头部和尾部用 ``` 包围起来，需要高亮的话，在 ``` 包围的代码块头部标注语法的名字：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'Python syntax highlighting'</span></span><br><span class="line"><span class="keyword">for</span> chr <span class="keyword">in</span> s:</span><br><span class="line">    print (s)</span><br></pre></td></tr></table></figure>
+<h4 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h4><p>通过 <code></code> 插入行内代码：</p>
+<p><code>print(Hello world)</code></p>
+<h3 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h3><p>一行中使用三个即以上的 <code>*</code>、<code>-</code>、<code>_</code>来添加分隔线：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">****</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>需要显示的文本为 [] 的内容，小括号中的链接可以是本地也可以是网络</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[Google](https:<span class="comment">//google.com)</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://google.com" target="_blank" rel="noopener">Google</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>语法与超链接基本一致，只是需要在前面加一个 !：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![title](https:<span class="comment">//cdn.pixabay.com/photo/2012/10/26/00/45/senegal-pechlibelle-62964_960_720.jpg)</span></span><br></pre></td></tr></table></figure>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><h4 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h4><p>使用 <code>** **</code> 或 <code>__ __</code> 包括的文本会转化成<strong>粗体</strong></p>
+<h4 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h4><p>使用 <code>* *</code> 或 <code>_ _</code> 包括的文本会转化为_斜体_</p>
+<h3 id="字符的转义"><a href="#字符的转义" class="headerlink" title="字符的转义"></a>字符的转义</h3><p>当需要显示一些特殊的字符的时候，需要使用反斜线 <code>\</code> 来进行转义：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是一个*转义*的_例子_</span><br><span class="line">这是一个\*转义\*的\_例子\_</span><br></pre></td></tr></table></figure>
+<p>这是一个<em>转义</em>的_例子_</p>
+<p>这是一个*转义*的_例子_</p>
+<h2 id="进阶语法"><a href="#进阶语法" class="headerlink" title="进阶语法"></a>进阶语法</h2><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是~~删除线~~</span><br></pre></td></tr></table></figure>
+<p>这是<del>删除线</del></p>
+<h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><p>Markdown 原生并无下划线语法，可以通过 HTML 来实现：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;这是下划线&lt;<span class="regexp">/u&gt;</span></span><br></pre></td></tr></table></figure>
+<p><u>这是下划线</u></p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><h4 id="单元格和表头"><a href="#单元格和表头" class="headerlink" title="单元格和表头"></a>单元格和表头</h4><p>使用 <code>|</code> 来分隔不同单元格，使用 <code>-</code>  来分隔表头和其他行：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| name  | age  |</span><br><span class="line">| ----- | ---- |</span><br><span class="line">| Leo   | <span class="number">16</span>   |</span><br><span class="line">| Virgo | <span class="number">18</span>   |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leo</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Virgo</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+<h4 id="对齐"><a href="#对齐" class="headerlink" title="对齐"></a>对齐</h4><p>在表头下方的分隔线标记加入 <code>:</code>，可更换下方单元格的对齐方式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| left | center | right |</span><br><span class="line">| ---- | :----: | ----: |</span><br><span class="line">| left | center | right |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>left</th>
+<th style="text-align:center">center</th>
+<th style="text-align:right">right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td style="text-align:center">center</td>
+<td style="text-align:right">right</td>
+</tr>
+</tbody>
+</table>
+<h3 id="待办事宜（hexo-不支持以下语法）"><a href="#待办事宜（hexo-不支持以下语法）" class="headerlink" title="待办事宜（hexo 不支持以下语法）"></a>待办事宜（hexo 不支持以下语法）</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- [ ] 吃饭</span><br><span class="line">- [x] 唱歌</span><br></pre></td></tr></table></figure>
+
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://ws1.sinaimg.cn/large/ba22af52gy1ffy07lxnyhj20fn02ct8i.jpg" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p>以 flow 为关键字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">e=&gt;end: End</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://ws1.sinaimg.cn/large/ba22af52gy1ffy055sa4mj20710bgt8p.jpg" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    
+<h3 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h3><p>以 sequence 为关键字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://ws1.sinaimg.cn/large/ba22af52gy1ffy05m64ttj20e607i3yk.jpg" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    
+<h3 id="Latex-公式"><a href="#Latex-公式" class="headerlink" title="Latex 公式"></a>Latex 公式</h3><h4 id="行内公式"><a href="#行内公式" class="headerlink" title="行内公式"></a>行内公式</h4><p>用 <code>$ $</code> 包括起来的表示行内公式：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">质能守恒方程：$E=mc^2$</span><br></pre></td></tr></table></figure>
+<p>质能守恒方程：$E=mc^2$</p>
+<h4 id="整行公式"><a href="#整行公式" class="headerlink" title="整行公式"></a>整行公式</h4><p>用 <code>$$ $$</code> 包括起来的表示整行公式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$$\sum_&#123;i=<span class="number">1</span>&#125;^n a_i=<span class="number">0</span>$$</span><br><span class="line">$$f(x_1,x_x,\ldots,x_n)=x_1^<span class="number">2</span>+x_2^<span class="number">2</span>+\cdots+x_n^<span class="number">2</span>$$</span><br></pre></td></tr></table></figure>
+<p>$$\sum_{i=1}^n a_i=0$$</p>
+<p>$$f(x_1,x_x,\ldots,x_n)=x_1^2+x_2^2+\cdots+x_n^2$$</p>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><p>使用 <code>[^keyword]</code> 表示脚注：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这是一个脚注[^<span class="number">1</span>]的例子</span><br><span class="line"></span><br><span class="line">[^<span class="number">1</span>]: 这是一个脚注</span><br></pre></td></tr></table></figure></p>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/语法/">语法</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/e2ef2032/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
+    
+    </ul>
+
+    
+<nav id="page-nav">
+    <div class="inner">
+    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </div>
+</nav>
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        <p>
+            <!-- 
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss" aria-hidden="true"></i></a></span>
+             -->
+            
+    <span id="busuanzi_container_site_uv style='display:none'">
+        <i class="fa fa-area-chart"></i> &nbsp;您目前是第&nbsp;<i id="busuanzi_value_site_uv"></i>&nbsp;位访问者
+    </span>
+    <span id="busuanzi_container_site_pv style='display:none'">
+        <i class="fa fa-eye"></i> &nbsp;流量已达&nbsp;<i id="busuanzi_value_site_pv"></i>&nbsp;次
+    </span>
+
+
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Dinphy - 简乐 &copy; 2017 - 2018</span>
+            <span>
+                
+                本站基于 <a href="http://hexo.io/" target="_blank">Hexo</a> 搭建
+            </span>
+        </p>
+    </div>
+    <div class="links">
+	<b>友情链接：</b>
+	
+		<li>
+		  <a href="https://blog.adymilk.cn/" target="_blank">三步枫</a>
+		</li>
+	
+		<li>
+		  <a href="https://www.zxnest.cn/" target="_blank">珍惜小窝</a>
+		</li>
+	
+		<li>
+		  <a href="/menu/about.html" target="_blank">申请链接</a>
+		</li>
+	
+    </div>    
+</footer>
+
+
+
+    </main>
+
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dinphy.wang/page/3/&title=Dinphy - 简乐&pic=http://www.dinphy.wang/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dinphy.wang/page/3/&title=Dinphy - 简乐&source=生活不易,快乐就好" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dinphy.wang/page/3/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Dinphy - 简乐&url=http://www.dinphy.wang/page/3/&via=http://www.dinphy.wang" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dinphy.wang/page/3/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABvUlEQVR42u3aS27EIBAFQN//0s42kTLMa2iwF8VqpLGg7EWrP1xXvO5fq/fJa8fCxcVd5t7D9emZuZcc/x4bcHFxz3PHgWbu4PEpn3b4YsPFxX0ld0xP0p3qDri4uO/nJptW0xdcXNx3cue2G3PHZcz2Wg0XF3eBmzc49v3e0t/FxcWd4t5TK2+UjHHlc3FxcY9wq1vPNTuaByq4uLibuUmjMyl7quVNPo7957vi4uI+xK2OUvKwVR2l/PkXFxf3OHfHoHQueOHi4j7L7Rp75OnOOh0XF/ckdyW4VNsf+cf6UgLh4uIe4eaD1fzCRFfrBBcX9yS3N3+oPpkPb3Bxcc9z24qTqatd5fQIFxd3Gzc5MklN8usXeUulPGTFxcVt4q43TFdKo6UsDBcXdxs3aVAmrKS8ycNlFMJwcXG3cedaFXmw6yqTyqMUXFzcBe5dXNVgl4S8hnsiuLi4rdy5FKQrgubJU/kFcHFxl7nVFkZ+2SJJocrfEhcX9yB3/SpGPphZGcri4uK+jdtVtOQv/7HLi4uL+xpub8sjGZzg4uI+y602SfNiprlywcXFPcJdKkWK49W54IiLi3uQ+wM7JecelJp/EwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!--<script src="//cdn.bootcss.com/node-waves/0.7.5/waves.min.js"></script>-->
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script type="text/javascript" src="/js/jquery_3.3.1_jquery.min.js"></script>
+<script src="/js/waves.min.js"></script>
+<script src="/js/main.min.js?v=2.0.0"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.js" async></script>
+
+
+
+
+
+
+<script async type="text/javascript" src="/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+    <div class="music" id="music"></div>
+</body>
+</html>
