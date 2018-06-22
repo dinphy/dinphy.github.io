@@ -13,12 +13,10 @@
         <% } else {
             site.tags.each(function(tag){  %>
 			<div class="tagcloud-container">
-				<div class="tagcloud">
-					
+				<div class="tagcloud">					
 					<a href="/tags/<%- tag.name %>">
-						<h4 id="tag-<%=tag.name %>"><%=tag.name %></h4>
+						<h5 id="tag-<%=tag.name %>"><%=tag.name %></h5>
 					</a>
-					<img src="/img/tagcloud.png">
 				</div>
 			</div>
         <% })
