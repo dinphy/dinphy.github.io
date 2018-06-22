@@ -26,7 +26,7 @@ ws.Run "D:\\webProject\\Hexo-blog\\hexo-server.bat /start",0
 ```js
 D:
 cd D:/webProject/Hexo-Blog
-hexo s -d
+hexo s
 ```
 bat脚本保存文件名和上面要对应，例如上面是 `hexo-server.bat`,保存一样即可。
 

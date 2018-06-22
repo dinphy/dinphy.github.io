@@ -1,3 +1,3 @@
 D:
 cd D:/webProject/Hexo-Blog
-hexo s -d
+hexo s
