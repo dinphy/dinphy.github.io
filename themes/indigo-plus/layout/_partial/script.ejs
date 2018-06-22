@@ -7,7 +7,7 @@ lazyScripts.push('//s95.cnzz.com/z_stat.php?id=<%-theme.cnzz %>&web_id=<%-theme.
 <% } %>
 </script>
 
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery_3.3.1_jquery.min.js"></script>
 <script src="<%- url_for('/js/waves.min.js') %>"></script>
 <script src="<%- url_for('/js/main' + (cache ? '.min': '') + '.js?v=' + theme_version()) %>"></script>
 <% if (theme.search){ %>
@@ -18,7 +18,7 @@ lazyScripts.push('//s95.cnzz.com/z_stat.php?id=<%-theme.cnzz %>&web_id=<%-theme.
 <%- partial('plugins/mathjax') %>
 
 <% if (theme.visit_counter) { %>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async type="text/javascript" src="/js/busuanzi.pure.mini.js"></script>
 <% } %>
 
 
