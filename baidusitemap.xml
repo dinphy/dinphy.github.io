@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/683be42/</loc>
+    <lastmod>2018-06-26T06:17:43.417Z</lastmod>
+    <data>
+        <display>
+        <title>凡事用心</title>
+        <pubTime>2018-06-26T05:17:00.000Z</pubTime>
+        
+        <tag>读后感</tag>
+         
+        <tag>毕淑敏</tag>
+         
+        <tag>用心</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活感悟" url="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/4bcde556/</loc>
     <lastmod>2018-06-22T23:57:18.356Z</lastmod>
     <data>
@@ -478,9 +502,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>web技术</tag>
-         
         <tag>学习笔记</tag>
+         
+        <tag>web技术</tag>
          
         <tag>blog</tag>
          

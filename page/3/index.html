@@ -146,7 +146,7 @@
 			  <h5 class="nickname">Dinphy - 简乐</h5>
 			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
 
-			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 23 篇，约 13.6k 字</b></div>
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 24 篇，约 14.8k 字</b></div>
 				
 					<li class="waves-block socail-icon ">
 					  <a href="https://github.com/dinphy" target="_blank">
@@ -181,7 +181,7 @@
 						</a>
 							<ul class="treeview-menu">
 								<li>
-								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">14</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">6</span></a>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">14</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">7</span></a>
 							</ul>				
 					</li>					
 					<li class="waves-block waves-effect">
@@ -274,6 +274,119 @@
 <div class="container body-wrap index">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-05-20-Hexo 主题 teal 使用"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 05 月 20 日 18:35" datetime="2018-05-20T10:35:00.000Z"  itemprop="datePublished">
+    2018-05-20
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 754 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 7.5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/8e1e451e/">Hexo 主题 teal 使用</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><ul>
+<li><p>yscoder原版<a href="https://yscoder.github.io" target="_blank" rel="noopener">预览效果</a>：<a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="noopener">hexo-theme-indigo</a> </p>
+</li>
+<li><p>Zoctan版本<a href="https://hexo-theme-teal.herokuapp.com/" target="_blank" rel="noopener">预览效果</a>：<a href="https://github.com/Zoctan/hexo-theme-teal" target="_blank" rel="noopener">hexo-theme-teal</a> </p>
+</li>
+</ul>
+<p>dinphy版本：</p>
+<ul>
+<li>修复搜索</li>
+<li>改变字体大小，修复对齐分享中的图标</li>
+<li>添加文章字数统计</li>
+<li>添加文章篇数统计</li>
+<li>添加文章页结束语</li>
+<li>添加Valine评论插件</li>
+<li>TOC翻译为中文</li>
+<li>demo文件夹中的内容直接复制到对应的source文件夹使用</li>
+</ul>
+<h4 id="快速开始Hexo-帮助文档"><a href="#快速开始Hexo-帮助文档" class="headerlink" title="快速开始Hexo | 帮助文档"></a>快速开始<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo | 帮助文档</a></h4><h5 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h5><h6 id="安装所需工具"><a href="#安装所需工具" class="headerlink" title="安装所需工具"></a>安装所需工具</h6><p>（1）node.js：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
+<p>（2）git：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<h6 id="托管平台注册"><a href="#托管平台注册" class="headerlink" title="托管平台注册"></a>托管平台注册</h6><ul>
+<li><p>平台注册账号，新建域名：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><br>默认的域名是<a href="http://username.github.io/，username为你想要的名字。" target="_blank" rel="noopener">http://username.github.io/，username为你想要的名字。</a><br>以上完成了第一步，我们有自己的代码仓库了，接下来我们要配置本机环境了！</p>
+</li>
+<li><p>服务器 SSH授权</p>
+</li>
+</ul>
+<p>（1）右键打开git bash，输入命令：</p>
+<blockquote>
+<p>ssh-keygen -t rsa</p>
+</blockquote>
+<p>接着回车三下,会在C盘（C:\Users\Administrator.ssh）用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥，用记事本打开id_rsa.pub，复制其中的全部内容，登录号自己的github账号，进入<a href="https://github.com/settings/keys" target="_blank" rel="noopener">https://github.com/settings/keys</a>页面New SSH keys添加到GitHub上，Title随便写，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功。</p>
+<p>（2）SSH key添加之后，就可以在本机git bash中进行测试，输入命令：</p>
+<blockquote>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> </p>
+</blockquote>
+<p>进行测试。（yes/no ?）输入yes。返回Hi username ！You’ve successfully ……说明你已经成功啦！</p>
+<h5 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h5><p>在任意地方新建一个建站的空文件夹，然后在此文件夹下右键选择git bash打开，执行初始化命令：</p>
+<blockquote>
+<p>hexo init</p>
+</blockquote>
+<p>安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上 10.0 以下，在 Hexo 根目录，执行以下命令。</p>
+<p>git clone <a href="https://github.com/dinphy/hexo-theme-teal.git" target="_blank" rel="noopener">https://github.com/dinphy/hexo-theme-teal.git</a> themes/teal</p>
+<h4 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo hexo-cli gulp gulp-minify-css gulp-htmlmin gulp-uglify gulp-clean-css babel-cli gulp-babel babel-preset-env</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo hexo-renderer-less hexo-generator-search hexo-deployer-git hexo-wordcount hexo-helper-qrcode hexo-generator-json-content hexo-generator-feed</span><br></pre></td></tr></table></figure>
+<h4 id="新建缺失的页面"><a href="#新建缺失的页面" class="headerlink" title="新建缺失的页面"></a>新建缺失的页面</h4><p>可以直接复制demo文件夹到项目根目录，亦可以按照下面的的步骤</p>
+<h5 id="开启标签页"><a href="#开启标签页" class="headerlink" title="开启标签页"></a>开启标签页</h5><p>修改 hexo/source/tags/index.md 的元数据</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout: tags</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h5 id="开启分类页"><a href="#开启分类页" class="headerlink" title="开启分类页"></a>开启分类页</h5><p>修改 hexo/source/categories/index.md 的元数据</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout: categories</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h5 id="关于页"><a href="#关于页" class="headerlink" title="关于页"></a>关于页</h5><p>about 关于页用到 /demo/souece/_data 的 Json 数据，需要将该文件夹放到 /source 下</p>
+<h4 id="快速部署"><a href="#快速部署" class="headerlink" title="快速部署"></a>快速部署</h4><p>参照/demo文件夹下的_config.yml配置</p>
+<h4 id="生成页面"><a href="#生成页面" class="headerlink" title="生成页面"></a>生成页面</h4><pre><code>hexo g
+</code></pre><h4 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h4><pre><code>hexo s
+
+(如果端口被占用，可以使用命令更改端口：hexo s -p 5000)
+</code></pre><h4 id="上传github"><a href="#上传github" class="headerlink" title="上传github"></a>上传github</h4><pre><code>hexo d -m &quot;update commit&quot;
+
+(亦可以不加 &apos;-m&apos; 参数，这是说明你做了什么操作--提交记录，不加的话直接提交记录就是hexo默认的)
+</code></pre><h4 id="其他使用方法"><a href="#其他使用方法" class="headerlink" title="其他使用方法"></a>其他使用方法</h4><p><a href="https://github.com/yscoder/hexo-theme-indigo/wiki" target="_blank" rel="noopener">原版文档 | Document</a></p>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web技术/">web技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/8e1e451e/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-2018-05-19-hexo-abbrlink 插件使用"
