@@ -494,9 +494,9 @@
       <category term="生活感悟" scheme="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
-    
       <category term="生活感悟" scheme="http://www.dinphy.wang/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
     
   </entry>
   
@@ -616,9 +616,9 @@
       <category term="生活感悟" scheme="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
-    
       <category term="生活感悟" scheme="http://www.dinphy.wang/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
     
   </entry>
   
@@ -735,11 +735,11 @@
       <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
     
     
-      <category term="学习笔记" scheme="http://www.dinphy.wang/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="Markdown" scheme="http://www.dinphy.wang/tags/Markdown/"/>
     
       <category term="语法" scheme="http://www.dinphy.wang/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+      <category term="学习笔记" scheme="http://www.dinphy.wang/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
