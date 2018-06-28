@@ -146,7 +146,7 @@
 			  <h5 class="nickname">Dinphy - 简乐</h5>
 			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
 
-			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 24 篇，约 14.8k 字</b></div>
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 25 篇，约 15.5k 字</b></div>
 				
 					<li class="waves-block socail-icon ">
 					  <a href="https://github.com/dinphy" target="_blank">
@@ -181,7 +181,7 @@
 						</a>
 							<ul class="treeview-menu">
 								<li>
-								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">14</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">7</span></a>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">15</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">7</span></a>
 							</ul>				
 					</li>					
 					<li class="waves-block waves-effect">
@@ -274,6 +274,130 @@
 <div class="container body-wrap index">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-06-28-将-hexo-个人网站托管于coding-net"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 06 月 28 日 19:42" datetime="2018-06-28T11:42:00.000Z"  itemprop="datePublished">
+    2018-06-28
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 741 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 7.5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/5cd9f4a5/">将 hexo 个人网站托管于coding.net</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<h5 id="coding-与-github-的区别"><a href="#coding-与-github-的区别" class="headerlink" title="coding 与 github 的区别"></a>coding 与 github 的区别</h5><ul>
+<li>coding 是国内的，访问速度快，金牌会员以下的首页有 5 秒广告跳转（下文有去除的方法）。</li>
+<li>github 是国外的，访问速度慢，但用户多，可靠，安全性高，免费无广告。
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="https://dn-coding-net-production-pp.qbox.me/dbb26a62-68d3-4ed5-b0ef-d883b8aba999.png" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    
+<h5 id="coding-与-github-仓库托管原理"><a href="#coding-与-github-仓库托管原理" class="headerlink" title="coding 与 github 仓库托管原理"></a>coding 与 github 仓库托管原理</h5></li>
+<li>同：二者托管的原理一样，使用 git 工具完成。</li>
+<li>异：coding 是中文界面且支持静态和动态网站托管（例如：PHP），github 是英文界面，仅支持静态页面托管。</li>
+</ul>
+<h5 id="将-hexo-托管于-coding-上"><a href="#将-hexo-托管于-coding-上" class="headerlink" title="将 hexo 托管于 coding 上"></a>将 hexo 托管于 coding 上</h5><ol>
+<li>账号注册与登录<ul>
+<li>coding 主页：<a href="https://coding.net/" target="_blank" rel="noopener">https://coding.net/</a></li>
+<li>可以使用 github 账号登录，然后设置一个用户名也行。</li>
+</ul>
+</li>
+<li><p>新建项目</p>
+<ul>
+<li><p><strong>项目名必须与用户名称一致</strong>，否则会出现托管的页面不加载 css 与 js 的问题。</p>
+<blockquote>
+<p>例如：用户名为 <code>dinphy</code> ，那么新建的项目名也要是 <code>dinphy</code> 。完成后的访问地址是： <code>dinphy.coding.me/dinphy</code></p>
+</blockquote>
+</li>
+<li><p>使用 github 上传源码的方法把网站的源码传到你新建的项目中。</p>
+</li>
+<li>展开左侧<strong>代码</strong>菜单，找到下面的 <strong>Pages 服务</strong>，静态与动态自己选择，部署分值为 master 。</li>
+<li>域名绑定：如果要绑定自己购买的域名，必须在项目根目录添加 CNAME 文件，并在此文件中添加购买的域名，如我的是：<code>www.dinphy.wang</code>，我就在 CNAME 中添加这个；不绑定域名可以忽略。</li>
+<li>强制 HTTPS 访问：视情况而定，想开就开吧。</li>
+<li>Hosted by Coding Pages (去除首页 5 秒跳转的广告)<blockquote>
+<p>银牌会员的 Coding Pages 在访问时默认会先加载 Pages 跳转页，您可选择在网站首页任意位置放置<strong>「Hosted by Coding Pages」</strong>的文字版或图片版，然后勾选下方的<strong>「已放置 Hosted by Coding Pages」</strong>选项，通过审核后您的 Pages 将不会显示跳转页。请务必将<strong>「Hosted by Coding Pages」</strong>持续保留在网站首页，撤掉后跳转页会再次出现。</p>
+</blockquote>
+</li>
+</ul>
+<p>等一两个工作日就可以了。</p>
+
+        <figure class="image-bubble">
+            <div class="img-lightbox">
+                <div class="overlay"></div>
+                <img src="http://upload-images.jianshu.io/upload_images/782269-f21be3393bf0caa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" title="">
+            </div>
+            <div class="image-caption"></div>
+        </figure>
+    
+<p>这里我放到了页脚下，我的页脚每一页都会显示，所以也包括了首页。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hosted by &lt;a href=<span class="string">"https://pages.coding.me"</span> style=<span class="string">"font-weight: bold"</span>&gt;Coding Pages&lt;<span class="regexp">/a&gt;&lt;/</span>p&gt;</span><br></pre></td></tr></table></figure>
+<p>显示效果：</p>
+<blockquote>
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold" target="_blank" rel="noopener">Coding Pages</a></p>
+</blockquote>
+</li>
+</ol>
+<h5 id="config-yml配置"><a href="#config-yml配置" class="headerlink" title="_config.yml配置"></a>_config.yml配置</h5><p>配置和 github 相似</p>
+<ul>
+<li>只托管在 coding 的情况</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:<span class="comment">//git.coding.net/dinphy/dinphy.git</span></span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">'站点更新:&#123;&#123;now("YYYY-MM-DD HH:mm:ss")&#125;&#125;'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>同时托管在 coding 和 github 的情况</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- type: git</span><br><span class="line">  repository: git@github.com:dinphy/dinphy.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">'站点更新:&#123;&#123;now("YYYY-MM-DD HH:mm:ss")&#125;&#125;'</span></span><br><span class="line">- type: git</span><br><span class="line">  repository: https:<span class="comment">//git.coding.net/dinphy/dinphy.git</span></span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">'站点更新:&#123;&#123;now("YYYY-MM-DD HH:mm:ss")&#125;&#125;'</span></span><br></pre></td></tr></table></figure>
+<p>最后就是 <code>hexo d</code> 部署到仓库了。</p>
+<p>如果不想每次都输入用户名和密码，那么可以添加 ssh 到 coding 上面的公钥上。</p>
+<p>添加方法参考：<a href="http://localhost:4000/posts/8e1e451e/" target="_blank" rel="noopener">Hexo 主题 teal 使用</a></p>
+<p>本文到此结束。</p>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/">coding</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人网站/">个人网站</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/托管/">托管</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/5cd9f4a5/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-2018-06-26-凡事用心"
@@ -929,82 +1053,6 @@
 </article>
 <div class="more">
 	<a href="/posts/a373e8ef/">
-		展开全文
-		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-	</a>
-</div>
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-2018-06-16-一款简洁的 hexo 编辑器"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018 年 06 月 16 日 7:47" datetime="2018-06-15T23:47:46.000Z"  itemprop="datePublished">
-    2018-06-16
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
-
-
-
-        <span style="color: dodgerblue">
-            约 288 字
-        </span>
-        <span>
-            将阅读<span style="color: orange;"> 2.5 </span> 分钟
-        </span>
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/posts/b7bc064e/">一款简洁的 hexo 编辑器</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-		
-			<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><ul>
-<li><a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a> v4.0+</li>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
-</ul>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tajpure/hexo-editor.git</span><br></pre></td></tr></table></figure>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>进入hexo-editor目录，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --production</span><br></pre></td></tr></table></figure></p>
-<h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h2><p>_config.yml位于hexo-editor根目录，提供了一些简单的配置选项给用户设置。</p>
-<h4 id="设置环境"><a href="#设置环境" class="headerlink" title="设置环境"></a><em>设置环境</em></h4><ol>
-<li>如果在桌面环境使用，将local改为true，此时无需登录即可使用。</li>
-<li>如果部署在服务器，请使用local的默认值false，此时需要配置用户名和密码。</li>
-</ol>
-<h4 id="设置用户名和密码"><a href="#设置用户名和密码" class="headerlink" title="设置用户名和密码"></a><em>设置用户名和密码</em></h4><blockquote>
-<p>如果在桌面环境使用，请忽略此配置</p>
-</blockquote>
-<p>将要使用的用户名和密码依次填到username和password中，请不要使用默认值。</p>
-<h4 id="设置博客目录-使用绝对路径"><a href="#设置博客目录-使用绝对路径" class="headerlink" title="设置博客目录(使用绝对路径)"></a><em>设置博客目录</em>(使用绝对路径)</h4><p>将hexo博客的目录路径配置到base_dir, 例:如果你的博客目录为”/home/user/blog”，则将base_dir设为该地址。</p>
-<blockquote>
-<p>如果需要使用hexo-editor提供的deploy功能，你需要设好hexo的deploy配置，并添加你的ssh key至deploy服务器的authorized_keys。使其不用密码即可deploy。</p>
-</blockquote>
-<h4 id="设置端口"><a href="#设置端口" class="headerlink" title="设置端口"></a><em>设置端口</em></h4><p>默认端口为2048，如果想自定义端口，直接修改即可。</p>
-<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
-
-		
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/editor/">editor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
-
-    </div>
-    
-</article>
-<div class="more">
-	<a href="/posts/b7bc064e/">
 		展开全文
 		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 	</a>

@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/5cd9f4a5/</loc>
+    <lastmod>2018-06-28T12:34:38.500Z</lastmod>
+    <data>
+        <display>
+        <title>将 hexo 个人网站托管于coding.net</title>
+        <pubTime>2018-06-28T11:42:00.000Z</pubTime>
+        
+        <tag>coding</tag>
+         
+        <tag>托管</tag>
+         
+        <tag>个人网站</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/683be42/</loc>
     <lastmod>2018-06-26T06:17:43.417Z</lastmod>
     <data>
@@ -386,9 +410,9 @@
         <title>小儿难养</title>
         <pubTime>2018-06-06T02:07:00.000Z</pubTime>
         
-        <tag>生活感悟</tag>
-         
         <tag>业余小作</tag>
+         
+        <tag>生活感悟</tag>
          
          
            
@@ -480,9 +504,9 @@
         <title>月下江边行</title>
         <pubTime>2018-05-25T06:24:00.000Z</pubTime>
         
-        <tag>生活感悟</tag>
-         
         <tag>业余小作</tag>
+         
+        <tag>生活感悟</tag>
          
          
            
@@ -502,9 +526,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>web技术</tag>
+         
+        <tag>学习笔记</tag>
          
         <tag>blog</tag>
          

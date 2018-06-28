@@ -146,7 +146,7 @@
 			  <h5 class="nickname">Dinphy - 简乐</h5>
 			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
 
-			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 24 篇，约 14.8k 字</b></div>
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 25 篇，约 15.5k 字</b></div>
 				
 					<li class="waves-block socail-icon ">
 					  <a href="https://github.com/dinphy" target="_blank">
@@ -181,7 +181,7 @@
 						</a>
 							<ul class="treeview-menu">
 								<li>
-								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">14</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">7</span></a>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">15</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">7</span></a>
 							</ul>				
 					</li>					
 					<li class="waves-block waves-effect">
@@ -274,6 +274,82 @@
 <div class="container body-wrap index">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-06-16-一款简洁的 hexo 编辑器"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 06 月 16 日 7:47" datetime="2018-06-15T23:47:46.000Z"  itemprop="datePublished">
+    2018-06-16
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 288 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 2.5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/b7bc064e/">一款简洁的 hexo 编辑器</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><ul>
+<li><a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a> v4.0+</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+</ul>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tajpure/hexo-editor.git</span><br></pre></td></tr></table></figure>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>进入hexo-editor目录，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --production</span><br></pre></td></tr></table></figure></p>
+<h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h2><p>_config.yml位于hexo-editor根目录，提供了一些简单的配置选项给用户设置。</p>
+<h4 id="设置环境"><a href="#设置环境" class="headerlink" title="设置环境"></a><em>设置环境</em></h4><ol>
+<li>如果在桌面环境使用，将local改为true，此时无需登录即可使用。</li>
+<li>如果部署在服务器，请使用local的默认值false，此时需要配置用户名和密码。</li>
+</ol>
+<h4 id="设置用户名和密码"><a href="#设置用户名和密码" class="headerlink" title="设置用户名和密码"></a><em>设置用户名和密码</em></h4><blockquote>
+<p>如果在桌面环境使用，请忽略此配置</p>
+</blockquote>
+<p>将要使用的用户名和密码依次填到username和password中，请不要使用默认值。</p>
+<h4 id="设置博客目录-使用绝对路径"><a href="#设置博客目录-使用绝对路径" class="headerlink" title="设置博客目录(使用绝对路径)"></a><em>设置博客目录</em>(使用绝对路径)</h4><p>将hexo博客的目录路径配置到base_dir, 例:如果你的博客目录为”/home/user/blog”，则将base_dir设为该地址。</p>
+<blockquote>
+<p>如果需要使用hexo-editor提供的deploy功能，你需要设好hexo的deploy配置，并添加你的ssh key至deploy服务器的authorized_keys。使其不用密码即可deploy。</p>
+</blockquote>
+<h4 id="设置端口"><a href="#设置端口" class="headerlink" title="设置端口"></a><em>设置端口</em></h4><p>默认端口为2048，如果想自定义端口，直接修改即可。</p>
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/editor/">editor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/b7bc064e/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-2018-06-15-使用JQuery中的attr-获取和设置元素属性"
@@ -1125,67 +1201,6 @@
 </article>
 <div class="more">
 	<a href="/posts/96d8dc65/">
-		展开全文
-		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-	</a>
-</div>
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-2018-05-25-月下江边行"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018 年 05 月 25 日 14:24" datetime="2018-05-25T06:24:00.000Z"  itemprop="datePublished">
-    2018-05-25
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/生活感悟/">生活感悟</a></li></ul>
-
-
-
-        <span style="color: dodgerblue">
-            约 454 字
-        </span>
-        <span>
-            将阅读<span style="color: orange;"> 5 </span> 分钟
-        </span>
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/posts/f77a468f/">月下江边行</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-		
-			<p>晚风轻轻，江水悠悠，星光熠熠，皎月柔柔。</p>
-<p>沿江步道行，处处皆风景。小道间，人来人往，男女老少，有陪着老人散心的儿女，有牵着小孩学步的父母，有遛宠物的；草坪里，有拿着凉扇左右扇动的老人，有白日上班累了休闲的年轻人；凉亭中，多为谈情说爱的小青年，他们需要安静的氛围；天桥下、近水边，是坐江垂钓的喜好者，即便是没有上钩的鱼，他们依然学着“姜太公”；广场上，人特别多，有你追我赶、嬉戏打闹的小朋友，有跟着音乐、活力四射跳着广场舞的大妈、大爷；若稍有留意，人工山洞、高低台阶、楼阁亭子似有仿古之韵，绿树成荫、杨柳依依、花草竹舟正合众人之意；抬头有月亮星星，望远是高楼霓虹；凉风习习，江面上叠起层层波纹；蛙声喋喋，四周围顿时热闹非常。细细想来，其间乐趣，无穷尽也。</p>
-<p>茶余饭后，工作之余，生活乐趣，尽在其中。</p>
-<blockquote>
-<p>江：这里指的是铜仁的锦江，几年前，政府投资沿江修建了一条休闲的小道。不论四季如何变幻，人们或早上或傍晚都喜欢沿着这条小道散步。这条小道很长，从世纪公园处可以走到三江公园，甚至更远的地方。读书时，我喜欢走的更远；现在变懒了，从金滩桥头至世纪公园这一段便成了常走的。夏天到了，待在家里太闷热，于是，每天傍晚，我喜欢和家人一同到江边散步，此文为散步过程中的所见所感。</p>
-</blockquote>
-
-		
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/业余小作/">业余小作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活感悟/">生活感悟</a></li></ul>
-
-    </div>
-    
-</article>
-<div class="more">
-	<a href="/posts/f77a468f/">
 		展开全文
 		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 	</a>
