@@ -96,6 +96,10 @@ deploy:
   repository: git@github.com:dinphy/dinphy.github.io.git
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH:mm:ss")}}'
+- type: git
+  repository: https://git.coding.net/dinphy/dinphy.git
+  branch: master
+  message: '站点更新:{{now("YYYY-MM-DD HH:mm:ss")}}'  
 - type: baidu_url_submitter
 
 # rss
