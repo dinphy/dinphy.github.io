@@ -5,7 +5,7 @@ abbrlink: 9ff79b23
 date: 2018-05-26 23:13:18
 tags:
 ---
-dinphy，这是我的英文名称，我叫王定飞（dinphy wang）。
+dinphy，这是我的英文名称，我叫王定飞（dinphy wang），故而我选中了顶级域名 `.wang`，有 **王** 的含义在里面。
 
 我是一个精通 `html css java javascript php node.js vue` 英语单词阅读的前端、后端、移动端的业余爱好者。
 
@@ -41,5 +41,7 @@ so,简单从下面几句顺口溜了解下我吧～
 | 2018-06-07 | 更改侧边栏菜单样式为二级下拉									          |
 | 2018-06-11 | 调整主页卡片PC端和移动端显示     									  |
 | 2018-06-14 | 调整页脚、评论框夜间模式样式                                           |
+| 2018-06-22 | 改变标签页样式[update tags style](https://github.com/dinphy/hexo-theme-indigo/commit/9f84a421bc6a69bd4f292e75918eb85e339ff75e) |
+| 2018-06-28 | 为了加快访问速度，[将博客项目托管于 coding.net](https://www.dinphy.wang/posts/5cd9f4a5/) |
 
 > 欢迎诸君订阅 RSS。
