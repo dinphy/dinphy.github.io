@@ -146,7 +146,7 @@
 			  <h5 class="nickname">Dinphy - 简乐</h5>
 			  <a href="mailto:2027821710@qq.com" title="2027821710@qq.com" class="mail">2027821710@qq.com</a>
 
-			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 25 篇，约 15.5k 字</b></div>
+			  <div style="margin-top: 5px; margin-bottom: 5px; font-size: 92%"><b>文章共 26 篇，约 16.6k 字</b></div>
 				
 					<li class="waves-block socail-icon ">
 					  <a href="https://github.com/dinphy" target="_blank">
@@ -181,7 +181,7 @@
 						</a>
 							<ul class="treeview-menu">
 								<li>
-								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">15</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">7</span></a>
+								<a class="sidebar_show-link" href="/categories/业余小作/">业余小作<span class="sidebar_show-count">3</span></a></li><li><a class="sidebar_show-link" href="/categories/学习参考/">学习参考<span class="sidebar_show-count">15</span></a></li><li><a class="sidebar_show-link" href="/categories/生活感悟/">生活感悟<span class="sidebar_show-count">8</span></a>
 							</ul>				
 					</li>					
 					<li class="waves-block waves-effect">
@@ -274,6 +274,82 @@
 <div class="container body-wrap index">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-2018-05-25-hexo-admin 插件使用"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018 年 05 月 25 日 15:07" datetime="2018-05-25T07:07:00.000Z"  itemprop="datePublished">
+    2018-05-25
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习参考/">学习参考</a></li></ul>
+
+
+
+        <span style="color: dodgerblue">
+            约 448 字
+        </span>
+        <span>
+            将阅读<span style="color: orange;"> 5 </span> 分钟
+        </span>
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/posts/96d8dc65/">hexo-admin 插件使用</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+		
+			<blockquote>
+<p>用了几天hexo搭建的网站，感觉主题挺好的，就是发布文章时有点麻烦，于是搜索了一下有没有什么新的办法，快速发布文章的。<br>网上有很多方法，这里我用了hexo-admin这个插件。用起来比较简单，界面也可以。<br>使用方法如下：</p>
+<ul>
+<li>在已经搭建好的环境中，也就是hexo 的根目录进行操作。</li>
+<li>先使用官方的方法安装hexo-admin插件<code>npm install --save hexo-admin</code></li>
+<li>然后使用我FORK过来的<a href="https://github.com/dinphy/hexo-admin" target="_blank" rel="noopener">hexo-admin</a></li>
+<li>将我FORK过来的hexo-admin克隆下来到hexo根目录</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>git clone <a href="https://github.com/dinphy/hexo-admin.git" target="_blank" rel="noopener">https://github.com/dinphy/hexo-admin.git</a></p>
+<ul>
+<li>进入克隆下来的hexo-admin目录，执行<code>npm link</code>;</li>
+<li>在 hexo 根目录下执行 <code>npm link hexo-admin</code>;</li>
+<li>配置 hexo 根目录下的_config.yml文件，以下代码可以在Settings里面设置了获取，在文件中加入：</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># hexo-admin authentification</span><br><span class="line">admin:</span><br><span class="line">  username: dinphy</span><br><span class="line">  password_hash: $<span class="number">2</span>a$<span class="number">10</span>$Cjsi8jHIzInUtkSBaK9tnOyv3oqqcJPS2MF3Mz6FlGj2JNQYlwVhm</span><br><span class="line">  secret: Life is not easy, happiness is good</span><br><span class="line">  deployCommand: <span class="string">'hexo-deploy.sh'</span></span><br></pre></td></tr></table></figure>
+<p>(注意：username是管理员名称，password_hash是密码，secret是cookies缓存短语，据说越长越好，deployCommand是执行的命令，也就是Deploy页面的deploy按钮要调用的东西。我这里是在 hexo 根目录新建了一个hexo-deploy.sh文件，里面只有两条命令<code>hexo clean</code>和<code>hexo g -d</code>意思简单明了)。</p>
+<p>这些都配置好了，就可以开始测试了本地执行<code>hexo s</code>，浏览器输入<code>http://localhost:4000/admin</code>就能进入管理后台了，输入用户名密码，就可以看到你发的文章了。</p>
+<p>hexo-admin支持添加标签和分类，间隔几秒就可以保存草稿到本地，完了之后右上角的Pubilc点一下，Deploy页面点一下deploy按钮，就可以直接发布到站点上了。</p>
+
+		
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web技术/">web技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/插件使用/">插件使用</a></li></ul>
+
+    </div>
+    
+</article>
+<div class="more">
+	<a href="/posts/96d8dc65/">
+		展开全文
+		<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	</a>
+</div>
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-2018-05-25-月下江边行"
