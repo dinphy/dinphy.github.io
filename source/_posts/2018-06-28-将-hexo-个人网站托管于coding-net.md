@@ -9,10 +9,11 @@ categories:
   - 学习参考
 date: 2018-06-28 19:42:00
 ---
+![](https://dn-coding-net-production-static.qbox.me/ac3485e9f3aea7284a27b489aae9ec09.png)
 ##### coding 与 github 的区别
 - coding 是国内的，访问速度快，金牌会员以下的首页有 5 秒广告跳转（下文有去除的方法）。
 - github 是国外的，访问速度慢，但用户多，可靠，安全性高，免费无广告。
-![](https://dn-coding-net-production-pp.qbox.me/dbb26a62-68d3-4ed5-b0ef-d883b8aba999.png)
+
 ##### coding 与 github 仓库托管原理
 - 同：二者托管的原理一样，使用 git 工具完成。
 - 异：coding 是中文界面且支持静态和动态网站托管（例如：PHP），github 是英文界面，仅支持静态页面托管。
