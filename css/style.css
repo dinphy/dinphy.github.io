@@ -1081,14 +1081,14 @@ pre {
 #back-to-top,
 #toc-btn {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 50px;
+  bottom: 50px;
   background-color: #959595;
   color: #fff;
   text-align: center;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 15px;
+  border-radius: 20px;
   z-index: 1;
   cursor: pointer;
 }
@@ -1100,12 +1100,12 @@ pre {
 }
 #back-to-top i,
 #toc-btn i {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 #toc-btn {
-  bottom: 65px;
+  bottom: 90px;
 }
 /*====================================================
     timeline
