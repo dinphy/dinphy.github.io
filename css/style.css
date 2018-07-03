@@ -1346,6 +1346,32 @@ pre .javascript .function {
 /*====================================================
     media
 ====================================================*/
+@media screen and (min-width: 120px) and (max-width: 766px) {
+#back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: #959595;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+#back-to-top:hover,
+#toc-btn:hover {
+  background: #e67e22;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#back-to-top i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+}
 @media screen and (max-width: 767px) {
   .main-navigation {
     text-align: left;
@@ -1401,18 +1427,6 @@ pre .javascript .function {
   .post-footer,
   #article-toc {
     display: none;
-  }
-  #back-to-top {
-    right: 40px;
-    bottom: 40px;
-    position: fixed;
-    z-index: 1;
-    cursor: pointer;
-  }
-  #back-to-top i {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
   }
   .content-wrap .m-post {
     padding: 0px;
