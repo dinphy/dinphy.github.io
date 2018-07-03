@@ -122,17 +122,17 @@ window.onload = function() {
     });	
 
     //返回顶部
-	$backToTop.onclick = function() {
-	    cancelAnimationFrame(timer);
-	    timer = requestAnimationFrame(function fn() {
-	        var sTop = getScrollTop();
-	        if (sTop > 0) {
-	            $body.scrollTop = document.documentElement.scrollTop = sTop - 50;
-	            timer = requestAnimationFrame(fn);
-	        } else {
-	            cancelAnimationFrame(timer);
-	        }
-	    });
-	};
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 50) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    $('#back-to-top').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+
 
 };

@@ -1078,6 +1078,9 @@ pre {
 /*====================================================
    back-to-top and toc-btn
 ====================================================*/
+#back-to-top.show {
+  opacity: 1;
+}
 #back-to-top,
 #toc-btn {
   position: fixed;
@@ -1346,32 +1349,6 @@ pre .javascript .function {
 /*====================================================
     media
 ====================================================*/
-@media screen and (min-width: 120px) and (max-width: 766px) {
-#back-to-top {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  background-color: #959595;
-  color: #fff;
-  text-align: center;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 20px;
-  z-index: 1;
-  cursor: pointer;
-}
-#back-to-top:hover,
-#toc-btn:hover {
-  background: #e67e22;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-#back-to-top i {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-}
-}
 @media screen and (max-width: 767px) {
   .main-navigation {
     text-align: left;
