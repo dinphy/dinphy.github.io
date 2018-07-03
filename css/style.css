@@ -1078,9 +1078,6 @@ pre {
 /*====================================================
    back-to-top and toc-btn
 ====================================================*/
-#back-to-top.show {
-  opacity: 1;
-}
 #back-to-top,
 #toc-btn {
   position: fixed;
@@ -1404,6 +1401,11 @@ pre .javascript .function {
   .post-footer,
   #article-toc {
     display: none;
+  }
+  #back-to-top {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
   .content-wrap .m-post {
     padding: 0px;
