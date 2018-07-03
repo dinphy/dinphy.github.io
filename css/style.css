@@ -1402,6 +1402,10 @@ pre .javascript .function {
   #article-toc {
     display: none;
   }
+  #back-to-top {
+    right: 40px;
+    bottom: 40px;
+  }
   .content-wrap .m-post {
     padding: 0px;
   }
