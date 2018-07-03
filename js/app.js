@@ -123,8 +123,16 @@ window.onload = function() {
 
     //返回顶部
 	$backToTop.onclick = function() {
-            scrollTo(0,0);
-
+	    cancelAnimationFrame(timer);
+	    timer = requestAnimationFrame(function fn() {
+	        var sTop = getScrollTop();
+	        if (sTop > 0) {
+	            $body.scrollTop = document.documentElement.scrollTop = sTop - 50;
+	            timer = requestAnimationFrame(fn);
+	        } else {
+	            cancelAnimationFrame(timer);
+	        }
+	    });
 	};
 
 };
