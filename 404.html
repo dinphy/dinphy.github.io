@@ -137,16 +137,7 @@
                     <article class="post">
     <h1 class="post-head"></h1>
     <div class="post-body">
-        <!DOCTYPE HTML>
-<html>
-<head>
-	<title>404</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8;">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="robots" content="all">
-	<meta name="robots" content="index,follow">
-</head>
-<style>
+        <style>
 	.container {
 		background: url(404-bg.png) no-repeat 560px top;
 	}
@@ -201,26 +192,21 @@
 		<b>你找的是：<span id="title"></span></b>
 		<div>
 			<a href="/" title="返回首页">返回首页</a>
-			<a href="javascript:;" title="上一步" id="reload-btn" target="_blank" rel="noopener">上一步</a>
+			<a href="javascript:history.back(-1);" title="上一步" target="_blank" rel="noopener">上一步</a>
 		</div>
 	</div>
-<script>
+<script type="text/javascript">
 	//倒计时跳转到首页的js代码
-	var $_num=$("#num");
-	var num=parseInt($_num.html());
-	var numId=setInterval(function(){
+	var num = 10;
+	function redirect() {
 		num--;
-		$_num.html(num);
-		if(num===0){
-			//跳转地址写在这里
-			window.location.href="/";
+		document.getElementById("num").innerHTML = num;
+		if (num < 0) {
+			document.getElementById("num").innerHTML = 0;
+			location.href = "/";
 		}
-	},1000);
-	//返回按钮单击事件
-	var reloadPage = $("#reload-btn");
-	reloadPage.click(function(e){
-		window.history.back();
-	});
+	}
+	setInterval("redirect()", 1000);
 </script>
 <script>
 	//获取标题
@@ -229,10 +215,7 @@
 	var index = url.slice(0, url.length - 1).lastIndexOf('/') + 1;
 	title.style.color = '#f34';
 	title.innerText = decodeURI(url.slice(index).replace(/(\.html|\/)$/, ''));
-</script>
-</body>
-</html>
-
+</script></body>
     </div>
 </article>
                 </main>
