@@ -1405,6 +1405,14 @@ pre .javascript .function {
   #back-to-top {
     right: 40px;
     bottom: 40px;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+  }
+  #back-to-top i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
   .content-wrap .m-post {
     padding: 0px;
