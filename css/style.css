@@ -453,10 +453,10 @@ pre {
 }
 .post .post-media {
   position: relative;
-  margin-right: 15px;
-  width: 220px;
-  height: 160px;
-  float: left;
+  //margin-right: 15px;
+  width: auto;
+  height: 300px;
+  //float: left;
   overflow: hidden;
 }
 .post .post-media img {
@@ -1394,8 +1394,8 @@ pre .javascript .function {
   }
   .post .post-media {
     float: none;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 220px;
     margin: 0 0 1em 0;
   }
   .post-footer,
