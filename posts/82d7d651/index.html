@@ -31,7 +31,7 @@
     <!--Title-->
 
 
-<title>将 hexo 个人网站托管于coding.net | Dinphy - 简乐 | 生活不易,快乐就好</title>
+<title>CSS 文本两端对齐 | Dinphy - 简乐 | 生活不易,快乐就好</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Dinphy - 简乐 | 生活不易,快乐就好" type="application/atom+xml">
@@ -149,16 +149,16 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="将 hexo 个人网站托管于coding.net">
+        <h1 id="CSS 文本两端对齐">
             
-	            将 hexo 个人网站托管于coding.net
+	            CSS 文本两端对齐
             
         </h1>
         <div class="post-meta">
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018年06月28日</span>
+        <span class="date-meta">2018年07月04日</span>
     </span>
     
     
@@ -178,59 +178,13 @@
     </div>
     
     <div class="post-body post-content">
-        <p><img src="https://dn-coding-net-production-static.qbox.me/ac3485e9f3aea7284a27b489aae9ec09.png" alt=""></p>
-<h5 id="coding-与-github-的区别"><a href="#coding-与-github-的区别" class="headerlink" title="coding 与 github 的区别"></a>coding 与 github 的区别</h5><ul>
-<li>coding 是国内的，访问速度快，金牌会员以下的首页有 5 秒广告跳转（下文有去除的方法）。</li>
-<li>github 是国外的，访问速度慢，但用户多，可靠，安全性高，免费无广告。</li>
-</ul>
-<h5 id="coding-与-github-仓库托管原理"><a href="#coding-与-github-仓库托管原理" class="headerlink" title="coding 与 github 仓库托管原理"></a>coding 与 github 仓库托管原理</h5><ul>
-<li>同：二者托管的原理一样，使用 git 工具完成。</li>
-<li>异：coding 是中文界面且支持静态和动态网站托管（例如：PHP），github 是英文界面，仅支持静态页面托管。</li>
-</ul>
-<h5 id="将-hexo-托管于-coding-上"><a href="#将-hexo-托管于-coding-上" class="headerlink" title="将 hexo 托管于 coding 上"></a>将 hexo 托管于 coding 上</h5><ol>
-<li>账号注册与登录<ul>
-<li>coding 主页：<a href="https://coding.net/" target="_blank" rel="noopener">https://coding.net/</a></li>
-<li>可以使用 github 账号登录，然后设置一个用户名也行。</li>
-</ul>
-</li>
-<li><p>新建项目</p>
-<ul>
-<li><p><strong>项目名必须与用户名称一致</strong>，否则会出现托管的页面不加载 css 与 js 的问题。</p>
-<blockquote>
-<p>例如：用户名为 <code>dinphy</code> ，那么新建的项目名也要是 <code>dinphy</code> 。完成后的访问地址是： <code>dinphy.coding.me/dinphy</code></p>
-</blockquote>
-</li>
-<li><p>使用 github 上传源码的方法把网站的源码传到你新建的项目中。</p>
-</li>
-<li>展开左侧<strong>代码</strong>菜单，找到下面的 <strong>Pages 服务</strong>，静态与动态自己选择，部署分值为 master 。</li>
-<li>域名绑定：如果要绑定自己购买的域名，必须在项目根目录添加 CNAME 文件，并在此文件中添加购买的域名，如我的是：<code>www.dinphy.wang</code>，我就在 CNAME 中添加这个；不绑定域名可以忽略。</li>
-<li>强制 HTTPS 访问：视情况而定，想开就开吧。</li>
-<li>Hosted by Coding Pages (去除首页 5 秒跳转的广告)<blockquote>
-<p>银牌会员的 Coding Pages 在访问时默认会先加载 Pages 跳转页，您可选择在网站首页任意位置放置<strong>「Hosted by Coding Pages」</strong>的文字版或图片版，然后勾选下方的<strong>「已放置 Hosted by Coding Pages」</strong>选项，通过审核后您的 Pages 将不会显示跳转页。请务必将<strong>「Hosted by Coding Pages」</strong>持续保留在网站首页，撤掉后跳转页会再次出现。</p>
-</blockquote>
-</li>
-</ul>
-<p>等一两个工作日就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/782269-f21be3393bf0caa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>这里我放到了页脚下，我的页脚每一页都会显示，所以也包括了首页。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hosted by &lt;a href=<span class="string">"https://pages.coding.me"</span> style=<span class="string">"font-weight: bold"</span>&gt;Coding Pages&lt;<span class="regexp">/a&gt;&lt;/</span>p&gt;</span><br></pre></td></tr></table></figure>
-<p>显示效果：</p>
-<blockquote>
-<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold" target="_blank" rel="noopener">Coding Pages</a></p>
-</blockquote>
-</li>
-</ol>
-<h5 id="config-yml配置"><a href="#config-yml配置" class="headerlink" title="_config.yml配置"></a>_config.yml配置</h5><p>配置和 github 相似</p>
-<ul>
-<li>只托管在 coding 的情况</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:<span class="comment">//git.coding.net/dinphy/dinphy.git</span></span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">'站点更新:&#123;&#123;now("YYYY-MM-DD HH:mm:ss")&#125;&#125;'</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>同时托管在 coding 和 github 的情况</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- type: git</span><br><span class="line">  repository: git@github.com:dinphy/dinphy.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">'站点更新:&#123;&#123;now("YYYY-MM-DD HH:mm:ss")&#125;&#125;'</span></span><br><span class="line">- type: git</span><br><span class="line">  repository: https:<span class="comment">//git.coding.net/dinphy/dinphy.git</span></span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">'站点更新:&#123;&#123;now("YYYY-MM-DD HH:mm:ss")&#125;&#125;'</span></span><br></pre></td></tr></table></figure>
-<p>最后就是 <code>hexo d</code> 部署到仓库了。</p>
-<p>如果不想每次都输入用户名和密码，那么可以添加 ssh 到 coding 上面的公钥上。</p>
-<p>添加方法参考：<a href="http://localhost:4000/posts/8e1e451e/" target="_blank" rel="noopener">Hexo 主题 teal 使用</a></p>
-<p>本文到此结束。</p>
+        <p>先来看看两行大家都很熟悉的代码，对于多行文本来说，基本可以兼容所有的游览器，实现两端对齐。在多行文本中，该样式对于最后一段文字并不处理。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">    text-align:justify;</span><br><span class="line">    text-align-last:justify;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>所以对于单行中文文本，我们需要打补丁</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    content:<span class="string">''</span>;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    width:<span class="number">100</span>%;</span><br><span class="line">    height:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们使用after选择器在单行文本的最后加入content，不过这时会导致p被撑开了，所以我们还需要设置高度，完整代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p &#123;</span><br><span class="line">    text-align:justify;</span><br><span class="line">    text-align-last:justify;</span><br><span class="line">    height:<span class="number">24</span>px;</span><br><span class="line"> </span><br><span class="line">    font-size:<span class="number">20</span>px;</span><br><span class="line">    width:<span class="number">500</span>px;</span><br><span class="line">&#125;</span><br><span class="line">p:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    content:<span class="string">''</span>;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    width:<span class="number">100</span>%;</span><br><span class="line">    height:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">&lt;p&gt;文 字 间 要 有 空 格，不 然 不 管 用&lt;/</span>P&gt;</span><br></pre></td></tr></table></figure>
+<p>具体效果可以看本站的友链部分。</p>
 
     </div>
 
@@ -248,15 +202,10 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/posts/dbb667d7/" class="pre-post btn btn-default" title='随心随意随缘'>
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">随心随意随缘</span>
-        </a>
     
-    
-        <a href="/posts/683be42/" class="next-post btn btn-default" title='凡事用心'>
+        <a href="/posts/cec1b3cd/" class="next-post btn btn-default" title='使用Javascript实现回到顶端'>
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">凡事用心</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">使用Javascript实现回到顶端</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>
@@ -303,7 +252,7 @@
     <div class="widget">
         <h3 class="title">文章目录</h3>
         
-            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#coding-与-github-的区别"><span class="toc-number">1.</span> <span class="toc-text">coding 与 github 的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#coding-与-github-仓库托管原理"><span class="toc-number">2.</span> <span class="toc-text">coding 与 github 仓库托管原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#将-hexo-托管于-coding-上"><span class="toc-number">3.</span> <span class="toc-text">将 hexo 托管于 coding 上</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#config-yml配置"><span class="toc-number">4.</span> <span class="toc-text">_config.yml配置</span></a></li></ol>
+            <p>暂无目录</p>
         
     </div>
 </aside>

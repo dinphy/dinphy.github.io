@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>http://www.dinphy.wang/posts/82d7d651/</loc>
+    <lastmod>2018-07-04T05:02:34.074Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 文本两端对齐</title>
+        <pubTime>2018-07-04T04:51:00.000Z</pubTime>
+        
+        <tag>两端对齐</tag>
+         
+        <tag>选择器</tag>
+         
+        <tag>justify</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.dinphy.wang/posts/b5f422e3/</loc>
@@ -609,9 +633,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>web技术</tag>
+         
+        <tag>学习笔记</tag>
          
         <tag>blog</tag>
          

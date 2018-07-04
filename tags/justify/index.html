@@ -31,7 +31,7 @@
     <!--Title-->
 
 
-<title>标签: markdown | Dinphy - 简乐 | 生活不易,快乐就好</title>
+<title>标签: justify | Dinphy - 简乐 | 生活不易,快乐就好</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Dinphy - 简乐 | 生活不易,快乐就好" type="application/atom+xml">
@@ -148,7 +148,7 @@
                 <main class="col-md-8 main-content ">
                     <h3> 
     
-        markdown 
+        justify 
     
     
 </h3>
@@ -158,18 +158,15 @@
         <div class="post-content">
             <div class="post-head home-post-head">
                 <h1 class="post-title"> 
-                    <a href="/posts/b7bc064e/">一款简洁的 hexo 编辑器</a>
+                    <a href="/posts/82d7d651/">CSS 文本两端对齐</a>
                 </h1>
             </div>
             <p class="brief">
                 
-                    安装依赖
-Node.js v4.0+
-Git
-
-下载1git clone https://github.com/tajpure/hexo-editor.git
-初始化进入hexo-editor目录，执行1npm install --production
-配置_config.yml_config.yml位于hexo-editor根目录，提供了一些简单的配...
+                    先来看看两行大家都很熟悉的代码，对于多行文本来说，基本可以兼容所有的游览器，实现两端对齐。在多行文本中，该样式对于最后一段文字并不处理。
+1234p &amp;#123;    text-align:justify;    text-align-last:justify;&amp;#125;
+所以对于单行中文文本，我们需要打补丁
+1234567p:after &amp;#12...
                 
             </p> 
         </div>
@@ -180,7 +177,7 @@ Git
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018年06月16日</span>
+        <span class="date-meta">2018年07月04日</span>
     </span>
     
     
@@ -199,7 +196,7 @@ Git
             </div>
 
             <div class="post-permalink">
-                <a href="/posts/b7bc064e/" class="btn btn-default">阅读全文</a>
+                <a href="/posts/82d7d651/" class="btn btn-default">阅读全文</a>
             </div>
         </footer>
     
@@ -412,11 +409,6 @@ Git
 
 
 <script src="/js/tagcloud.js"></script>
-
-<script src="/js/tagcanvas.js"></script>
-
-</body>
-</html>script src="/js/tagcloud.js"></script>
 
 <script src="/js/tagcanvas.js"></script>
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dinphy.wang/"/>
-  <updated>2018-07-03T06:38:51.229Z</updated>
+  <updated>2018-07-04T05:02:34.074Z</updated>
   <id>http://www.dinphy.wang/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 文本两端对齐</title>
+    <link href="http://www.dinphy.wang/posts/82d7d651/"/>
+    <id>http://www.dinphy.wang/posts/82d7d651/</id>
+    <published>2018-07-04T04:51:00.000Z</published>
+    <updated>2018-07-04T05:02:34.074Z</updated>
+    
+    <content type="html"><![CDATA[<p>先来看看两行大家都很熟悉的代码，对于多行文本来说，基本可以兼容所有的游览器，实现两端对齐。在多行文本中，该样式对于最后一段文字并不处理。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">    text-align:justify;</span><br><span class="line">    text-align-last:justify;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以对于单行中文文本，我们需要打补丁</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    content:<span class="string">''</span>;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    width:<span class="number">100</span>%;</span><br><span class="line">    height:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们使用after选择器在单行文本的最后加入content，不过这时会导致p被撑开了，所以我们还需要设置高度，完整代码如下：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p &#123;</span><br><span class="line">    text-align:justify;</span><br><span class="line">    text-align-last:justify;</span><br><span class="line">    height:<span class="number">24</span>px;</span><br><span class="line"> </span><br><span class="line">    font-size:<span class="number">20</span>px;</span><br><span class="line">    width:<span class="number">500</span>px;</span><br><span class="line">&#125;</span><br><span class="line">p:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    content:<span class="string">''</span>;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    width:<span class="number">100</span>%;</span><br><span class="line">    height:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">&lt;p&gt;文 字 间 要 有 空 格，不 然 不 管 用&lt;/</span>P&gt;</span><br></pre></td></tr></table></figure><p>具体效果可以看本站的友链部分。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;先来看看两行大家都很熟悉的代码，对于多行文本来说，基本可以兼容所有的游览器，实现两端对齐。在多行文本中，该样式对于最后一段文字并不处理。&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
+      
+    
+    </summary>
+    
+      <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+    
+    
+      <category term="两端对齐" scheme="http://www.dinphy.wang/tags/%E4%B8%A4%E7%AB%AF%E5%AF%B9%E9%BD%90/"/>
+    
+      <category term="选择器" scheme="http://www.dinphy.wang/tags/%E9%80%89%E6%8B%A9%E5%99%A8/"/>
+    
+      <category term="justify" scheme="http://www.dinphy.wang/tags/justify/"/>
+    
+  </entry>
   
   <entry>
     <title>使用Javascript实现回到顶端</title>
@@ -570,35 +600,6 @@
       <category term="高考" scheme="http://www.dinphy.wang/tags/%E9%AB%98%E8%80%83/"/>
     
       <category term="感悟" scheme="http://www.dinphy.wang/tags/%E6%84%9F%E6%82%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小儿难养</title>
-    <link href="http://www.dinphy.wang/posts/70b5b646/"/>
-    <id>http://www.dinphy.wang/posts/70b5b646/</id>
-    <published>2018-06-06T02:07:00.000Z</published>
-    <updated>2018-06-13T12:17:08.612Z</updated>
-    
-    <content type="html"><![CDATA[<p>有时候，我觉得人们真的很可怜：当拥有时不懂得珍惜，等失去后才觉得可惜。这其实也很可悲，不值得别人怜悯。</p><p>我似乎就是这样的可怜。孩子还小，我总是以“别人家的孩子”的行为习惯要求她这样那样的，殊不知她才学会走路，还不会说话，勉强可以听懂大人说的而已。</p><p>我时常在反省自己，我是不是过早的对她家教了，抑或是让她随性，开心一点。为了这个问题，家人之间也时常意见不合，老的老，小的小，老的偏袒小的，小的不听话，做父母的又想好好教育她，让她有一个好的行为习惯。我在教育她的时候，老的说她还小，慢慢来；我让老的先别管，特别是她想要什么东西又不肯自己动手的时候，她习惯性的就是哭着骗着的，长此以往，这就是一种不良的习惯。</p><p>我不知道这种做法是否正确，她不想动手去拿自己想要的，她就哭，我就让她哭，不管她，直到她停下来为止，不知道能不能纠正她的这种习惯？或者是我过早的要求她了，我该不该再等等看呢？</p><p>在行为规范这一点，也许我是对的，因为好习惯都是养出来的，好孩子都是教出来的；在考虑她年纪尚小这一点，也许我真的过早要求她了。</p><p>不论怎样，在这个家里，她现在正需要我们大人的呵护，同时也需要大人的正确引导；我是教师，她是学生，她是课堂的主体，我是她的引导者，传教者，管理者，更重要的是我是她的父亲，以身作则对她才是最好的引导。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;有时候，我觉得人们真的很可怜：当拥有时不懂得珍惜，等失去后才觉得可惜。这其实也很可悲，不值得别人怜悯。&lt;/p&gt;
-&lt;p&gt;我似乎就是这样的可怜。孩子还小，我总是以“别人家的孩子”的行为习惯要求她这样那样的，殊不知她才学会走路，还不会说话，勉强可以听懂大人说的而已。&lt;/p&gt;
-&lt;p
-      
-    
-    </summary>
-    
-      <category term="生活感悟" scheme="http://www.dinphy.wang/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
-    
-    
-      <category term="生活感悟" scheme="http://www.dinphy.wang/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
-    
-      <category term="业余小作" scheme="http://www.dinphy.wang/tags/%E4%B8%9A%E4%BD%99%E5%B0%8F%E4%BD%9C/"/>
     
   </entry>
   
