@@ -50,7 +50,7 @@ h6 {
   color: #303030;
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 h2 {
   font-size: 1.5em;
@@ -418,9 +418,11 @@ pre {
   text-align: center;
 }
 .post .post-head .post-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.35em;
   margin: 0;
+  border-left: 3px solid #e67e22;
+  padding-left: 8px;
 }
 .post .post-head .post-title a {
   color: #303030;
