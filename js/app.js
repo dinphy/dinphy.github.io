@@ -42,9 +42,9 @@ window.onload = function() {
     $msearch.onclick = function(){
         var searchOpen = $mainSearch.getAttribute("class");
         if(searchOpen.indexOf("in") != '-1'){
-            $mainSearch.setAttribute("class","widget");
+            $mainSearch.setAttribute("class","widget collapse");
         } else {
-            $mainSearch.setAttribute("class","widget in");
+            $mainSearch.setAttribute("class","widget collapse in");
         }
     };    
 
