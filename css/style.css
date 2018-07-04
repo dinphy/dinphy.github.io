@@ -356,7 +356,7 @@ pre {
   color: #505050;
   line-height: 4em;
   display: block;
-  padding: 0 21px;
+  padding: 0 15px;
 }
 .main-navigation .menu li:hover > a {
   color: #e67e22;
@@ -671,7 +671,7 @@ pre {
   border-top: #dededc 1px solid;
 }
 .post-content blockquote {
-  padding: 8px 0;
+  padding: 8px 8px;
   margin: 5px 0;
   color: #4b4b4b;
   background-color: #f9f9f9;
