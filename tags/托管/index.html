@@ -108,8 +108,13 @@
                         <i class="fa fa-bars"></i>
                     </span>
                     <a class="navbar-brand" href="http://www.dinphy.wang">Dinphy - 简乐 | 生活不易,快乐就好</a>
+                    <div class="searchbar-header"><span class="search-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-search" id="msearch">
+                        <span class="sr-only"></span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="main-menu">
+                <div class="collapse navbar-collapse pull-left" id="main-menu">
                     <ul class="menu">
                         
                             <li role="presentation" class="text-center">
@@ -138,6 +143,33 @@
                         
                     </ul>
                 </div>
+		
+		    <div class="widget collapse navbar-collapse pull-left" id="main-search">    
+		        <div id="search-form">
+		            <div id="result-mask" class="hide"></div>
+		            <div class="search-area">
+		                
+		                    <input id="search-key" type="search" autocomplete="off" placeholder="请输入关键词">
+		                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+		                
+		                
+		            </div>
+		            <div id="result-wrap" class="hide">
+		                <div id="search-result"></div>
+		            </div>
+		            <div class="hide">
+		                <template id="search-tpl">
+		                    <div class="item">
+		                        <a href="/{path}" title="{title}">
+		                            <div class="title">{title}</div>
+		                            <div class="content">{content}</div>
+		                        </a>
+		                    </div>
+		                </template>
+		            </div>			    
+		        </div>
+		    </div>
+					
             </div>
         </div>
     </div>
@@ -220,33 +252,6 @@ coding 与 github 仓库托管原理
     <aside class="col-md-4 sidebar">
         
         
-    <div class="widget">    
-        <h3 class="title">搜索</h3>
-        <div id="search-form">
-            <div id="result-mask" class="hide"></div>
-            <div class="search-area">
-                
-                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
-                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
-                
-                
-            </div>
-            <div id="result-wrap" class="hide">
-                <div id="search-result"></div>
-            </div>
-            <div class="hide">
-                <template id="search-tpl">
-                    <div class="item">
-                        <a href="/{path}" title="{title}">
-                            <div class="title">{title}</div>
-                            <div class="content">{content}</div>
-                        </a>
-                    </div>
-                </template>
-            </div>
-        </div>
-    </div>
-
         
         
     <div class="widget notification">
