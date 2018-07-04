@@ -1003,7 +1003,7 @@ pre {
   box-sizing: content-box;
   top: 45px;
   left: -50px;
-  z-index: 666;
+  z-index: 6;
   width: 120%;
   padding: 20px;
   color: #333;
@@ -1011,7 +1011,6 @@ pre {
   border-radius: 4px;
   box-shadow: 1px 2px 2px #ccc;
   border: 1px solid #ccc;
-  overflow-y: auto;
 }
 .widget #search-form #result-wrap:before {
   content: '';
