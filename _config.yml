@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Dinphy - 简乐 
+title: Dinphy - 简乐 | 生活不易,快乐就好
 subtitle: 生活不易,快乐就好
 description: 生活不易,快乐就好
 keywords: 小王,dinphy,定飞,国庆
@@ -35,12 +35,10 @@ skip_render:
 # Writing | 写作
 new_post_name: :title.md # File name of new posts
 default_layout: post
-auto_spacing: true
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-# https://hexo.io/zh-cn/docs/asset-folders.html
 post_asset_folder: false
 relative_link: false
 future: true
@@ -87,7 +85,7 @@ category_generator:
 # Extensions | 主题扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: indigo-plus
+theme: snippet
 
 # Deployment | 部署
 ## Docs: https://hexo.io/zh-cn/docs/deployment.html
@@ -101,33 +99,6 @@ deploy:
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH:mm:ss")}}'  
 - type: baidu_url_submitter
-
-# rss
-feed:
-  type: atom
-  path: atom.xml
-  limit: 0
-# jsonContent | 用于生成静态站点数据，用作站内搜索的数据源
-## npm install --save hexo-generator-json-content
-jsonContent:
-  meta: true
-  pages: false
-  posts:
-    title: true
-    date: true
-    path: true
-    text: true
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    permalink: false
-    excerpt: false
-    categories: false
-    tags: true
-    
 # hexo-admin authentification
 admin:
   username: dinphy
