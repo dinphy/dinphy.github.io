@@ -31,7 +31,7 @@
     <!--Title-->
 
 
-<title>CSS 文本两端对齐 | Dinphy - 简乐 | 生活不易,快乐就好</title>
+<title>一年太久，一天太长 | Dinphy - 简乐 | 生活不易,快乐就好</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Dinphy - 简乐 | 生活不易,快乐就好" type="application/atom+xml">
@@ -181,16 +181,16 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="CSS 文本两端对齐">
+        <h1 id="一年太久，一天太长">
             
-	            CSS 文本两端对齐
+	            一年太久，一天太长
             
         </h1>
         <div class="post-meta">
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018年07月04日</span>
+        <span class="date-meta">2018年07月06日</span>
     </span>
     
     
@@ -210,13 +210,16 @@
     </div>
     
     <div class="post-body post-content">
-        <p>先来看看两行大家都很熟悉的代码，对于多行文本来说，基本可以兼容所有的游览器，实现两端对齐。在多行文本中，该样式对于最后一段文字并不处理。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">    text-align:justify;</span><br><span class="line">    text-align-last:justify;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>所以对于单行中文文本，我们需要打补丁</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    content:<span class="string">''</span>;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    width:<span class="number">100</span>%;</span><br><span class="line">    height:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我们使用after选择器在单行文本的最后加入content，不过这时会导致p被撑开了，所以我们还需要设置高度，完整代码如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p &#123;</span><br><span class="line">    text-align:justify;</span><br><span class="line">    text-align-last:justify;</span><br><span class="line">    height:<span class="number">24</span>px;</span><br><span class="line"> </span><br><span class="line">    font-size:<span class="number">20</span>px;</span><br><span class="line">    width:<span class="number">500</span>px;</span><br><span class="line">&#125;</span><br><span class="line">p:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    content:<span class="string">''</span>;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    width:<span class="number">100</span>%;</span><br><span class="line">    height:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">&lt;p&gt;文 字 间 要 有 空 格，不 然 不 管 用&lt;/</span>P&gt;</span><br></pre></td></tr></table></figure>
-<p>具体效果可以看本站的友链部分。</p>
+        <p>人为什么要思索和计划未来呢？我突然萌生了一个想法——一年太久，一天太长。</p>
+<p>其实我们并不能预测到将来会发生什么，明天是否能看到黎明，甚至是今天下午、下一个小时、10分钟后。</p>
+<p>既然如此，为何不选择自己喜欢做的事情，做了和不做，起码在未来发生突发事件时也不会后悔。</p>
+<p>一年真的太久了，我们根本不知道之后的时间里会有那些遭遇抑或是小幸运；如果人生没有规划好，那么一天也太长了，简直是度日如年。</p>
+<p>我不想活在规划好的人生轨道上行驶，这样会显得无趣；我喜欢做自己所想的事，爱自己所爱的人，哪怕是生活拮据一点，踏实对我来说比任何不劳而获与施舍跟符合我的需求。</p>
+<p>这或许是逃避，或许是不作为，亦或许是别出心裁、另有想法。</p>
+<p>当一个人思想有所扭曲，心态开始不端正时，任何时刻对他来说都是漫长的，更不必说过好每一天、迎接下一年。</p>
+<p>喜欢雨，下雨时就静静的欣赏吧；喜欢风，风来了就展开双臂放松吧；喜欢什么，就不要踌躇等会儿还有事情没做。</p>
+<p>兴趣爱好是一个人活着的精神支柱，没有兴趣爱好的人，心累与身体疲惫将是伴随他直到死亡的累赘。或许我们就该好好把握正在发生的每一刻，什么都不要多想，就现在，做自己。</p>
+<p>我终于明白了人为什么要思索和计划未来，因为无头苍蝇总是碰壁，没有方向的船将迷失大海，而有计划并不断思索的人生每一刻都不觉得漫长，甚至吃饭、接电话都喜欢简单。</p>
 
     </div>
 
@@ -224,9 +227,9 @@
         <div>
             
                 <blockquote style="margin: 0.4em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;list-style: none;font-size:14px;">
-                    <b>本文标题：</b>CSS 文本两端对齐<br>
-                    <b>最后更新：</b>2018 年 07 月 04 日 - 13:07<br>
-                    <b>本文链接：</b><a href="http://www.dinphy.wang/posts/82d7d651/">http://www.dinphy.wang/posts/82d7d651/</a><br>
+                    <b>本文标题：</b>一年太久，一天太长<br>
+                    <b>最后更新：</b>2018 年 07 月 06 日 - 13:07<br>
+                    <b>本文链接：</b><a href="http://www.dinphy.wang/posts/b81f1f55/">http://www.dinphy.wang/posts/b81f1f55/</a><br>
                     <b>转载声明：</b>商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="/posts/b5f422e3/" target="_blank">Dinphy</a>		    
                 </blockquote>		
             
@@ -239,15 +242,10 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/posts/b81f1f55/" class="pre-post btn btn-default" title='一年太久，一天太长'>
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">一年太久，一天太长</span>
-        </a>
     
-    
-        <a href="/posts/cec1b3cd/" class="next-post btn btn-default" title='使用Javascript实现回到顶端'>
+        <a href="/posts/82d7d651/" class="next-post btn btn-default" title='CSS 文本两端对齐'>
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">使用Javascript实现回到顶端</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">CSS 文本两端对齐</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>
