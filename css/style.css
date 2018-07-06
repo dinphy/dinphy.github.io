@@ -1108,8 +1108,8 @@ pre {
 #article-toc {
   padding-top: 1em;
   background-color: #fff;
-  top: 0px;
-  bottom: 140px;
+  top: 0;
+  bottom: 70px;
   overflow-y: auto;
   
 }
@@ -1117,7 +1117,6 @@ pre {
   list-style: none;
 }
 #article-toc .toc {
-  overflow-y: auto;
   padding-left: 2em;
 }
 #article-toc .toc .toc-item .toc-link {
@@ -1462,7 +1461,6 @@ pre .javascript .function {
     height: 200px;
     margin: 0 0 1em 0;
   }
-  .post-footer,
   #article-toc {
     display: none;
   }
