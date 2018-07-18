@@ -232,34 +232,6 @@ pre {
 .carousel img {
   width: 100%;
 }
-*::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-  height: 7px;
-}
-@media screen and (max-width: 480px) {
-  *::-webkit-scrollbar {
-    height: 3px;
-    width: 3px;
-  }
-}
-*::-webkit-scrollbar-track-piece {
-  background-color: rgba(255, 255, 255, 0);
-}
-*::-webkit-scrollbar-track {
-  background-color: inherit;
-}
-*::-webkit-scrollbar-thumb {
-  max-height: 100px;
-  border-radius: 3px;
-  background-color: rgba(1, 1, 1, 0.12);
-}
-*::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(1, 1, 1, 0.22);
-}
-*::-webkit-scrollbar-thumb:active {
-  background-color: rgba(1, 1, 1, 0.32);
-}
 /*====================================================
     header
 ====================================================*/
@@ -857,6 +829,44 @@ pre {
   padding: 20px;
   margin-bottom: 20px;
 }
+#comments .vheader .vinput {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-size: .9em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#comments .vheader .vinput:focus {
+  border-bottom: 1px solid #e67e22;
+}
+#comments .vheader .vinput:hover {
+  border-bottom: 1px solid #e67e22;
+}
+#comments .veditor {
+  font-size: 1em;
+}
+#comments .vcontrol .vbtn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: .5rem 2rem;
+  color: #808080;
+}
+#comments .vcontrol .vbtn:hover {
+  color: #e67e22;
+  border-color: #e67e22;
+}
+#comments .item3 input {
+  width: 31%;
+  margin: 0 1%;
+}
+#comments .item2 input {
+  width: 48%;
+  margin: 0 1%;
+}
 /* prev and next link */
 .prev-next-wrap {
   margin-bottom: 25px;
@@ -1085,31 +1095,13 @@ pre {
   margin: 0 2px;
 }
 /*====================================================
-   copyright
-====================================================*/
-.copyright {
-  background: #222;
-  font-size: 13px;
-  text-align: center;
-  color: #666666;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #303030;
-}
-.copyright span {
-  margin: 0 .5em;
-}
-.copyright a {
-  color: #666666;
-}
-/*====================================================
    toc
 ====================================================*/
 #article-toc {
   padding-top: 1em;
   background-color: #fff;
   top: 0;
-  bottom: 70px;
+  bottom: 140px;
   overflow-y: auto;
   
 }
@@ -1137,6 +1129,24 @@ pre {
 }
 #article-toc .toc .toc-item.toc-level-2 > .toc-link {
   font-size: 15px;
+}
+/*====================================================
+   copyright
+====================================================*/
+.copyright {
+  background: #222;
+  font-size: 13px;
+  text-align: center;
+  color: #666666;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #303030;
+}
+.copyright span {
+  margin: 0 .5em;
+}
+.copyright a {
+  color: #666666;
 }
 /*====================================================
    back-to-top and toc-btn
@@ -1405,6 +1415,26 @@ pre .coffeescript .title {
 pre .keyword,
 pre .javascript .function {
   color: #b294bb;
+}
+/*====================================================
+    scrollbar
+====================================================*/
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 5px;
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(1, 1, 1, 0.12);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(1, 1, 1, 0.22);
 }
 /*====================================================
     media

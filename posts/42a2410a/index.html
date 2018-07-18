@@ -249,29 +249,28 @@
     <div id="comments">
         
 	
-    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <!-- Valine Comments script -->
+<script src="/assets/valine.min.js"></script>
+
     <script>
         var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
           return GUEST_INFO.indexOf(item) > -1
         });
         new Valine({
+            av: AV,
             el: '#comments',
             notify: 'false' == 'true',
             verify: 'false' == 'true',
             appId: "EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz",
             appKey: "4pmmj56YRbawceTeHCkLMT7n",
             avatar: "mm",
-            placeholder: "Hi,留下您的足迹吧~",
+            placeholder: "Hi,说点什么吧~",
             guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
             pageSize: "10"
         })
     </script>
-    <!-- Valine Comments end -->
 
 
 
