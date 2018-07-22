@@ -245,3 +245,6 @@ baidu_push: bxXthxpFQo
 since: 2018
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.1
+
+#网易云音乐ID
+musicid: 864820699
