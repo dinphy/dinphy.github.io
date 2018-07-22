@@ -32,7 +32,7 @@ rss: /atom.xml
 
 ## Carousel
 carousel:
-  img: img/head-img.jpg
+  img: /img/head-img.png
 
 # 各个小工具的设置
 
@@ -113,11 +113,11 @@ links:
 # 主题自定义个性化配置
 
 ## 网站宣传语
-branding: 生活不易，快乐就好
+branding:
 
 ## 设置banner背景图片
 banner:
-    img: http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg
+    img: /img/banner.jpg
 
 ## 首页列表底部面板
 homePanel: true
