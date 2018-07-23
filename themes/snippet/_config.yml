@@ -38,13 +38,13 @@ carousel:
 
 ## widgets
 widgets:
-  - search
   - notification
-  - social
   - category
   - archive
   - tagcloud
   - friends
+  - social
+  - stick
 
 ## 搜索
 jsonContent:
@@ -59,11 +59,16 @@ jsonContent:
 
 ## 网站公告设置
 notification: |-
-            <p>新版主题Snippet v1.2.1已经上线！欢迎更新~ <br/>
-            主题下载：<a href="https://github.com/dinphy/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-            主题使用：<a href="https://github.com/dinphy/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
-            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request<br/>支持主题：<a href="https://github.com/dinphy/hexo-theme-snippet/stargazers">Star一下</a>
-            </p>
+    <p style="text-indent: 35px;">
+        搭建本站，纯属个人爱好。本站内容为业余学习过程中所作的笔记与写作留下的痕迹，如遇内容有侵犯到他人利益的，请 <a href="http://localhost:4000/posts/b5f422e3/" target="_blank">给我留言</a> ，我将及时处理并删除该内容。
+    <hr/>
+        主题下载： Snippet <a href="https://github.com/shenliyang/hexo-theme-snippet">原始版</a> | 
+                   <a href="https://github.com/dinphy/hexo-theme-snippet">高级版</a>
+        <br/>
+        主题使用： <a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md">参考教程</a>
+        <br/>
+        支持主题： <a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star 一下</a>
+    </p>
 
 ## 社交设置
 social:
