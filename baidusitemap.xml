@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/b5f422e3/</loc>
+    <lastmod>2018-07-23T07:00:13.291Z</lastmod>
+    <data>
+        <display>
+        <title>关于我</title>
+        <pubTime>2018-05-02T05:57:28.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/d2b000fe/</loc>
     <lastmod>2018-07-21T07:13:41.073Z</lastmod>
     <data>
@@ -366,21 +381,6 @@
 
     
   <url>
-    <loc>http://www.dinphy.wang/posts/b5f422e3/</loc>
-    <lastmod>2018-07-05T08:09:06.727Z</lastmod>
-    <data>
-        <display>
-        <title>关于我</title>
-        <pubTime>2018-05-02T05:57:28.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dinphy.wang/posts/5cd9f4a5/</loc>
     <lastmod>2018-07-05T07:26:30.611Z</lastmod>
     <data>
@@ -526,28 +526,6 @@
 
     
   <url>
-    <loc>http://www.dinphy.wang/posts/7c6b7673/</loc>
-    <lastmod>2018-06-21T04:26:40.358Z</lastmod>
-    <data>
-        <display>
-        <title>Word分栏页码，Ctrl + F9高级功能</title>
-        <pubTime>2018-06-20T04:02:00.000Z</pubTime>
-        
-        <tag>word</tag>
-         
-        <tag>办公技巧</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dinphy.wang/posts/91edd881/</loc>
     <lastmod>2018-06-21T04:26:40.358Z</lastmod>
     <data>
@@ -560,6 +538,28 @@
         <tag>卡片</tag>
          
         <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习参考" url="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dinphy.wang/posts/7c6b7673/</loc>
+    <lastmod>2018-06-21T04:26:40.358Z</lastmod>
+    <data>
+        <display>
+        <title>Word分栏页码，Ctrl + F9高级功能</title>
+        <pubTime>2018-06-20T04:02:00.000Z</pubTime>
+        
+        <tag>word</tag>
+         
+        <tag>办公技巧</tag>
          
          
            
@@ -747,9 +747,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>web技术</tag>
+         
+        <tag>学习笔记</tag>
          
         <tag>blog</tag>
          
