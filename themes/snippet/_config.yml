@@ -220,7 +220,7 @@ valine:
   verify: false # 验证码
   avatar: monsterid # avatar头像: mm/identicon/monsterid/wavatar/retro/hide
   placeholder: Hi,说点什么吧~
-  meta: nick,mail,link # 输入框内容，可选值nick,mail,link
+  meta: nick,link # 输入框内容，可选值nick,mail,link
   pageSize: 10
   
 ## 网站访问统计
