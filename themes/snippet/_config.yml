@@ -211,17 +211,17 @@ changyan:
   appid:
   conf:
 
-## Valine评论
+### Valine评论 参考网站: [valine评论](https://valine.js.org/)
 valine:
   enable: true # 如果你想使用valine，请将值设置为 true
-  appId: EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz # your leancloud appId
-  appKey: 4pmmj56YRbawceTeHCkLMT7n # your leancloud appKey
-  notify: false # Mail notify
-  verify: false # Verify code
-  avatar: monsterid # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  placeholder: Hi,说点什么吧~ # Comment Box placeholder
-  guest_info: nick,mail # Comment header info
-  pageSize: 10 # comment list page size
+  appId: EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz
+  appKey: 4pmmj56YRbawceTeHCkLMT7n
+  notify: false # 邮件通知
+  verify: false # 验证码
+  avatar: monsterid # avatar头像: mm/identicon/monsterid/wavatar/retro/hide
+  placeholder: Hi,说点什么吧~
+  meta: nick,mail,link # 输入框内容，可选值nick,mail,link
+  pageSize: 10
   
 ## 网站访问统计
 
