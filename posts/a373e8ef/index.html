@@ -263,21 +263,20 @@
 <script src="/assets/valine.min.js"></script>
 
     <script>
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        new Valine({
+        var valine = new Valine();
+        valine.init({
             av: AV,
             el: '#comments',
             notify: 'false' == 'true',
             verify: 'false' == 'true',
-            appId: "EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz",
-            appKey: "4pmmj56YRbawceTeHCkLMT7n",
-            avatar: "monsterid",
-            placeholder: "Hi,说点什么吧~",
-            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
-            pageSize: "10"
+            appId: 'EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz',
+            appKey: '4pmmj56YRbawceTeHCkLMT7n',
+            avatar: 'monsterid',
+            placeholder: 'Hi,说点什么吧~',
+            meta: 'nick,link'.split(','),
+            pageSize: '10',
+			path: window.location.pathname,
+			lang: 'zh-CN'.toLowerCase()
         })
     </script>
 
