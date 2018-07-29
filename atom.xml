@@ -552,9 +552,9 @@
     <link href="http://www.dinphy.wang/posts/7c6b7673/"/>
     <id>http://www.dinphy.wang/posts/7c6b7673/</id>
     <published>2018-06-20T04:02:00.000Z</published>
-    <updated>2018-06-21T04:26:40.358Z</updated>
+    <updated>2018-07-29T07:07:10.293Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。</p></blockquote><p>这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。<br>效果图：<br><img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG" alt=""><br><strong>用到的知识有：</strong></p><ul><li>分栏</li><li>插入页脚</li><li>Ctrl + F9 功能组合键，插入域代码输入大括号 <code>{ }</code></li></ul><ol><li>奇数栏 <blockquote><p>{ = { page }*2-1} / { = { numpages }*2}</p></blockquote></li></ol><p>可加修饰：</p><blockquote><p>第 { = { page }*2-1} 页 / 共 { = { numpages }*2} 页</p></blockquote><ol start="2"><li>偶数栏 <blockquote><p>{ = { page }*2} / { = { numpages }*2}</p></blockquote></li></ol><p>可加修饰：</p><blockquote><p>第 { = { page }*2} 页 / 共 { = { numpages }*2} 页</p></blockquote><p><strong>域代码解释</strong></p><ul><li>page 为页码数</li><li>numpages 为总页码数</li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。</p></blockquote><p>这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。<br>效果图：<br><img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG" alt=""><br><strong>用到的知识有：</strong></p><ul><li>分栏</li><li>插入页脚</li><li>Ctrl + F9 功能组合键，插入域代码输入大括号 <code>{ }</code></li></ul><ol><li>奇数栏</li></ol><blockquote><p>{ = { page }*2-1} / { = { numpages }*2}</p></blockquote><p>可加修饰：</p><blockquote><p>第 { = { page }*2-1} 页 / 共 { = { numpages }*2} 页</p></blockquote><ol start="2"><li>偶数栏</li></ol><blockquote><p>{ = { page }*2} / { = { numpages }*2}</p></blockquote><p>可加修饰：</p><blockquote><p>第 { = { page }*2} 页 / 共 { = { numpages }*2} 页</p></blockquote><p><strong>域代码解释</strong></p><ul><li>page 为页码数</li><li>numpages 为总页码数</li></ul>]]></content>
     
     <summary type="html">
     
