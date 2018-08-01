@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dinphy.wang/"/>
-  <updated>2018-08-01T08:09:55.468Z</updated>
+  <updated>2018-08-01T11:35:45.623Z</updated>
   <id>http://www.dinphy.wang/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>说者无意，听者有心</title>
+    <link href="http://www.dinphy.wang/posts/fde0de24/"/>
+    <id>http://www.dinphy.wang/posts/fde0de24/</id>
+    <published>2018-08-01T10:31:00.000Z</published>
+    <updated>2018-08-01T11:35:45.623Z</updated>
+    
+    <content type="html"><![CDATA[<p>人与人的交往中，“说者无意，听者有心”的场景时刻都在上演。稍不注意，自己说的话就会把某个人得罪。我们知道，语言的中伤往往会比一把利剑更伤人。</p><p>生活中，说话对于任何正常人而言，都是再简单不过的事了。可怎样说出一句让人听了之后心里觉得舒服的话，就不那么简单了。有人善于表达，有人沉默寡言，一旦说起话聊起天来，善于表达的变成了演讲家，而沉默寡言的便是观众了。演讲家演讲时多半是写好了手稿，是精心准备过的，所以很少有中伤他人之说，否则就是自己把饭碗砸了。当然，不是每一个善于表达的人都能成为演讲家，有绝大多数人依然是普通的群众，只不过说的话比不爱说话的人多了一点而已。</p><p>爱说话，不代表说的都是中听的；会说话，才是让人觉得悦耳的。相反，不爱说话，不代表一开口说的就是良言；恰恰是不爱说话的人，许多时候一开口便把所有人得罪了。因为不爱说话，所以得罪了人就不知道怎么圆场了。爱说话的人，突然间说了一句不中听的，他便说上十句甚至更多的好话来试图掩盖。这样一来，可以避免了大部分的误解。而那些就算是说上一千句一万句都无法掩盖的言语，那就是极其恶毒的、伤人心肺的话了。这将导致的结果就是朋友绝交、情侣分手和人际关系破裂。</p><p>很多公共场合下，“说者无意，听者有心”的情节也不可避免。譬如说某些QQ或微信群中，有人活跃，有人潜水，有人不在线。活跃的人因为经常在说话，大家都司空见惯了；往往如此，这类人就养成了肆无忌惮的习惯，该说的不该说的，都噼里啪啦的说了出来，自个儿还乐呵呵的，然后就是各种卖萌，各种非礼勿视、非礼勿听的得意着，殊不知“说者无意，听者有心”的话就被那些潜水的人听了进去，这样无形的调侃或中伤，指不定下次碰面就无言无辜的成了陌路人。除此之外，某些重要场合的说话也尤其关键，与其说一些让人听了恼羞成怒的话，不如把自己当做哑巴来得实在。</p><p>我不善表达，说话这门艺术于我而言是一门需要持久学习的功课。不断地吸取教训、不断地锤炼自己的说话水平，这将是我今后工作与生活中不可或缺的必修课。我不想成为演讲家，也不想成为话包子，我只想把说话练好，然后对自己说的每一句话负责。作为说者时，慎重发言；如此一般，或许能减少对听者的伤害。</p><blockquote><p>本文撰写的目的是提醒自己，不要乱说话，尤其是在公共场合与重要场合。同时，以“说者无意，听者有心”为题也是在某微信群里受到启发。我也曾不懂说话，因乱说话后被领导找去谈话，故而再次警惕自己。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;人与人的交往中，“说者无意，听者有心”的场景时刻都在上演。稍不注意，自己说的话就会把某个人得罪。我们知道，语言的中伤往往会比一把利剑更伤人。&lt;/p&gt;
+&lt;p&gt;生活中，说话对于任何正常人而言，都是再简单不过的事了。可怎样说出一句让人听了之后心里觉得舒服的话，就不那么简单了。有人
+      
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="说话" scheme="http://www.dinphy.wang/tags/%E8%AF%B4%E8%AF%9D/"/>
+    
+      <category term="中伤" scheme="http://www.dinphy.wang/tags/%E4%B8%AD%E4%BC%A4/"/>
+    
+      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>选择是件头痛的事</title>
@@ -574,36 +604,6 @@
       <category term="端午" scheme="http://www.dinphy.wang/tags/%E7%AB%AF%E5%8D%88/"/>
     
       <category term="外婆家" scheme="http://www.dinphy.wang/tags/%E5%A4%96%E5%A9%86%E5%AE%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Word分栏页码，Ctrl + F9高级功能</title>
-    <link href="http://www.dinphy.wang/posts/7c6b7673/"/>
-    <id>http://www.dinphy.wang/posts/7c6b7673/</id>
-    <published>2018-06-20T04:02:00.000Z</published>
-    <updated>2018-07-29T07:07:10.293Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。</p></blockquote><p>这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。<br>效果图：<br><img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/1.PNG" alt=""><br><strong>用到的知识有：</strong></p><ul><li>分栏</li><li>插入页脚</li><li>Ctrl + F9 功能组合键，插入域代码输入大括号 <code>{ }</code></li></ul><ol><li>奇数栏</li></ol><blockquote><p>{ = { page }*2-1} / { = { numpages }*2}</p></blockquote><p>可加修饰：</p><blockquote><p>第 { = { page }*2-1} 页 / 共 { = { numpages }*2} 页</p></blockquote><ol start="2"><li>偶数栏</li></ol><blockquote><p>{ = { page }*2} / { = { numpages }*2}</p></blockquote><p>可加修饰：</p><blockquote><p>第 { = { page }*2} 页 / 共 { = { numpages }*2} 页</p></blockquote><p><strong>域代码解释</strong></p><ul><li>page 为页码数</li><li>numpages 为总页码数</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;在日常办公时，我们会经常使用到办公软件 Office ，其中 word 用的最多。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这里介绍一种在 word 中添加分栏后，在每一栏的下面添加页码的方法。&lt;br&gt;效果图：&lt;br&gt;&lt;img src=&quot;http
-      
-    
-    </summary>
-    
-      <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
-    
-    
-      <category term="word" scheme="http://www.dinphy.wang/tags/word/"/>
-    
-      <category term="办公技巧" scheme="http://www.dinphy.wang/tags/%E5%8A%9E%E5%85%AC%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
