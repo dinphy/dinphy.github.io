@@ -7,22 +7,22 @@
 menu:
 - page: home
   url: /
-  icon:
+  icon: fa-home
 - page: 写作
   url: /categories/闲言碎语/
-  icon:
+  icon: fa-edit
 - page: 知识
   url: /categories/学习参考/
-  icon:
+  icon: fa-book
 #- page: 生活
 #  url: /categories/业余小作/
 #  icon:
 - page: 归档
   url: /archives/
-  icon:
+  icon: fa-save
 - page: 关于
   url: /posts/b5f422e3/
-  icon:
+  icon: fa-question-circle-o
 
 ## favicon
 favicon: /img/favicon.ico
@@ -220,7 +220,7 @@ valine:
   verify: false # 验证码
   avatar: monsterid # avatar头像: mm/identicon/monsterid/wavatar/retro/hide
   placeholder: Hi,说点什么吧~
-  meta: nick,link # 输入框内容，可选值nick,mail,link
+  meta: nick,mail,link # 输入框内容，可选值nick,mail,link
   pageSize: 10
   
 ## 网站访问统计
