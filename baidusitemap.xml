@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/24002ff1/</loc>
+    <lastmod>2018-09-10T04:29:40.417Z</lastmod>
+    <data>
+        <display>
+        <title>旋转木马</title>
+        <pubTime>2018-09-10T03:10:00.000Z</pubTime>
+        
+        <tag>游乐场</tag>
+         
+        <tag>摩天轮</tag>
+         
+        <tag>旋转木马</tag>
+         
+         
+           
+             
+              <breadCrumb title="闲言碎语" url="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/3e99c90d/</loc>
     <lastmod>2018-09-08T04:33:32.727Z</lastmod>
     <data>
@@ -891,11 +915,11 @@
         <title>Markdown 学习参考</title>
         <pubTime>2018-05-15T13:00:00.000Z</pubTime>
         
+        <tag>学习笔记</tag>
+         
         <tag>Markdown</tag>
          
         <tag>语法</tag>
-         
-        <tag>学习笔记</tag>
          
          
            
@@ -1011,9 +1035,9 @@
         <title>Hexo 主题 teal 使用</title>
         <pubTime>2018-05-20T10:35:00.000Z</pubTime>
         
-        <tag>学习笔记</tag>
-         
         <tag>web技术</tag>
+         
+        <tag>学习笔记</tag>
          
         <tag>blog</tag>
          
