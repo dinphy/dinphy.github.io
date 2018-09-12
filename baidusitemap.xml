@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://www.dinphy.wang/posts/be3bc8c3/</loc>
+    <lastmod>2018-09-12T05:28:36.185Z</lastmod>
+    <data>
+        <display>
+        <title>邻家的小茅屋</title>
+        <pubTime>2018-09-12T03:25:00.000Z</pubTime>
+        
+        <tag>玩伴</tag>
+         
+        <tag>小茅屋</tag>
+         
+        <tag>政策</tag>
+         
+         
+           
+             
+              <breadCrumb title="闲言碎语" url="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dinphy.wang/posts/24002ff1/</loc>
     <lastmod>2018-09-10T11:52:43.953Z</lastmod>
     <data>
@@ -1061,9 +1085,9 @@
         
         <tag>web技术</tag>
          
-        <tag>hexo</tag>
-         
         <tag>github</tag>
+         
+        <tag>hexo</tag>
          
          
            
