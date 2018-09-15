@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Dinphy - 简乐 | 生活不易,快乐就好">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://www.dinphy.wang">
+    <!--SEO-->
+
+<meta name="description" content="生活不易,快乐就好"/>
+
+
+
+<meta name="keywords" content="小王,dinphy,定飞,国庆"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>在 Hexo 中添加百度分享 | Dinphy - 简乐 | 生活不易,快乐就好</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="Dinphy - 简乐 | 生活不易,快乐就好" type="application/atom+xml">
+
+
+    <link rel="icon" href="/img/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273798106'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273798106' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3fabe56e1599321476f3206be87a31b5";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=65917606" charset="UTF-8"></script>
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(/img/banner.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='Dinphy - 简乐'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation" id="fixnav">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://www.dinphy.wang">Dinphy - 简乐 | 生活不易,快乐就好</a>
+                    <div class="searchbar-header"><span class="search-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-search" id="msearch">
+                        <span class="sr-only"></span>
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse pull-left" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa fa-home"></i>&nbsp;首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/闲言碎语/"><i class="fa fa-edit"></i>&nbsp;写作</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/学习参考/"><i class="fa fa-book"></i>&nbsp;知识</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa fa-save"></i>&nbsp;归档</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/posts/b5f422e3/"><i class="fa fa-question-circle-o"></i>&nbsp;关于</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+		
+		    <div class="widget collapse navbar-collapse pull-right" id="main-search">    
+		        <div id="search-form">
+		            <div id="result-mask" class="hide"></div>
+		            <div class="search-area">
+		                
+		                    <input id="search-key" type="search" autocomplete="off" placeholder="请输入关键词">
+		                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+		                
+		                
+		            </div>
+		            <div id="result-wrap" class="hide">
+		                <div id="search-result"></div>
+		            </div>
+		            <div class="hide">
+		                <template id="search-tpl">
+		                    <div class="item">
+		                        <a href="/{path}" title="{title}">
+		                            <div class="title">{title}</div>
+		                            <div class="content">{content}</div>
+		                        </a>
+		                    </div>
+		                </template>
+		            </div>			    
+		        </div>
+		    </div>
+					
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="在 Hexo 中添加百度分享">
+            
+	            在 Hexo 中添加百度分享
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2018年09月15日</span>
+    </span>
+    
+    
+
+    
+        <span>
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    您是第 <span id="busuanzi_value_page_pv" style="color: #FFA500"></span>位阅读的小伙伴
+</span>
+
+</span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>百度分享功能在网页中很常见，最简单的方法就是通过 <a href="http://share.baidu.com/code" target="_blank" rel="noopener">百度分享官网</a> 一步一步的操作，然后获取代码，放在相应的位置即可。</p>
+<p>然而，这个方法添加的百度分享对于 https 页面的站点不支持，所以想要在 hexo 站点中添加可以使用的有支持 https 页面的百度分享功能，可以参考本文的方法。</p>
+<h5 id="1、获取源码"><a href="#1、获取源码" class="headerlink" title="1、获取源码"></a>1、获取源码</h5><blockquote>
+<p><a href="https://github.com/dinphy/baiduShare" target="_blank" rel="noopener">https://github.com/dinphy/baiduShare</a></p>
+</blockquote>
+<p>将源码下载到本地计算机中，做好第一步准备。</p>
+<h5 id="2、使用方法"><a href="#2、使用方法" class="headerlink" title="2、使用方法"></a>2、使用方法</h5><ul>
+<li>在主题文件夹 source 目录下新建一个 baiduShare 文件夹，将提前准备好的源码 static 文件夹拷贝到 baiduShare 文件夹中。</li>
+<li>在需要调用分享按钮的页面添加如下代码：</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"bdsharebuttonbox"</span> style=<span class="string">"padding-top: 14px;"</span>&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"bds_more"</span> data-cmd=<span class="string">"more"</span>&gt;分享到：&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">	&lt;a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"&gt;微信&lt;/</span>a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"bds_sqq"</span> data-cmd=<span class="string">"sqq"</span> title=<span class="string">"分享到QQ好友"</span>&gt;QQ好友&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">	&lt;a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"&gt;新浪微博&lt;/</span>a&gt;</span><br><span class="line">	&lt;a href=<span class="string">"#"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"bds_qzone"</span> data-cmd=<span class="string">"qzone"</span> title=<span class="string">"分享到QQ空间"</span>&gt;QQ空间&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;script&gt;<span class="built_in">window</span>._bd_share_config=&#123;<span class="string">"common"</span>:&#123;<span class="string">"bdSnsKey"</span>:&#123;&#125;,<span class="string">"bdText"</span>:<span class="string">""</span>,<span class="string">"bdMini"</span>:<span class="string">"2"</span>,<span class="string">"bdMiniList"</span>:<span class="literal">false</span>,<span class="string">"bdPic"</span>:<span class="string">""</span>,<span class="string">"bdStyle"</span>:<span class="string">"1"</span>,<span class="string">"bdSize"</span>:<span class="string">"16"</span>&#125;,<span class="string">"share"</span>:&#123;<span class="string">"bdSize"</span>:<span class="number">16</span>&#125;,<span class="string">"image"</span>:&#123;<span class="string">"viewList"</span>:[<span class="string">"sqq"</span>,<span class="string">"weixin"</span>,<span class="string">"tsina"</span>,<span class="string">"qzone"</span>],<span class="string">"viewText"</span>:<span class="string">"分享到："</span>,<span class="string">"viewSize"</span>:<span class="string">"16"</span>&#125;,<span class="string">"selectShare"</span>:&#123;<span class="string">"bdContainerClass"</span>:<span class="literal">null</span>,<span class="string">"bdSelectMiniList"</span>:[<span class="string">"sqq"</span>,<span class="string">"weixin"</span>,<span class="string">"tsina"</span>,<span class="string">"qzone"</span>]&#125;&#125;;<span class="keyword">with</span>(<span class="built_in">document</span>)<span class="number">0</span>[(getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]||body).appendChild(createElement(<span class="string">'script'</span>)).src=<span class="string">'/baiduShare/static/api/js/share.js?v=89860593.js?cdnversion='</span>+~(-<span class="keyword">new</span> <span class="built_in">Date</span>()/<span class="number">36e5</span>)];&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>也可以单独把这段代码用一个文件保存，比如我这里就是单独保存在 baidu_share.ejs 文件中的，使用时直接调用这个文件即可。</p>
+<p>我把这个文件放在了 layout 目录 _vendor 文件夹下，调用时如下：</p>
+<blockquote>
+<p>&lt;%- partial(‘_vendor/baidu_share’) %&gt;</p>
+</blockquote>
+<h5 id="3、更多参考"><a href="#3、更多参考" class="headerlink" title="3、更多参考"></a>3、更多参考</h5><ul>
+<li>详见作者Blog：<a href="https://www.hrwhisper.me/baidu-share-not-support-https-solution/" target="_blank" rel="noopener">百度分享不支持https的解决方案</a></li>
+<li>其他：<a href="https://blog.csdn.net/cl534854121/article/details/76121105" target="_blank" rel="noopener">Hexo+Github搭建个人博客(三)——百度分享集成</a></li>
+</ul>
+
+    </div>
+    
+        <div class="reward">
+    <div class="reward-wrap">赏
+        <div class="reward-box">
+            
+                <span class="reward-type">
+                    <img class="alipay" src="/img/reward-alipay.gif"><b>支付宝打赏</b>
+                </span>
+            
+            
+                <span class="reward-type">
+                    <img class="wechat" src="/img/reward-wepay.gif"><b>微信打赏</b>
+                </span>
+            
+        </div>
+    </div>
+    <p class="reward-tip">赞赏是不耍流氓的鼓励</p>
+</div>
+
+
+    
+    <div class="post-footer">
+        <div>
+            
+                <blockquote style="margin: 0.4em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;list-style: none;font-size:14px;">
+                    <b>本文标题：</b>在 Hexo 中添加百度分享<br>
+                    <b>最后更新：</b>2018 年 09 月 15 日 - 16:09<br>
+                    <b>本文链接：</b><a href="http://www.dinphy.wang/posts/cbb9fc78/">http://www.dinphy.wang/posts/cbb9fc78/</a><br>
+                    <b>转载声明：</b>商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="/posts/b5f422e3/" target="_blank">Dinphy</a>
+                </blockquote>		
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <div class="bdsharebuttonbox" style="padding-top: 14px;">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["sqq","weixin","tsina","qzone"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["sqq","weixin","tsina","qzone"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/baiduShare/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+        <a href="/posts/eb0b973/" class="next-post btn btn-default" title='睡梦中的她'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">睡梦中的她</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+	
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        var valine = new Valine();
+        valine.init({
+            av: AV,
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: 'EdyGwWrx3Uxu5hRnY4d4pswD-gzGzoHsz',
+            appKey: '4pmmj56YRbawceTeHCkLMT7n',
+            avatar: 'monsterid',
+            placeholder: 'Hi,说点什么吧~',
+            meta: 'nick,mail,link'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: 'zh-CN'.toLowerCase()
+        })
+    </script>
+
+
+
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目录</h3>
+        
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、获取源码"><span class="toc-number">1.</span> <span class="toc-text">1、获取源码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、使用方法"><span class="toc-number">2.</span> <span class="toc-text">2、使用方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、更多参考"><span class="toc-number">3.</span> <span class="toc-text">3、更多参考</span></a></li></ol>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+	        <p>
+    <span id="busuanzi_container_site_uv style='display:none'">
+        <i class="fa fa-eye"></i> &nbsp;您是第&nbsp;<i id="busuanzi_value_site_uv"></i>&nbsp;位小伙伴
+    </span>
+    <span id="busuanzi_container_site_pv style='display:none'">
+        <i class="fa fa-area-chart"></i> &nbsp;浏览量排&nbsp;<i id="busuanzi_value_site_pv"></i>&nbsp;名
+    </span>
+
+</p>
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span>
+		<p>
+                    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+		</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/tagcloud.js"></script>
+
+<script src="/js/tagcanvas.js"></script>
+
+</body>
+</html>
