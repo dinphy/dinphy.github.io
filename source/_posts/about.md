@@ -36,22 +36,22 @@ img:
 本站名称为` Dinphy - 简乐 | 生活不易，快乐就好`，建站于 2018 年 5 月份，从零接触，学习是一种态度，敢做就会有收获。失败是一种经验，累计起来就会距离成功很近。下面是搭建本站是历程表，也没做啥事，回顾一下自己的成长而已。
 
 | 时间 | 事件 |
-|:--------------------:|:---------------------|
-| 05-03 | 初步了解使用 github 和 hexo |
-| 05-10 | 基于 github 和 Hexo 搭建本站 | 
-| 05-18 | 使用 [teal](https://github.com/dinphy/hexo-theme-teal) 主题 |
-| 06-01 | 使用 [indigo](https://github.com/dinphy/hexo-theme-indigo-plus) 主题 |
-| 06-07 | 更改侧边栏菜单样式为二级下拉 |
-| 06-11 | 调整主页卡片PC端和移动端显示 |
-| 06-14 | 调整页脚、评论框夜间模式样式 |
-| 06-22 | 改变标签页样式[update tags style](https://github.com/dinphy/hexo-theme-indigo/commit/9f84a421bc6a69bd4f292e75918eb85e339ff75e) |
-| 06-28 | 为了加快访问速度，[将博客项目托管于 coding.net](https://www.dinphy.wang/posts/5cd9f4a5/) |
-| 07-03 | 使用 Snippet 主题、详情 >> [@Snippet](https://github.com/dinphy/hexo-theme-snippet) |
-| 07-05 | 调整 Snippet 主题布局为当前页面样式 |
-| 07-22 | 添加首页音乐 |
-| 08-25 | 文章添加百度分享功能 |
-| 09-07 | 优化菜单导航并添加图标 |
-| 09-11 | 更新 valine 评论系统 |
-| 09-14 | 文章添加打赏功能 |
+|:-:|:-|
+| 05/03 | 初步了解使用 github 和 hexo |
+| 05/10 | 基于 github 和 Hexo 搭建本站 | 
+| 05/18 | 使用 [teal](https://github.com/dinphy/hexo-theme-teal) 主题 |
+| 06/01 | 使用 [indigo](https://github.com/dinphy/hexo-theme-indigo) 主题 |
+| 06/07 | 更改侧边栏菜单样式为二级下拉 |
+| 06/11 | 调整主页卡片PC端和移动端显示 |
+| 06/14 | 调整页脚、评论框夜间模式样式 |
+| 06/22 | 改变标签页样式[update tags style](https://github.com/dinphy/hexo-theme-indigo/commit/9f84a421bc6a69bd4f292e75918eb85e339ff75e) |
+| 06/28 | 为了加快访问速度，[将博客项目托管于 coding.net](https://www.dinphy.wang/posts/5cd9f4a5/) |
+| 07/03 | 使用 Snippet 主题、详情 >> [@Snippet](https://github.com/dinphy/hexo-theme-snippet) |
+| 07/05 | 调整 Snippet 主题布局为当前页面样式 |
+| 07/22 | 添加首页音乐 |
+| 08/25 | 文章添加百度分享功能 |
+| 09/07 | 优化菜单导航并添加图标 |
+| 09/11 | 更新 valine 评论系统 |
+| 09/14 | 文章添加打赏功能 |
 
 > 欢迎诸君订阅 RSS。
