@@ -468,10 +468,10 @@ pre {
 }
 .post .post-media {
   position: relative;
-  //margin-right: 15px;
-  width: auto;
-  height: 220px;
-  //float: left;
+  margin-right: 15px;
+  width: 220px;
+  height: 160px;
+  float: left;
   overflow: hidden;
 }
 .post .post-media img {

@@ -151,7 +151,7 @@ defaultImgs:
   - /img/random/20.jpg 
   
 ## 截取文章首页描述字数
-excerptLength: 180
+excerptLength: 120
 
 ## 是否开启文章目录
 toc: true
