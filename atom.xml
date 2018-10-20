@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dinphy.wang/"/>
-  <updated>2018-10-20T05:47:37.310Z</updated>
+  <updated>2018-10-20T07:52:41.760Z</updated>
   <id>http://www.dinphy.wang/</id>
   
   <author>
@@ -15,35 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>CKEditor 编辑内容时，回车生成段落P，首行缩进两字</title>
-    <link href="http://www.dinphy.wang/posts/b09dbdd3/"/>
-    <id>http://www.dinphy.wang/posts/b09dbdd3/</id>
-    <published>2018-10-20T05:04:00.000Z</published>
-    <updated>2018-10-20T05:47:37.310Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用 ckeditor 编辑器时，按回车会自动添加 <code>&lt;br /&gt;</code> 标签强制换行，而且行距之间距离不好控制，若用 CSS 给它 <code>display:none;</code> 属性的话，之前处理好的文章就会合并到一起，所以为了能更好的掌控，决定将 <code>&lt;br /&gt;</code> 标签换成 <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> 标签，对于 <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> 标签处理起来就方便的多。</p><p>查看 ckeditor 编辑器源码时会看到，点击回车显示的 <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> 。</p><p>解决这个问题说简单也不简单，说难也不难，不过终究还是解决了。</p><h5 id="1、替换-br-标签为-p-标签"><a href="#1、替换-br-标签为-p-标签" class="headerlink" title="1、替换 br 标签为 p 标签"></a>1、替换 br 标签为 p 标签</h5><p>首先，修改 ckeditor/config.js 配置文件里面的 <code>CKEDITOR.editorConfig = function( config )</code> 函数下的代码。</p><p>将原始代码</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">config.enterMode = CKEDITOR.ENTER_BR;</span><br><span class="line">config.shiftEnterMode = CKEDITOR.ENTER_P;</span><br></pre></td></tr></table></figure><p>修改为</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">config.enterMode = CKEDITOR.ENTER_P;</span><br><span class="line">config.shiftEnterMode = CKEDITOR.ENTER_BR;</span><br></pre></td></tr></table></figure><p>最后，清理一下浏览器的缓存就可以看到效果了。</p><h5 id="2、段落首行缩进两字"><a href="#2、段落首行缩进两字" class="headerlink" title="2、段落首行缩进两字"></a>2、段落首行缩进两字</h5><p>首先，修改 <code>ckeditor/skin/kama/editor.js</code> 文件中的 <code>.cke_panel_listItem p</code> 属性,在p后面添加：<code>{text-indent:2em;}</code> ；完成后如下： <code>.cke_panel_listItem p{text-indent:2em;}</code> 。</p><p>最后，清理一下浏览器的缓存就可以看到效果了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;使用 ckeditor 编辑器时，按回车会自动添加 &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; 标签强制换行，而且行距之间距离不好控制，若用 CSS 给它 &lt;code&gt;display:none;&lt;/code&gt; 属性的话，之前处理好的文章就会合并到一起，所以为了能更好
-      
-    
-    </summary>
-    
-      <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
-    
-    
-      <category term="ckeditor" scheme="http://www.dinphy.wang/tags/ckeditor/"/>
-    
-      <category term="换行" scheme="http://www.dinphy.wang/tags/%E6%8D%A2%E8%A1%8C/"/>
-    
-      <category term="段落" scheme="http://www.dinphy.wang/tags/%E6%AE%B5%E8%90%BD/"/>
-    
-  </entry>
   
   <entry>
     <title>CKEditor 编辑内容时，回车生成段落P，首行缩进两字</title>
@@ -640,6 +611,40 @@
       <category term="勇气" scheme="http://www.dinphy.wang/tags/%E5%8B%87%E6%B0%94/"/>
     
       <category term="痛快" scheme="http://www.dinphy.wang/tags/%E7%97%9B%E5%BF%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>太阳伞下</title>
+    <link href="http://www.dinphy.wang/posts/d2b000fe/"/>
+    <id>http://www.dinphy.wang/posts/d2b000fe/</id>
+    <published>2018-07-21T06:14:00.000Z</published>
+    <updated>2018-07-21T07:13:41.073Z</updated>
+    
+    <content type="html"><![CDATA[<p>伞之上，</p><p>是骄阳。</p><p>伞之下，</p><p>我们一家三口。<br><br></p><p>微风透过人群直扑脸颊，</p><p>伞下的我们顿时凉意些许。</p><p>这个季节里它如火般烘烤着大地上的人民，</p><p>毫不保留。<br><br></p><p>它的出现给人们带来了希望和光明，</p><p>但除此之外的炎热使人们爱之、恨之、惧之。</p><p>太阳伞虽然可以挡住它的照射，</p><p>却无法避开它散发的热。<br><br></p><p>人们总在寒冬时期盼它的到来，</p><p>譬如春光，温暖和谐。</p><p>大地复苏时，</p><p>春光下人们播种了梦想的种子。</p><p>譬如秋日，幸福惬意。</p><p>硕果丰收时，</p><p>秋日里人们收获了梦想的果实。<br><br></p><p>而躲在太阳伞下的夏天的人啊，</p><p>总想快些走到大树下乘凉，</p><p>可那该死的蚊虫却想吸干那人的血！</p><p>手臂上，脚跟上，甚至脸上，</p><p>都留下了它的埋下的毒液。<br><br></p><p>而太阳伞下还在继续前行的我们，</p><p>爸爸撑着伞、抱着女儿，</p><p>妈妈推着车、靠近伞下；</p><p>我们知道前方不远处就是家了，</p><p>可无精打采的肢体像在暗示着什么；</p><p>直到我看见那挑着担子、流着汗，</p><p>曝晒在骄阳下还不忘前行的农夫时，</p><p>太阳伞下的我们很幸福。<br><br></p><p>我恍然大悟——</p><p>不做懦夫停在原地，</p><p>要做勇士继续前进！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;伞之上，&lt;/p&gt;
+&lt;p&gt;是骄阳。&lt;/p&gt;
+&lt;p&gt;伞之下，&lt;/p&gt;
+&lt;p&gt;我们一家三口。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;微风透过人群直扑脸颊，&lt;/p&gt;
+&lt;p&gt;伞下的我们顿时凉意些许。&lt;/p&gt;
+&lt;p&gt;这个季节里它如火般烘烤着大地上的人民，&lt;/p&gt;
+&lt;p&gt;毫不保留。&lt;br&gt;&lt;br
+      
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="伞下的幸福" scheme="http://www.dinphy.wang/tags/%E4%BC%9E%E4%B8%8B%E7%9A%84%E5%B9%B8%E7%A6%8F/"/>
+    
+      <category term="光明" scheme="http://www.dinphy.wang/tags/%E5%85%89%E6%98%8E/"/>
     
   </entry>
   
