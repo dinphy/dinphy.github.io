@@ -50,15 +50,15 @@
     <link href="http://www.dinphy.wang/posts/b09dbdd3/"/>
     <id>http://www.dinphy.wang/posts/b09dbdd3/</id>
     <published>2018-10-20T05:04:00.000Z</published>
-    <updated>2018-10-20T05:09:54.100Z</updated>
+    <updated>2018-10-20T07:52:41.760Z</updated>
     
-    <content type="html"><![CDATA[<p>使用ckeditor编辑器时，按回车会自动添加 br 标签，强制换行，而且行距之间距离不好控制，若用 CSS 给它 <code>display:none;</code> 属性的话，之前处理好的文章就会合并到一起，所以，为了前台显示好看一点，决定将 br 标签换成 p 标签，对于 p 标签处理起来就方便的多。</p><p>查看ckeditor编辑器源码时会看到，点击回车显示的</p><p>&nbsp;</p><p></p>]]></content>
+    <content type="html"><![CDATA[<p>使用 ckeditor 编辑器时，按回车会自动添加 <code>&lt;br /&gt;</code> 标签强制换行，而且行距之间距离不好控制，若用 CSS 给它 <code>display:none;</code> 属性的话，之前处理好的文章就会合并到一起，所以为了能更好的掌控，决定将 <code>&lt;br /&gt;</code> 标签换成 <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> 标签，对于 <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> 标签处理起来就方便的多。</p><p>查看 ckeditor 编辑器源码时会看到，点击回车显示的 <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> 。</p><p>解决这个问题说简单也不简单，说难也不难，不过终究还是解决了。</p><h5 id="1、替换-br-标签为-p-标签"><a href="#1、替换-br-标签为-p-标签" class="headerlink" title="1、替换 br 标签为 p 标签"></a>1、替换 br 标签为 p 标签</h5><p>首先，修改 ckeditor/config.js 配置文件里面的 <code>CKEDITOR.editorConfig = function( config )</code> 函数下的代码。</p><p>将原始代码</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">config.enterMode = CKEDITOR.ENTER_BR;</span><br><span class="line">config.shiftEnterMode = CKEDITOR.ENTER_P;</span><br></pre></td></tr></table></figure><p>修改为</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">config.enterMode = CKEDITOR.ENTER_P;</span><br><span class="line">config.shiftEnterMode = CKEDITOR.ENTER_BR;</span><br></pre></td></tr></table></figure><p>最后，清理一下浏览器的缓存就可以看到效果了。</p><h5 id="2、段落首行缩进两字"><a href="#2、段落首行缩进两字" class="headerlink" title="2、段落首行缩进两字"></a>2、段落首行缩进两字</h5><p>首先，修改 <code>ckeditor/skin/kama/editor.js</code> 文件中的 <code>.cke_panel_listItem p</code> 属性,在p后面添加：<code>{text-indent:2em;}</code> ；完成后如下： <code>.cke_panel_listItem p{text-indent:2em;}</code> 。</p><p>最后，清理一下浏览器的缓存就可以看到效果了。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;使用ckeditor编辑器时，按回车会自动添加 br 标签，强制换行，而且行距之间距离不好控制，若用 CSS 给它 &lt;code&gt;display:none;&lt;/code&gt; 属性的话，之前处理好的文章就会合并到一起，所以，为了前台显示好看一点，决定将 br 标签换成 p 标签，
+        &lt;p&gt;使用 ckeditor 编辑器时，按回车会自动添加 &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; 标签强制换行，而且行距之间距离不好控制，若用 CSS 给它 &lt;code&gt;display:none;&lt;/code&gt; 属性的话，之前处理好的文章就会合并到一起，所以为了能更好
       
     
     </summary>
@@ -516,9 +516,9 @@
       <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
     
     
-      <category term="偷懒" scheme="http://www.dinphy.wang/tags/%E5%81%B7%E6%87%92/"/>
-    
       <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
+    
+      <category term="偷懒" scheme="http://www.dinphy.wang/tags/%E5%81%B7%E6%87%92/"/>
     
       <category term="死了" scheme="http://www.dinphy.wang/tags/%E6%AD%BB%E4%BA%86/"/>
     
@@ -576,11 +576,11 @@
       <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
     
     
-      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
-    
       <category term="说话" scheme="http://www.dinphy.wang/tags/%E8%AF%B4%E8%AF%9D/"/>
     
       <category term="中伤" scheme="http://www.dinphy.wang/tags/%E4%B8%AD%E4%BC%A4/"/>
+    
+      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
     
   </entry>
   
