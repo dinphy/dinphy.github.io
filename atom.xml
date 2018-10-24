@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dinphy.wang/"/>
-  <updated>2018-10-20T07:52:41.760Z</updated>
+  <updated>2018-10-24T05:07:27.475Z</updated>
   <id>http://www.dinphy.wang/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Win7 系统精简，简单有效，可精简掉5GB左右</title>
+    <link href="http://www.dinphy.wang/posts/2c19abba/"/>
+    <id>http://www.dinphy.wang/posts/2c19abba/</id>
+    <published>2018-10-24T05:03:00.000Z</published>
+    <updated>2018-10-24T05:07:27.475Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="1、前提"><a href="#1、前提" class="headerlink" title="1、前提"></a>1、前提</h5><p>第一步就是开启 <strong>Administrator</strong> 帐户，先取得最高管理权限，方法： 右键桌面计算机——管理，本地用户和组——用户，右键 <strong>Administrator</strong> 属性，去除“帐户已禁 用”前的勾，注销当前用户登录 <strong>Administrator</strong> 帐户。</p><h5 id="2、禁用休眠"><a href="#2、禁用休眠" class="headerlink" title="2、禁用休眠"></a>2、禁用休眠</h5><p>点击开始菜单， 所有程序→附件→命令提示符”， 右击选择“以管理员身份运行”， 进入命令提示符后， 手动输入 <code>powercfg -h off</code> （如果不行的， 用  <code>powercfg.exe /hibernate off</code> 并回车；可以通过 <code>powercfg /a</code> 确认是否已经关闭。 </p><h5 id="3、删除系统备份，关闭系统保护"><a href="#3、删除系统备份，关闭系统保护" class="headerlink" title="3、删除系统备份，关闭系统保护"></a>3、删除系统备份，关闭系统保护</h5><p>右键桌面计算机——属性——高级管理设置——系统保护，选中开 启系统保护的磁盘，配置，选择“关闭系统保护”，应用，确定。 </p><h5 id="4、转移虚拟内存"><a href="#4、转移虚拟内存" class="headerlink" title="4、转移虚拟内存"></a>4、转移虚拟内存</h5><p>右键桌面计算机——属性——高级系统设置——高级——性能——设置——高级，单击“虚拟内存”下的“更改”按钮，取消“自动管理所有驱动器的分页文件大小”复选框，选中虚拟内存所在系统盘（一般是在 C 盘），选择下方的“无分页文件”，再单击“设置”按钮。再选中其它盘，把分页文件放到其上即可。</p><p>如果内存大于 4GB 以上，可以考虑不再设置虚拟内存。 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;1、前提&quot;&gt;&lt;a href=&quot;#1、前提&quot; class=&quot;headerlink&quot; title=&quot;1、前提&quot;&gt;&lt;/a&gt;1、前提&lt;/h5&gt;&lt;p&gt;第一步就是开启 &lt;strong&gt;Administrator&lt;/strong&gt; 帐户，先取得最高管理权限，方法： 右键桌面计算
+      
+    
+    </summary>
+    
+      <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+    
+    
+      <category term="Win 7" scheme="http://www.dinphy.wang/tags/Win-7/"/>
+    
+      <category term="精简" scheme="http://www.dinphy.wang/tags/%E7%B2%BE%E7%AE%80/"/>
+    
+  </entry>
   
   <entry>
     <title>CKEditor 编辑内容时，回车生成段落P，首行缩进两字</title>
@@ -487,9 +514,9 @@
       <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
     
     
-      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
-    
       <category term="偷懒" scheme="http://www.dinphy.wang/tags/%E5%81%B7%E6%87%92/"/>
+    
+      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
     
       <category term="死了" scheme="http://www.dinphy.wang/tags/%E6%AD%BB%E4%BA%86/"/>
     
@@ -547,11 +574,11 @@
       <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
     
     
+      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
+    
       <category term="说话" scheme="http://www.dinphy.wang/tags/%E8%AF%B4%E8%AF%9D/"/>
     
       <category term="中伤" scheme="http://www.dinphy.wang/tags/%E4%B8%AD%E4%BC%A4/"/>
-    
-      <category term="舒服" scheme="http://www.dinphy.wang/tags/%E8%88%92%E6%9C%8D/"/>
     
   </entry>
   
@@ -611,40 +638,6 @@
       <category term="勇气" scheme="http://www.dinphy.wang/tags/%E5%8B%87%E6%B0%94/"/>
     
       <category term="痛快" scheme="http://www.dinphy.wang/tags/%E7%97%9B%E5%BF%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>太阳伞下</title>
-    <link href="http://www.dinphy.wang/posts/d2b000fe/"/>
-    <id>http://www.dinphy.wang/posts/d2b000fe/</id>
-    <published>2018-07-21T06:14:00.000Z</published>
-    <updated>2018-07-21T07:13:41.073Z</updated>
-    
-    <content type="html"><![CDATA[<p>伞之上，</p><p>是骄阳。</p><p>伞之下，</p><p>我们一家三口。<br><br></p><p>微风透过人群直扑脸颊，</p><p>伞下的我们顿时凉意些许。</p><p>这个季节里它如火般烘烤着大地上的人民，</p><p>毫不保留。<br><br></p><p>它的出现给人们带来了希望和光明，</p><p>但除此之外的炎热使人们爱之、恨之、惧之。</p><p>太阳伞虽然可以挡住它的照射，</p><p>却无法避开它散发的热。<br><br></p><p>人们总在寒冬时期盼它的到来，</p><p>譬如春光，温暖和谐。</p><p>大地复苏时，</p><p>春光下人们播种了梦想的种子。</p><p>譬如秋日，幸福惬意。</p><p>硕果丰收时，</p><p>秋日里人们收获了梦想的果实。<br><br></p><p>而躲在太阳伞下的夏天的人啊，</p><p>总想快些走到大树下乘凉，</p><p>可那该死的蚊虫却想吸干那人的血！</p><p>手臂上，脚跟上，甚至脸上，</p><p>都留下了它的埋下的毒液。<br><br></p><p>而太阳伞下还在继续前行的我们，</p><p>爸爸撑着伞、抱着女儿，</p><p>妈妈推着车、靠近伞下；</p><p>我们知道前方不远处就是家了，</p><p>可无精打采的肢体像在暗示着什么；</p><p>直到我看见那挑着担子、流着汗，</p><p>曝晒在骄阳下还不忘前行的农夫时，</p><p>太阳伞下的我们很幸福。<br><br></p><p>我恍然大悟——</p><p>不做懦夫停在原地，</p><p>要做勇士继续前进！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;伞之上，&lt;/p&gt;
-&lt;p&gt;是骄阳。&lt;/p&gt;
-&lt;p&gt;伞之下，&lt;/p&gt;
-&lt;p&gt;我们一家三口。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;微风透过人群直扑脸颊，&lt;/p&gt;
-&lt;p&gt;伞下的我们顿时凉意些许。&lt;/p&gt;
-&lt;p&gt;这个季节里它如火般烘烤着大地上的人民，&lt;/p&gt;
-&lt;p&gt;毫不保留。&lt;br&gt;&lt;br
-      
-    
-    </summary>
-    
-      <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
-    
-    
-      <category term="伞下的幸福" scheme="http://www.dinphy.wang/tags/%E4%BC%9E%E4%B8%8B%E7%9A%84%E5%B9%B8%E7%A6%8F/"/>
-    
-      <category term="光明" scheme="http://www.dinphy.wang/tags/%E5%85%89%E6%98%8E/"/>
     
   </entry>
   
