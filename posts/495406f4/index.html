@@ -207,12 +207,16 @@
     
     <div class="post-body post-content">
         <p>不小心下载了一个伪 <strong>KMS</strong> 激活工具，一点击运行就安装了一个2345浏览器在做面上，还占用了进程，注销后卸载了2345浏览器，和删除掉执行程序，以为没事了。结果很气愤，打开浏览器时，主页被 <strong><code>劫持/篡改到 t999.cn</code></strong> 查看了一下注册表，也没发现主页被篡改，检查了一下谷歌浏览器版本 <code>chrome://version/</code> 发现如下内容，</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令行	<span class="string">"E:\Program Files (x86)\CentBrowser\CentBrowser\Application\chrome.exe"</span> --flag-switches-begin --enable-tab-audio-muting --save-page-<span class="keyword">as</span>-mhtml --disable-features=AutomaticTabDiscarding --flag-switches-end www.t999.cn/?kl</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>命令行    “E:\Program Files (x86)\CentBrowser\CentBrowser\Application\chrome.exe” –flag-switches-begin –enable-tab-audio-muting –save-page-as-mhtml –disable-features=AutomaticTabDiscarding –flag-switches-end <a href="http://www.t999.cn/?kl" target="_blank" rel="noopener">www.t999.cn/?kl</a></p>
+</blockquote>
 <p>对，没错就是被 <code>www.t999.cn/?kl</code> 强制篡改了浏览器的启动页。</p>
 <p>解决办法（按如下操作以此进行）：</p>
-<blockquote>
-<p>win+R ——&gt; regedit ——&gt; HKEY_LOCAL_MACHINE ——&gt; SYSTEM ——&gt; CurrentControlSet ——&gt; Services ——&gt; 删除Hyipte ——&gt; 重启系统</p>
-</blockquote>
+<ul>
+<li>win+R ——&gt; regedit</li>
+<li>HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Services \ 删除Hyipte</li>
+<li>重启系统</li>
+</ul>
 <p>另外，也可以使用杀毒软件进行查杀，这是一个比较老的木马了。我是因为不习惯安装杀毒软件，所以才中毒的！！！</p>
 
     </div>
@@ -242,7 +246,7 @@
             
                 <blockquote style="margin: 0.4em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;list-style: none;font-size:14px;">
                     <b>本文标题：</b>解决浏览器主页被t999.cn劫持问题<br>
-                    <b>最后更新：</b>2018 年 11 月 08 日 - 23:11<br>
+                    <b>最后更新：</b>2018 年 11 月 09 日 - 17:11<br>
                     <b>本文链接：</b><a href="http://www.dinphy.wang/posts/495406f4/">http://www.dinphy.wang/posts/495406f4/</a><br>
                     <b>转载声明：</b>商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="/posts/b5f422e3/" target="_blank">Dinphy</a>
                 </blockquote>		
