@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dinphy.wang/posts/1c52959f/</loc>
+    
+    <lastmod>2018-11-13T11:42:59.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dinphy.wang/hexo-admin-ehc-images.json</loc>
+    
+    <lastmod>2018-11-13T11:41:16.543Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dinphy.wang/posts/495406f4/</loc>
     
     <lastmod>2018-11-09T09:39:59.010Z</lastmod>
@@ -355,13 +369,6 @@
     <loc>http://www.dinphy.wang/baidu_verify_bxXthxpFQo.html</loc>
     
     <lastmod>2018-07-02T13:34:21.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dinphy.wang/hexo-admin-ehc-images.json</loc>
-    
-    <lastmod>2018-07-02T13:32:50.103Z</lastmod>
     
   </url>
   

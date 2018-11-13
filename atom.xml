@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dinphy.wang/"/>
-  <updated>2018-11-09T09:39:59.010Z</updated>
+  <updated>2018-11-13T11:42:59.617Z</updated>
   <id>http://www.dinphy.wang/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一根网线接两个水晶头</title>
+    <link href="http://www.dinphy.wang/posts/1c52959f/"/>
+    <id>http://www.dinphy.wang/posts/1c52959f/</id>
+    <published>2018-11-13T11:33:00.000Z</published>
+    <updated>2018-11-13T11:42:59.617Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h5><p>标准的网线中有8根线，但是一般情况下百兆网络中只用到其中4根，另外4根是备用的，本文就是将备用的4根网线充分利用起来。</p><h5 id="具体接法"><a href="#具体接法" class="headerlink" title="具体接法"></a>具体接法</h5><h6 id="导线颜色分组"><a href="#导线颜色分组" class="headerlink" title="导线颜色分组"></a>导线颜色分组</h6><p>将8线网线导线分为2组，第一组颜色为：橙白，橙，绿白，绿，剩下的为第二组颜色。（有一些网线中有4根都是同样的白色，其中跟橙色绞在一起的为橙白，跟绿色绞在一起的为绿白，以此类推。）<br><img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/TIM截图20181113193558.png" alt=""></p><h6 id="导线对应位置"><a href="#导线对应位置" class="headerlink" title="导线对应位置"></a>导线对应位置</h6><p>拿出一个水晶头，将网线导线剪好后，在使用压线钳压制的时候，将橙白插入第一个位置，橙色插入第二个位置，绿白插入第三个位置，绿色插入第六个位置。</p><p>按以上步骤，将蓝白、蓝、棕白、棕分别接到另一个水晶头的1，2，3，6位置。</p><p>通过专业测试工具测试一下，通了就行。</p><h5 id="完成效果"><a href="#完成效果" class="headerlink" title="完成效果"></a>完成效果</h5><p><img src="https://raw.githubusercontent.com/dinphy/dinphy.github.io/master/images/TIM截图20181113192628.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;工作原理&quot;&gt;&lt;a href=&quot;#工作原理&quot; class=&quot;headerlink&quot; title=&quot;工作原理&quot;&gt;&lt;/a&gt;工作原理&lt;/h5&gt;&lt;p&gt;标准的网线中有8根线，但是一般情况下百兆网络中只用到其中4根，另外4根是备用的，本文就是将备用的4根网线充分利用起来。&lt;/p
+      
+    
+    </summary>
+    
+      <category term="学习参考" scheme="http://www.dinphy.wang/categories/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/"/>
+    
+    
+      <category term="网线" scheme="http://www.dinphy.wang/tags/%E7%BD%91%E7%BA%BF/"/>
+    
+      <category term="水晶头" scheme="http://www.dinphy.wang/tags/%E6%B0%B4%E6%99%B6%E5%A4%B4/"/>
+    
+      <category term="分组" scheme="http://www.dinphy.wang/tags/%E5%88%86%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>解决浏览器主页被t999.cn劫持问题</title>
@@ -608,36 +637,6 @@
       <category term="偷懒" scheme="http://www.dinphy.wang/tags/%E5%81%B7%E6%87%92/"/>
     
       <category term="死了" scheme="http://www.dinphy.wang/tags/%E6%AD%BB%E4%BA%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为自己鼓掌</title>
-    <link href="http://www.dinphy.wang/posts/f4e76f77/"/>
-    <id>http://www.dinphy.wang/posts/f4e76f77/</id>
-    <published>2018-08-05T08:21:00.000Z</published>
-    <updated>2018-08-06T07:25:07.388Z</updated>
-    
-    <content type="html"><![CDATA[<p>生命在于运动，如果你热爱运动，请为自己鼓掌；生活需要滋润，如果你热爱文字，请为自己鼓掌；人生长路漫漫，如果你热爱出发，请为自己鼓掌！</p><p>在这个世界上，我们每个人都扮演着各自不同的角色，有喜欢的也有憎恶的，即便如此我们也不能拒绝。于是，我们都在思索着，惆怅着和尝试着去适应并驾驭好这个角色。为人子，若能尽孝道、讲礼仪便可为自己鼓掌；为人师，若能以身作则、传道受业解惑便可为自己鼓掌；为人首，若能恪尽职守、公正廉洁便可为自己鼓掌；作为一个能说会听的高等动物，我们会思考、会表达，我们所扮演的角色可以是个体也可以是团队。为团队利益能牺牲自我的，可以为自己鼓掌。生活中，可以为自己鼓掌的地方很多，不一定要足够的出色，只要是有价值或有意思的事，做了，又做对了，就可以为自己鼓掌。</p><p>我们亦不奢望别人为我们鼓掌，倘若是别人情不自禁的为我们鼓掌了，毋庸置疑，请自信的为自己鼓掌吧。鼓掌，无需冠冕堂皇的修饰，左手右手掌心相对拍打即可。</p><p>为自己鼓掌，其实是鼓励自己努力的学习，朝着正确的方向，去做自己热爱的事。我们或许拥有不了整个世界，但我们可以徜徉在世界的某个角落起舞弄姿、展现自己。热爱运动，我就奔跑；热爱文字，我就阅读；热爱出发，我就远航！</p><p>为自己鼓掌吧，哪怕跌倒了，爬起来就是值得的。如果不甘人后，那就努力的向前，不断地鼓励自己朝前。人生路途中，出彩的地方不止一处，不必遍地开花，只要绽放得挺直，一朵花足以娇艳整片草地。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;生命在于运动，如果你热爱运动，请为自己鼓掌；生活需要滋润，如果你热爱文字，请为自己鼓掌；人生长路漫漫，如果你热爱出发，请为自己鼓掌！&lt;/p&gt;
-&lt;p&gt;在这个世界上，我们每个人都扮演着各自不同的角色，有喜欢的也有憎恶的，即便如此我们也不能拒绝。于是，我们都在思索着，惆怅着和尝试
-      
-    
-    </summary>
-    
-      <category term="闲言碎语" scheme="http://www.dinphy.wang/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
-    
-    
-      <category term="鼓掌" scheme="http://www.dinphy.wang/tags/%E9%BC%93%E6%8E%8C/"/>
-    
-      <category term="出发" scheme="http://www.dinphy.wang/tags/%E5%87%BA%E5%8F%91/"/>
-    
-      <category term="思考" scheme="http://www.dinphy.wang/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
